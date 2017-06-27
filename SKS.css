@@ -1,10 +1,10 @@
-#test {
-    color:green;
-}
+
 .topBar {
-    background-color: black !important;
-    display: block;
+    box-shadow: 0px 20px 75px darkgray;
+    padding: 20px;
 }
-.red {
-    color: blue;
+
+.logo {
+    width: 50%;
+    height: 50%;
 }
