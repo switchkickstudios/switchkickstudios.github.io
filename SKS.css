@@ -1,11 +1,11 @@
 /* TOP */
-div.topBar {
+.topBar {
+    box-shadow: 0px 20px 75px black;
     padding: 20px;
     display: flex;
 }
 #topNavSKS {
     background-color: white !important;
-    box-shadow: 0px 20px 75px darkgray;
 
 }
 div.topRightStack {
@@ -38,13 +38,15 @@ a.SKSButton {
 }
 
 /* BOTTOM */
+#botBar {
+    background-color: white !important;
+}
 .botBar {
     position: absolute;
     bottom: 0px;
-    box-shadow: 0px 15px 75px darkgray;
+    box-shadow: 0px 15px 75px black;
     padding-top: 40px;
     color: blue;
-    background-color: white !important;
     text-align:center;
     vertical-align:middle;
 }
