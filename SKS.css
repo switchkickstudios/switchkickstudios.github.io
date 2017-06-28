@@ -1,4 +1,4 @@
-
+/* TOP */
 .topBar {
     box-shadow: 0px 20px 75px darkgray;
     padding: 20px;
@@ -6,19 +6,60 @@
 }
 div.topRightStack {
     position: absolute;
-    right: 0px;
+    right: 45px;
+    padding-top: 17px;
 }
-
 .logo {
     max-height: 100%;
     max-width: 100%;
     padding-top: 6px;
 }
 
+.SKSButton:active {
+    color: white;
+}
+.SKSButton:hover {
+    text-decoration: none;
+}
+a.SKSButton {
+    cursor: pointer !important;
+    font-family: DinCondensed;
+    font-size: 20px;
+}
+
+
+/* BOTTOM */
+.botBar {
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0px 15px 75px darkgray;
+    padding-top: 40px;
+    color: blue;
+    text-align:center;
+    vertical-align:middle;
+}
+.contact {
+    font-family: Futura;
+}
+
+.primaryColor {
+    color: #283f60;
+}
+
 /* XS */
 @media (max-width: 768px) {
     .topBar {
         height: 80px;
+        padding-left: 5px;
+    }
+    .botBar {
+        height: 140px;
+    }
+    .topRightButton {
+        padding-right: 17px;
+    }
+    div.topRightStack {
+        right: 20px;
     }
 }
 
@@ -27,6 +68,16 @@ div.topRightStack {
     .topBar {
         height: 80px;
     }
+    .botBar {
+        min-height: 150px;
+    }
+    .topRightButton {
+        padding-right: 40px;
+    }
+    div.topRightStack {
+        right: 45px;
+    }
+
 }
 
 /* MD */
@@ -35,12 +86,21 @@ div.topRightStack {
         min-height: 80px;
         height: inherit;
     }
+
 }
 
 /* LG */
 @media (min-width: 1200px) {
-    .topBar {
-        min-height: 80px;
-        height: inherit;
-    }
+
+}
+
+/* FONTS */
+@font-face {
+    font-family: Futura;
+    src: url(fonts/Futura.ttc);
+    font-stretch: condensed;
+}
+@font-face {
+    font-family: DinCondensed;
+    src: url(fonts/DINCondensedBold.ttf);
 }
