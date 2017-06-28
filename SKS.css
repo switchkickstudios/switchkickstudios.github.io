@@ -1,11 +1,12 @@
 /* TOP */
 div.topBar {
-    box-shadow: 0px 20px 75px darkgray;
     padding: 20px;
     display: flex;
 }
-div#topBarSKS {
+#topNavSKS {
     background-color: white !important;
+    box-shadow: 0px 20px 75px darkgray;
+
 }
 div.topRightStack {
     position: absolute;
@@ -31,7 +32,7 @@ a.SKSButton {
 }
 
 /* Main Background */
-#mainBG {
+#mainBG{
     width: 100%;
     height: auto;
 }
