@@ -107,6 +107,7 @@ a.SKSButton {
     }
     #contentBlockSKS {
         top: -220px;
+        background-color: black;
     }
 
 }
