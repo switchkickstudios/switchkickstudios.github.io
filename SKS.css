@@ -96,6 +96,9 @@ a.SKSButton {
     div.topRightStack {
         right: 45px;
     }
+    #contentBlockSKS {
+        top: -220px;
+    }
 
 }
 
@@ -107,7 +110,6 @@ a.SKSButton {
     }
     #contentBlockSKS {
         top: -220px;
-        background-color: black;
     }
 
 }
