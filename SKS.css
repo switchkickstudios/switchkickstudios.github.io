@@ -32,6 +32,7 @@ a.SKSButton {
     font-size: 20px;
 }
 
+/* Main Content */
 #contentBlockSKS{
     position: relative;
     z-index: 1;
@@ -48,8 +49,6 @@ a.SKSButton {
     background-color: white !important;
 }
 .botBar {
-    position: fixed;
-    bottom: 0px;
     box-shadow: 0px 15px 75px black;
     padding-top: 40px;
     color: blue;
@@ -73,6 +72,7 @@ a.SKSButton {
     }
     .botBar {
         height: 140px;
+        position: absolute;
     }
     .topRightButton {
         padding-right: 17px;
@@ -92,6 +92,8 @@ a.SKSButton {
     }
     .botBar {
         min-height: 150px;
+        position: fixed;
+        bottom: 0px;
     }
     .topRightButton {
         padding-right: 40px;
