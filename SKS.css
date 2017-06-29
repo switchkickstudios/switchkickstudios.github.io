@@ -80,6 +80,9 @@ a.SKSButton {
     div.topRightStack {
         right: 20px;
     }
+    #contentBlockSKS {
+        top: 0px;
+    }
 }
 
 /* SM */
@@ -97,7 +100,7 @@ a.SKSButton {
         right: 45px;
     }
     #contentBlockSKS {
-        top: -200px;
+        top: -150px;
     }
 
 }
