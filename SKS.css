@@ -50,7 +50,7 @@ a.SKSButton {
 }
 .botBar {
     box-shadow: 0px 15px 75px black;
-    padding-top: 40px;
+
     color: blue;
     text-align:center;
     vertical-align:middle;
@@ -71,8 +71,9 @@ a.SKSButton {
         padding-left: 5px;
     }
     .botBar {
-        height: 140px;
+        height: 90px;
         position: absolute;
+        padding-top: 15px;
     }
     .topRightButton {
         padding-right: 17px;
@@ -91,9 +92,10 @@ a.SKSButton {
         height: 80px;
     }
     .botBar {
-        min-height: 150px;
+        min-height: 115px;
         position: fixed;
         bottom: 0px;
+        padding-top: 25px;
     }
     .topRightButton {
         padding-right: 40px;
@@ -112,6 +114,10 @@ a.SKSButton {
     .topBar {
         min-height: 80px;
         height: inherit;
+    }
+    .botBar {
+        min-height: 150px;
+        padding-top: 40px;
     }
     #contentBlockSKS {
         top: -220px;
