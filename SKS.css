@@ -7,6 +7,9 @@ Fonts: Anurati, DINCondensed, Futura
 
 */
 
+body {
+    background-color: #283f60;
+}
 
 
 /* TOP */
@@ -67,7 +70,7 @@ a.SKSButton {
 
 /* About Me */
 #aboutMe {
-    background-color: white !important;
+    background-color: #283f60 !important;
 }
 #aboutMeTitle {
     text-align: center !important;
@@ -76,6 +79,7 @@ a.SKSButton {
     text-decoration: underline;
     padding: 20px;
     padding-top: 35px;
+    color: white;
 }
 #aboutMeContent {
     text-align: center !important;
@@ -83,9 +87,11 @@ a.SKSButton {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
+    color: white;
 }
 #switchKickDefinition {
     text-align: left;
+    color: white;
 }
 
 /* BOTTOM */
