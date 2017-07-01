@@ -63,6 +63,9 @@ a.SKSButton {
     padding-top: 0px;
     padding-bottom: 35px;
 }
+#switchKickDefinition {
+    text-align: left;
+}
 
 /* BOTTOM */
 #botBar {
@@ -97,7 +100,7 @@ a.SKSButton {
     .botBar {
         height: 90px;
         position: initial;
-    
+
         padding-top: 15px;
     }
     .topRightButton {
@@ -131,6 +134,10 @@ a.SKSButton {
     #contentBlockSKS {
         top: -150px;
     }
+    #switchKickDefinition {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 }
 
@@ -146,6 +153,10 @@ a.SKSButton {
     }
     #contentBlockSKS {
         top: -220px;
+    }
+    #switchKickDefinition {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
 }
