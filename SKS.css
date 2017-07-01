@@ -44,6 +44,23 @@ a.SKSButton {
     height: auto;
 }
 
+#aboutMe {
+    background-color: white !important;
+}
+
+/* About Me */
+#aboutMeTitle {
+    text-align: center !important;
+    font-family: DinCondensed;
+    font-size: 30px;
+    padding: 20px;
+    padding-top: 35px;
+}
+#aboutMeContent {
+    text-align: center !important;
+    font-family: Futura;
+}
+
 /* BOTTOM */
 #botBar {
     background-color: white !important;
