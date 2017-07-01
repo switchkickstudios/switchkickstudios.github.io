@@ -7,7 +7,9 @@ Fonts: Anurati, DINCondensed, Futura
 
 */
 
-
+body {
+    background-color: #283f60;
+}
 
 
 /* TOP */
@@ -115,9 +117,6 @@ a.SKSButton {
 
 /* XS */
 @media (max-width: 768px) {
-    body {
-        background-color: white !important;
-    }
     .topBar {
         height: 80px;
         padding-left: 5px;
@@ -144,9 +143,6 @@ a.SKSButton {
 
 /* SM */
 @media (min-width: 768px) {
-    body {
-        background-color: #283f60;
-    }
     .topBar {
         height: 80px;
     }
