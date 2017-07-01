@@ -58,10 +58,20 @@ a.SKSButton {
 }
 #photoCred {
     position: relative;
-    top: -30px;
+    top: -90px;
     text-align: right;
     z-index: 2;
     color: paleturquoise;
+}
+#photoCred2 {
+    position: relative;
+    top: -45px;
+    text-align: right;
+    z-index: 2;
+    color: paleturquoise;
+}
+#photoCredKitt {
+    vertical-align: super;
 }
 
 
@@ -215,4 +225,20 @@ a.SKSButton {
 /* STYLES */
 .primaryColor {
     color: #283f60;
+}
+
+/* SOCIAL MEDIA ICONS */
+.fa {
+    border-radius: 50%;
+    font-size: 30px;
+    text-decoration: none;
+}
+.fa-instagram {
+    color: paleturquoise;
+}
+.fa:hover {
+    text-decoration: none;
+}
+.fa:focus {
+    text-decoration: none;
 }
