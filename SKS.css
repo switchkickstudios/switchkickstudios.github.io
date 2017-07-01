@@ -59,6 +59,9 @@ a.SKSButton {
 #aboutMeContent {
     text-align: center !important;
     font-family: Futura;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 35px;
 }
 
 /* BOTTOM */
