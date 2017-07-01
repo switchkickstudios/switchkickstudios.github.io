@@ -1,3 +1,14 @@
+/*
+
+Style Guidelines:
+
+Colors: White, PaleTurquoise, #283f60, Black
+Fonts: Anurati, DINCondensed, Futura
+
+*/
+
+
+
 /* TOP */
 .topBar {
     box-shadow: 0px 20px 75px black;
@@ -83,18 +94,15 @@ a.SKSButton {
 }
 .botBar {
     box-shadow: 0px 15px 75px black;
-
     color: blue;
-    text-align:center;
     vertical-align:middle;
     z-index: 9;
 }
 .contact {
     font-family: Futura;
 }
-
-.primaryColor {
-    color: #283f60;
+#socialMedia {
+    text-align: right;
 }
 
 
@@ -108,9 +116,8 @@ a.SKSButton {
         padding-left: 5px;
     }
     .botBar {
-        height: 90px;
+        height: 115px;
         position: initial;
-
         padding-top: 15px;
     }
     .topRightButton {
@@ -121,6 +128,9 @@ a.SKSButton {
     }
     #contentBlockSKS {
         top: 0px;
+    }
+    #socialMedia {
+        text-align: left;
     }
 
 }
@@ -148,6 +158,9 @@ a.SKSButton {
     #switchKickDefinition {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    #socialMedia {
+        text-align: right;
     }
 
 }
@@ -188,4 +201,9 @@ a.SKSButton {
 @font-face {
     font-family: DinCondensed;
     src: url(fonts/DINCondensedBold.ttf);
+}
+
+/* STYLES */
+.primaryColor {
+    color: #283f60;
 }
