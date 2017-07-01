@@ -8,7 +8,7 @@ Fonts: Anurati, DINCondensed, Futura
 */
 
 body {
-    background-color: #283f60;
+    background-color: white;
 }
 
 
@@ -50,6 +50,8 @@ a.SKSButton {
 /* Main Content */
 #contentBlockSKS{
     position: relative;
+    background-color: #283f60;
+    padding: 0px;
     z-index: 1;
 }
 
