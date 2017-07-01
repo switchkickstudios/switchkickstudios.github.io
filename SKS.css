@@ -93,7 +93,7 @@ a.SKSButton {
     }
     .botBar {
         height: 90px;
-        position: absolute;
+        position: initial;
         padding-top: 15px;
     }
     .topRightButton {
