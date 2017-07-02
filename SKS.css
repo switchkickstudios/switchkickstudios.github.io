@@ -245,6 +245,9 @@ a.SKSButton {
     text-align: left;
     font-style: italic;
 }
+.noPadding {
+    padding: 0px;
+}
 
 /* SOCIAL MEDIA ICONS */
 .fa {

@@ -68,6 +68,11 @@
     padding-top: 50px;
     text-decoration: underline;
 }
+#MDMLifeCounterScreenshot{
+    max-height: 300px;
+    margin-top: 40px;
+    display: initial;
+}
 .MDMSectionHead {
     text-align: left !important;
     font-family: Futura;
@@ -103,6 +108,12 @@
         text-align: center;
         padding-top: 30px;
     }
+    #MDMLifeCounterTitle {
+        padding-top: 40px;
+    }
+    #MDMLifeCounterScreenshotDiv {
+        text-align: center;
+    }
 
 }
 
@@ -124,6 +135,12 @@
     #MDMDownload {
         text-align: right;
     }
+    #MDMLifeCounterTitle {
+        padding-top: 40px;
+    }
+    #MDMLifeCounterScreenshotDiv {
+        text-align: center;
+    }
 
 }
 
@@ -135,6 +152,12 @@
     }
     #MDMBottomBuffer {
         height: 155px;
+    }
+    #MDMLifeCounterTitle {
+        padding-top: 120px;
+    }
+    #MDMLifeCounterScreenshotDiv {
+        text-align: right;
     }
 }
 
