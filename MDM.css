@@ -36,7 +36,8 @@
     }
     .MDMCarouselImage {
         max-height: auto;
-        /*margin-top: 20px;*/
+        margin-top: 20px;
+        margin-bottom: 10px;
         width: 70%;
     }
 
