@@ -73,6 +73,12 @@
     margin-top: 40px;
     display: initial;
 }
+#MDMTokensScreenshot {
+    max-height: 520px;
+    margin-top: 40px;
+    display: initial;
+}
+
 .MDMSectionHead {
     text-align: left !important;
     font-family: Futura;
@@ -114,6 +120,12 @@
     #MDMLifeCounterScreenshotDiv {
         text-align: center;
     }
+    #MDMTokensTitle {
+        padding-top: 40px;
+    }
+    #MDMTokensScreenshotDiv {
+        text-align: center;
+    }
 
 }
 
@@ -141,6 +153,13 @@
     #MDMLifeCounterScreenshotDiv {
         text-align: center;
     }
+    #MDMTokensTitle {
+        padding-top: 40px;
+    }
+    #MDMTokensScreenshotDiv {
+        text-align: center;
+    }
+
 
 }
 
@@ -159,6 +178,13 @@
     #MDMLifeCounterScreenshotDiv {
         text-align: right;
     }
+    #MDMTokensTitle {
+        padding-top: 190px;
+    }
+    #MDMTokensScreenshotDiv {
+        text-align: left;
+    }
+
 }
 
 /* LG */
