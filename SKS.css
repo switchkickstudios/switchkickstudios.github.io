@@ -239,6 +239,9 @@ a.SKSButton {
 .justifyRight {
     text-align: right;
 }
+.justifyCenter {
+    text-align: center;
+}
 .disclaimer {
     color: white;
     font-size: 12px;

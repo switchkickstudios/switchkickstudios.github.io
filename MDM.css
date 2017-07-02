@@ -78,6 +78,20 @@
     margin-top: 40px;
     display: initial;
 }
+#MDMStormScreenshot {
+    max-height: 520px;
+    margin-top: 40px;
+    display: initial;
+}
+#MDMDiceRollTitle {
+    margin-top: 40px;
+}
+#MDMColorSchemesTitle {
+    margin-top: 40px;
+}
+#MDMColorsCircle {
+    margin: auto;
+}
 
 .MDMSectionHead {
     text-align: left !important;
@@ -126,6 +140,18 @@
     #MDMTokensScreenshotDiv {
         text-align: center;
     }
+    #MDMCountersTitle {
+        padding-top: 40px;
+    }
+    #MDMStormScreenshotDiv {
+        text-align: center;
+    }
+    #MDMCircleDiv {
+        padding-top: 80px;
+    }
+    #MDMColorsCircle {
+        max-height: 50px;
+    }
 
 }
 
@@ -159,7 +185,18 @@
     #MDMTokensScreenshotDiv {
         text-align: center;
     }
-
+    #MDMCountersTitle {
+        padding-top: 40px;
+    }
+    #MDMStormScreenshotDiv {
+        text-align: center;
+    }
+    #MDMCircleDiv {
+        padding-top: 80px;
+    }
+    #MDMColorsCircle {
+        max-height: 60px;
+    }
 
 }
 
@@ -183,6 +220,18 @@
     }
     #MDMTokensScreenshotDiv {
         text-align: left;
+    }
+    #MDMCountersTitle {
+        padding-top: 190px;
+    }
+    #MDMStormScreenshotDiv {
+        text-align: right;
+    }
+    #MDMCircleDiv {
+        padding-top: 300px;
+    }
+    #MDMColorsCircle {
+        max-height: 60px;
     }
 
 }
