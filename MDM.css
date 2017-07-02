@@ -1,0 +1,44 @@
+/* Main Content */
+#contentBlockMDM{
+    position: relative;
+    background-color: black;
+    padding: 0px;
+    z-index: 1;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* XS */
+@media (max-width: 768px) {
+    #MDMbody {
+        background-color: white;
+    }
+    #contentBlockMDM {
+        top: 0px;
+    }
+}
+
+/* SM */
+@media (min-width: 768px) {
+    #MDMbody {
+        background-color: black;
+    }
+    #contentBlockMDM {
+        top: -150px;
+    }
+}
+
+/* MD */
+@media (min-width: 992px) {
+    #contentBlockMDM {
+        top: -220px;
+    }
+}
+
+/* LG */
+@media (min-width: 1200px) {
+    #contentBlockMDM {
+        top: -360px;
+    }
+}
