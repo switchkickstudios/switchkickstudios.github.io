@@ -1,4 +1,9 @@
 /* Main Content */
+#MDMLogo {
+    height: 200px;
+    width: auto;
+}
+
 #contentBlockMDM{
     position: relative;
     background-color: black;
@@ -20,9 +25,24 @@
     position: relative;
     top: 100px;
 }
-#MDMLogo {
-    height: 200px;
-    width: auto;
+
+
+/* General Info */
+#MDMContent {
+    position: relative;
+    padding-top: 50px;
+}
+#MDMTitle {
+    text-align: left !important;
+    font-family: DinCondensed;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+}
+#MDMDescription {
+    text-align: left !important;
+    font-family: Futura;
+    color: white;
 }
 
 /* --------------------------------------------------------------- */
@@ -64,6 +84,7 @@
         max-height: 600px;
         width: auto;
     }
+
 }
 
 /* LG */

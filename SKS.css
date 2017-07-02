@@ -117,6 +117,7 @@ a.SKSButton {
 }
 #socialMedia {
     text-align: right;
+    padding: 0px;
 }
 
 
@@ -234,6 +235,9 @@ a.SKSButton {
 /* STYLES */
 .primaryColor {
     color: #283f60;
+}
+.justifyRight {
+    text-align: right;
 }
 
 /* SOCIAL MEDIA ICONS */
