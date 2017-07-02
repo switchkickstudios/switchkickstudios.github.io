@@ -23,6 +23,9 @@
     #MDMbody {
         background-color: white;
     }
+    .MDMCarouselImage {
+        width: 85%;
+    }
 
 }
 
