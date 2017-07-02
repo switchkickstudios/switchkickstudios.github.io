@@ -38,13 +38,47 @@
     font-size: 30px;
     padding: 0px;
     text-decoration: underline;
-    color: white;
+}
+#MDMSubtitle {
+    text-align: left !important;
+    font-family: Futura;
+    font-size: 24px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #MDMDescription {
     text-align: left !important;
     font-family: Futura;
     padding: 0px;
-    color: white;
+}
+#MDMFeatures {
+    padding-top: 40px;
+}
+#MDMComingSoon {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 40px;
+}
+#MDMFeaturesTitle {
+    text-align: left !important;
+    font-family: DinCondensed;
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 50px;
+    text-decoration: underline;
+}
+.MDMSectionHead {
+    text-align: left !important;
+    font-family: Futura;
+    font-size: 24px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.MDMDescriptionText {
+    font-family: Futura;
+    padding: 0px;
 }
 
 /* --------------------------------------------------------------- */
@@ -112,4 +146,12 @@
     .MDMCarouselImage {
         max-height: 700px;
     }
+}
+
+/* STYLES */
+.whiteText {
+    color:white;
+}
+.MDMListIndent {
+    padding-left: 20px;
 }
