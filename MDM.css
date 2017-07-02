@@ -5,6 +5,15 @@
     padding: 0px;
     z-index: 1;
 }
+#MDMCarouselBody {
+    margin-top: 50px;
+}
+.MDMCarouselImage {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
 
 /* --------------------------------------------------------------- */
 
@@ -14,9 +23,7 @@
     #MDMbody {
         background-color: white;
     }
-    #contentBlockMDM {
-        top: 0px;
-    }
+
 }
 
 /* SM */
@@ -24,21 +31,22 @@
     #MDMbody {
         background-color: black;
     }
-    #contentBlockMDM {
-        top: -150px;
+    .MDMCarouselImage {
+        max-height: 500px;
     }
+
 }
 
 /* MD */
 @media (min-width: 992px) {
-    #contentBlockMDM {
-        top: -220px;
+    .MDMCarouselImage {
+        max-height: 600px;
     }
 }
 
 /* LG */
 @media (min-width: 1200px) {
-    #contentBlockMDM {
-        top: -360px;
+    .MDMCarouselImage {
+        max-height: 700px;
     }
 }
