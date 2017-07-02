@@ -23,7 +23,11 @@
     #MDMbody {
         background-color: white;
     }
+    #MDMCarouselIndicators {
+        bottom: -5px;
+    }
     .MDMCarouselImage {
+        margin-top: 20px;
         width: 85%;
     }
 
@@ -34,10 +38,11 @@
     #MDMbody {
         background-color: black;
     }
+    #MDMCarouselIndicators {
+        bottom: 5px;
+    }
     .MDMCarouselImage {
         max-height: auto;
-        margin-top: 20px;
-        margin-bottom: 10px;
         width: 70%;
     }
 
@@ -53,6 +58,9 @@
 
 /* LG */
 @media (min-width: 1200px) {
+    #MDMCarouselIndicators {
+        bottom: 20px;
+    }
     .MDMCarouselImage {
         max-height: 700px;
     }
