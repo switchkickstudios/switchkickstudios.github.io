@@ -53,19 +53,18 @@
     padding: 0px;
 }
 #MDMFeatures {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 #MDMComingSoon {
     text-align: center;
-    font-size: 18px;
-    padding-top: 40px;
+    font-size: 16px;
+    padding-top: 30px;
 }
 #MDMFeaturesTitle {
-    text-align: left !important;
+    text-align: center !important;
     font-family: DinCondensed;
     font-size: 30px;
     padding: 0px;
-    padding-top: 50px;
     text-decoration: underline;
 }
 #MDMLifeCounterScreenshot{
@@ -128,6 +127,9 @@
         text-align: center;
         padding-top: 30px;
     }
+    #MDMFeaturesTitle {
+        padding-top: 60px;
+    }
     #MDMLifeCounterTitle {
         padding-top: 40px;
     }
@@ -173,6 +175,9 @@
     #MDMDownload {
         text-align: right;
     }
+    #MDMFeaturesTitle {
+        padding-top: 150px;
+    }
     #MDMLifeCounterTitle {
         padding-top: 40px;
     }
@@ -209,6 +214,9 @@
     #MDMBottomBuffer {
         height: 155px;
     }
+    #MDMFeaturesTitle {
+        padding-top: 200px;
+    }
     #MDMLifeCounterTitle {
         padding-top: 120px;
     }
@@ -228,7 +236,8 @@
         text-align: right;
     }
     #MDMCircleDiv {
-        padding-top: 300px;
+        padding-top: 400px;
+        padding-bottom: 170px;
     }
     #MDMColorsCircle {
         max-height: 60px;
