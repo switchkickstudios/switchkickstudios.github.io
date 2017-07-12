@@ -251,6 +251,16 @@ a.SKSButton {
 .noPadding {
     padding: 0px;
 }
+.vert-padding-3 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.inline-flex {
+    display: inline-flex;
+}
 
 /* SOCIAL MEDIA ICONS */
 .fa {
