@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 
+<!-- <div itemscope itemtype="http://schema.org/Product">
+    <img itemprop="image" src="images/MDMAppIcon.png" alt="Magic DeckMate"/>
+    <span itemprop="name">Magic DeckMate</span>
+    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <span itemprop="ratingValue">5.0</span>
+        out of <span itemprop="bestRating">5</span>
+        based on <span itemprop="ratingCount">9</span> user ratings.
+    </div>
+</div> -->
+
 <head>
     <meta name="viewport" content="width=device-width">
     <title>Magic DeckMate</title>
-    <!-- <div itemscope itemtype="http://schema.org/Product">
-    <img itemprop="image" src="MDMAppIcon.png" alt="Magic DeckMate"/>
-    <span itemprop="name">Magic DeckMate</span>
-    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-    <span itemprop="ratingValue">5.0</span>
-    out of <span itemprop="bestRating">5</span>
-    based on <span itemprop="ratingCount">9</span> user ratings.
-    </div> -->
+
     <meta name="description" content="The best MTG in-game companion app on the iOS App Store, featuring virtual tokens, counters, and dice. Change starting life and customize color.">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type ="text/css"  href ="SKS.css">
     <link rel="stylesheet" type ="text/css"  href ="MDM.css">
+    <link rel="stylesheet" type ="text/css"  href ="StarRating.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -30,7 +34,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="MDMbody">
+<body itemscope itemtype="http://schema.org/Product" data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="MDMbody">
     <!-- TOP BAR -->
     <div class="topBar col-xs-12" data-spy="affix" id="topNavSKS">
 
@@ -144,6 +148,19 @@
                 <a href="https://itunes.apple.com/us/app/magic-deckmate/id1186058352?ls=1&mt=8" target="_blank">
                     <img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store">
                 </a>
+                <div>
+                    <img itemprop="image" src="images/MDMAppIcon.png" alt="Magic DeckMate" class="MDM_App_Icon"/>
+                    <span itemprop="name">Magic DeckMate</span>
+                    <div class="star-ratings-sprite">
+                        <span style="width:100%" class="star-ratings-sprite-rating"></span>
+                    </div>
+                    <!-- Star Rating -->
+                    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <span itemprop="ratingValue">5.0</span>
+                        out of <span itemprop="bestRating">5</span>
+                        based on <span itemprop="ratingCount">9</span> user ratings.
+                    </div>
+                </div>
             </div>
 
             <!-- Features Info -->
@@ -311,6 +328,7 @@
     </div>
 
     <div class="col-sm-1"></div>
+
 
 </body>
 

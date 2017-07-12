@@ -92,6 +92,10 @@
     margin: auto;
 }
 
+.MDM_App_Icon {
+    height: 30px;
+    width: 30px;
+}
 .MDMSectionHead {
     text-align: left !important;
     font-family: Futura;
