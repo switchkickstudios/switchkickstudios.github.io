@@ -41,7 +41,6 @@ a.SKSButton {
     font-size: 20px;
 }
 
-
 /* Main Content */
 #contentBlockSKS{
     position: relative;
@@ -90,17 +89,14 @@ a.SKSButton {
     color: white;
 }
 #aboutMeContent {
-    text-align: center !important;
+    text-align: left;
     font-family: Futura;
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
     color: white;
 }
-#switchKickDefinition {
-    text-align: left;
-    color: white;
-}
+
 
 /* BOTTOM */
 #botBar {
