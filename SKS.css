@@ -28,6 +28,12 @@ div.topRightStack {
     max-width: 100%;
     padding-top: 6px;
 }
+.logoMini {
+    max-height: 45px;
+    max-width: 50%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
 .SKSButton:active {
     color: white;
@@ -131,7 +137,6 @@ a.SKSButton {
     }
     .botBar {
         height: 115px;
-        position: inherit;
         padding-top: 15px;
     }
     .topRightButton {
@@ -159,7 +164,6 @@ a.SKSButton {
     }
     .botBar {
         min-height: 115px;
-        position: fixed;
         bottom: 0px;
         padding-top: 25px;
     }
@@ -194,6 +198,7 @@ a.SKSButton {
     .botBar {
         min-height: 150px;
         padding-top: 40px;
+        position: inherit;
     }
     #contentBlockSKS {
         top: -220px;
@@ -212,6 +217,9 @@ a.SKSButton {
 @media (min-width: 1200px) {
     #contentBlockSKS {
         top: -360px;
+    }
+    .botBar {
+        position: fixed;
     }
 }
 
