@@ -50,7 +50,7 @@ a.SKSButton {
 /* Main Content */
 #contentBlockSKS{
     position: relative;
-    background-color: #283f60;
+    background-color: #0f1826;
     padding: 0px;
     z-index: 1;
 }
@@ -59,30 +59,18 @@ a.SKSButton {
 /* Main Background */
 #mainBG{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 #photoCred {
-    position: relative;
-    top: -90px;
-    text-align: right;
-    z-index: 2;
-    color: paleturquoise;
-}
-#photoCred2 {
     position: relative;
     top: -45px;
     text-align: right;
     z-index: 2;
     color: paleturquoise;
 }
-#photoCredKitt {
-    vertical-align: super;
-}
-
 
 /* About Me */
 #aboutMe {
-    background-color: #283f60 !important;
     position: relative;
 }
 #aboutMeTitle {
@@ -129,7 +117,7 @@ a.SKSButton {
 /* XS */
 @media (max-width: 768px) {
     #SKSbody {
-        background-color: white;
+        background-color: #0f1826;
     }
     .topBar {
         height: 80px;
@@ -138,6 +126,7 @@ a.SKSButton {
     .botBar {
         height: 115px;
         padding-top: 15px;
+        margin-top: 50px;
     }
     .topRightButton {
         padding-right: 17px;
@@ -146,10 +135,14 @@ a.SKSButton {
         right: 20px;
     }
     #aboutMe {
-        top: -75px;
+        top: -30px;
+        /*padding-bottom: 700px;*/
     }
     #socialMedia {
         text-align: left;
+    }
+    #contentBlockSKS {
+        top: 50px;
     }
 
 }
@@ -157,24 +150,21 @@ a.SKSButton {
 /* SM */
 @media (min-width: 768px) {
     #SKSbody {
-        background-color: #283f60;
+        background-color: #0f1826;
     }
     .topBar {
         height: 80px;
     }
     .botBar {
         min-height: 115px;
-        bottom: 0px;
         padding-top: 25px;
+        margin-top: 60px;
     }
     .topRightButton {
         padding-right: 40px;
     }
     div.topRightStack {
         right: 45px;
-    }
-    #contentBlockSKS {
-        top: -150px;
     }
     #aboutMe {
         top: -30px;
@@ -186,7 +176,9 @@ a.SKSButton {
     #socialMedia {
         text-align: right;
     }
-
+    #contentBlockSKS {
+        top: 50px;
+    }
 }
 
 /* MD */
@@ -196,12 +188,9 @@ a.SKSButton {
         height: inherit;
     }
     .botBar {
-        min-height: 150px;
-        padding-top: 40px;
+        min-height: 125px;
+        padding-top: 30px;
         position: inherit;
-    }
-    #contentBlockSKS {
-        top: -220px;
     }
     #aboutMe {
         top: -20px;
@@ -210,16 +199,20 @@ a.SKSButton {
         padding-left: 60px;
         padding-right: 60px;
     }
-
+    #contentBlockSKS {
+        top: 20px;
+    }
 }
 
 /* LG */
 @media (min-width: 1200px) {
-    #contentBlockSKS {
-        top: -360px;
-    }
     .botBar {
         position: fixed;
+        bottom: 0px;
+    }
+    #contentBlockSKS {
+        top: 0px;
+        margin-bottom: 170px;
     }
 }
 
@@ -271,7 +264,7 @@ a.SKSButton {
     text-decoration: none;
 }
 .fa-instagram {
-    color: paleturquoise;
+    color: white;
 }
 .fa:hover {
     text-decoration: none;
