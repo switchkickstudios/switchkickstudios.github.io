@@ -37,10 +37,6 @@
 
 
 /* General Info */
-#MDMContent {
-    position: relative;
-    padding-top: 50px;
-}
 #MDMTitle {
     text-align: left !important;
     font-family: DinCondensed;
@@ -145,6 +141,7 @@
         padding-top: 60px;
     }
     #contentBlockMDM{
+        padding-top: 10px;
         padding-bottom: 60px;
     }
     #MDMLifeCounterTitle {
@@ -196,6 +193,7 @@
         padding-top: 100px;
     }
     #contentBlockMDM{
+        padding-top: 40px;
         padding-bottom: 100px;
     }
     #MDMLifeCounterTitle {
@@ -238,6 +236,7 @@
         padding-top: 150px;
     }
     #contentBlockMDM{
+        padding-top: 80px;
         padding-bottom: 150px;
     }
     #MDMLifeCounterTitle {
@@ -284,4 +283,7 @@
 }
 .MDMListIndent {
     padding-left: 20px;
+}
+.MDMSubtitleIndent {
+    padding-left: 15px;
 }
