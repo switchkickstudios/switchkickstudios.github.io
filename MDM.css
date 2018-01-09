@@ -3,13 +3,22 @@
     height: 200px;
     width: auto;
 }
-
-#contentBlockMDM{
+#carouselBlockMDM{
     position: relative;
     background-color: black;
     padding: 0px;
     z-index: 1;
     display: grid;
+}
+#contentBlockMDM{
+    position: relative;
+    background-color: black;
+    padding: 0px;
+}
+#featuresBlockMDM{
+    position: relative;
+    background-color: #0f1826;
+    padding: 0px;
 }
 #MDMCarouselBody {
     margin-top: 50px;
@@ -135,6 +144,9 @@
     #MDMFeaturesTitle {
         padding-top: 60px;
     }
+    #contentBlockMDM{
+        padding-bottom: 60px;
+    }
     #MDMLifeCounterTitle {
         padding-top: 40px;
     }
@@ -181,7 +193,10 @@
         text-align: right;
     }
     #MDMFeaturesTitle {
-        padding-top: 150px;
+        padding-top: 100px;
+    }
+    #contentBlockMDM{
+        padding-bottom: 100px;
     }
     #MDMLifeCounterTitle {
         padding-top: 40px;
@@ -220,7 +235,10 @@
         height: 155px;
     }
     #MDMFeaturesTitle {
-        padding-top: 200px;
+        padding-top: 150px;
+    }
+    #contentBlockMDM{
+        padding-bottom: 150px;
     }
     #MDMLifeCounterTitle {
         padding-top: 120px;
