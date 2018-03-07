@@ -77,16 +77,6 @@
     margin-top: 40px;
     display: initial;
 }
-#MDMTokensScreenshot {
-    max-height: 520px;
-    margin-top: 40px;
-    display: initial;
-}
-#MDMStormScreenshot {
-    max-height: 520px;
-    margin-top: 40px;
-    display: initial;
-}
 #MDMDiceRollTitle {
     margin-top: 40px;
 }
@@ -162,6 +152,15 @@
     #MDMStormScreenshotDiv {
         text-align: center;
     }
+    #MDMDecksTitle {
+        text-align: center;
+    }
+    #MDMDeckAddScreenshotDiv {
+        text-align: center;
+    }
+    #MDMDeckEditScreenshotDiv {
+        text-align: center;
+    }
     #MDMCircleDiv {
         padding-top: 80px;
     }
@@ -214,6 +213,12 @@
     #MDMStormScreenshotDiv {
         text-align: center;
     }
+    #MDMDeckAddScreenshotDiv {
+        text-align: center;
+    }
+    #MDMDeckEditScreenshotDiv {
+        text-align: center;
+    }
     #MDMCircleDiv {
         padding-top: 80px;
     }
@@ -251,6 +256,12 @@
     #MDMTokensScreenshotDiv {
         text-align: left;
     }
+    #MDMDeckAddScreenshotDiv {
+        text-align: left;
+    }
+    #MDMDeckEditScreenshotDiv {
+        text-align: right;
+    }
     #MDMCountersTitle {
         padding-top: 190px;
     }
@@ -286,4 +297,18 @@
 }
 .MDMSubtitleIndent {
     padding-left: 15px;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.screenshot_portrait {
+    max-height: 520px;
+    margin-top: 40px;
+    display: initial;
 }
