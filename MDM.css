@@ -1,4 +1,7 @@
 /* Main Content */
+#MDMbody {
+    background-color: #0f1826;
+}
 #MDMLogo {
     height: 200px;
     width: auto;
@@ -105,9 +108,6 @@
 
 /* XS */
 @media (max-width: 768px) {
-    #MDMbody {
-        background-color: white;
-    }
     #MDMCarouselIndicators {
         bottom: -5px;
     }
@@ -167,9 +167,6 @@
 
 /* SM */
 @media (min-width: 768px) {
-    #MDMbody {
-        background-color: black;
-    }
     #MDMCarouselIndicators {
         bottom: 5px;
     }
