@@ -34,6 +34,12 @@ div.topRightStack {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+.hamburgerMenuIcon {
+    max-height: 45px;
+    width: 45px;
+    padding-bottom: 3px;
+    padding-top: 7px;
+}
 
 .SKSButton:active {
     color: white;
@@ -133,6 +139,7 @@ a.SKSButton {
     }
     div.topRightStack {
         right: 20px;
+        padding-top: 0px;
     }
     #aboutMe {
         top: -30px;
