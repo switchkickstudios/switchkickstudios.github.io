@@ -7,6 +7,10 @@ Fonts: Anurati, DINCondensed, Futura
 
 */
 
+body {
+  overscroll-behavior-y: none;
+}
+
 /* TOP */
 .topBar {
     box-shadow: 0px 20px 75px black;
