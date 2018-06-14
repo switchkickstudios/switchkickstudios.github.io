@@ -71,6 +71,7 @@
                         if(menuIsOpen == false) {
                             menuIsOpen = true;
                             $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS-Hover.png");
+                            $(".verticalMenuTopBorderBackground").show();
                             $(".verticalMenuTopBorder").show("slow");
                             $(".hamburgerMenuItem").first().show("fast", function showNext() {
                                 $(this).next(".hamburgerMenuItem").show("fast", showNext);
@@ -78,6 +79,7 @@
                         } else {
                             menuIsOpen = false;
                             $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS.png");
+                            $(".verticalMenuTopBorderBackground").hide();
                             $(".verticalMenuTopBorder").hide("slow");
                             $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
                                 $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
@@ -96,7 +98,7 @@
     <div class="col-xs-12 visible-xs verticalMenuParentDiv" data-spy="affix">
         <div class="verticalMenu">
             <!-- HAMBURGER MENU TOP BORDER -->
-            <div class="col-xs-12 verticalMenuTopBorder" hidden></div>
+            <div class="col-xs-12 verticalMenuTopBorderBackground" hidden><div class="verticalMenuTopBorder" hidden></div></div>
 
             <!-- HAMBURGER MENU ITEMS -->
             <div class="col-xs-12 hamburgerMenuItem" style="padding-top: 14px;" hidden>
