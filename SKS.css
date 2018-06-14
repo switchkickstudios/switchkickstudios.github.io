@@ -40,6 +40,9 @@ div.topRightStack {
     padding-bottom: 3px;
     padding-top: 7px;
 }
+.hamburgerMenuIcon:focus {
+    outline: none;
+}
 .hamburgerMenuItem {
     background-color:white;
     padding: 8px;
