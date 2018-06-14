@@ -70,12 +70,14 @@
                     $("#SKSMenuIcon").click(function() {
                         if(menuIsOpen == false) {
                             menuIsOpen = true;
+                            $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS-Hover.png");
                             $(".verticalMenuTopBorder").show("slow");
                             $(".hamburgerMenuItem").first().show("fast", function showNext() {
                                 $(this).next(".hamburgerMenuItem").show("fast", showNext);
                             });
                         } else {
                             menuIsOpen = false;
+                            $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS.png");
                             $(".verticalMenuTopBorder").hide("slow");
                             $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
                                 $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
