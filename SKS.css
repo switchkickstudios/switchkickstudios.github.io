@@ -167,9 +167,6 @@ a.SKSButton {
         padding-top: 15px;
         margin-top: 50px;
     }
-    .topRightButton {
-        padding-right: 17px;
-    }
     div.topRightStack {
         right: 20px;
         padding-top: 0px;
@@ -201,7 +198,7 @@ a.SKSButton {
         margin-top: 60px;
     }
     .topRightButton {
-        padding-right: 40px;
+        padding-right: 20px;
     }
     div.topRightStack {
         right: 45px;
@@ -231,6 +228,9 @@ a.SKSButton {
         min-height: 125px;
         padding-top: 30px;
         position: inherit;
+    }
+    .topRightButton {
+        padding-right: 40px;
     }
     #aboutMe {
         top: -20px;
