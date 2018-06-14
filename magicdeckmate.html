@@ -57,14 +57,56 @@
                 </div>
 
                 <!-- HAMBURGER MENU -->
-                <div class="visible-xs">
-                    <input type="image" src="images/Menu-Icon-XS.png" class="img img-responsive hamburgerMenuIcon" alt="SKS Menu Icon">
+                <!-- ICON -->
+                <div class="visible-xs" style="">
+                    <input type="image" id="SKSMenuIcon" src="images/Menu-Icon-XS.png" class="img img-responsive hamburgerMenuIcon" alt="SKS Menu Icon">
                 </div>
+
+                <!-- HAMBURGER MENU ITEMS ACTIONS -->
+                <script type="text/javascript">
+
+                    var menuIsOpen = false
+
+                    $("#SKSMenuIcon").click(function() {
+                        if(menuIsOpen == false) {
+                            menuIsOpen = true;
+                            $(".verticalMenuTopBorder").show("slow");
+                            $(".hamburgerMenuItem").first().show("fast", function showNext() {
+                                $(this).next(".hamburgerMenuItem").show("fast", showNext);
+                            });
+                        } else {
+                            menuIsOpen = false;
+                            $(".verticalMenuTopBorder").hide("slow");
+                            $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
+                                $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
+                            });
+                        }
+                    });
+
+                </script>
+
             </div>
 
         </div>
         <div class="col-lg-1 visible-lg"></div>
+    </div>
 
+    <div class="col-xs-12 visible-xs verticalMenuParentDiv" data-spy="affix">
+        <div class="verticalMenu">
+            <!-- HAMBURGER MENU TOP BORDER -->
+            <div class="col-xs-12 verticalMenuTopBorder" hidden></div>
+
+            <!-- HAMBURGER MENU ITEMS -->
+            <div class="col-xs-12 hamburgerMenuItem" style="padding-top: 14px;" hidden>
+                <a class="SKSButton primaryColor">MAGIC DECKMATE</a>
+            </div>
+            <div class="col-xs-12 hamburgerMenuItem" hidden>
+                <a href="index.html#aboutMe" class="SKSButton primaryColor">ABOUT</a>
+            </div>
+            <div class="col-xs-12 hamburgerMenuItem" hidden style="padding-bottom: 10px;">
+                <a href="index.html#aboutMe" class="SKSButton primaryColor">TIP THE DEVELOPER</a>
+            </div>
+        </div>
     </div>
 
     <!-- CONTENT -->

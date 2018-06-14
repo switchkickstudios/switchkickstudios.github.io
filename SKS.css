@@ -40,6 +40,28 @@ div.topRightStack {
     padding-bottom: 3px;
     padding-top: 7px;
 }
+.hamburgerMenuItem {
+    background-color:white;
+    padding: 8px;
+    padding-right: 16px;
+}
+.verticalMenuParentDiv {
+    margin-top:80px;
+    text-align:right;
+    z-index:10;
+    padding-left: 0px;
+    padding-right:0px;
+}
+.verticalMenuTopBorder {
+    background-color: #e5e5e5;
+    height:2px;
+    width:100%;
+}
+.verticalMenu {
+    width:160px;
+    float:right;
+    text-align: right;
+}
 
 .SKSButton:active {
     color: white;
