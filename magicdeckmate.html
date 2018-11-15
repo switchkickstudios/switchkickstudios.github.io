@@ -27,94 +27,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/Product" data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="MDMbody">
-    <!-- TOP BAR -->
-    <div class="topBar col-xs-12" data-spy="affix" id="topNavSKS">
-
-        <div class="col-lg-1 visible-lg"></div>
-        <div class="col-xs-12 col-lg-10">
-
-            <div class="col-xs-8 col-sm-6 col-md-5">
-
-                <a href="index.html">
-                <img src="images/SKSLogoBlue.png"
-                    alt="Switch Kick Studio"
-                    class="img img-responsive logo hidden-xs hidden-sm">
-
-                <img src="images/SKSLogoBlueSML.png"
-                    alt="Switch Kick Studio"
-                    class="img img-responsive logoMini visible-xs visible-sm">
-                </a>
-
-            </div>
-
-            <div class="col-xs-4"></div>
-            <div class="topRightStack">
-
-                <!-- STANDARD NAVIGATION MENU -->
-                <div class="hidden-xs">
-                    <a href="#carouselBlockMDM" class="SKSButton topRightButton primaryColor">MAGIC DECKMATE</a>
-                    <a href="index.html#aboutMe" class="SKSButton primaryColor">ABOUT</a>
-                    <!-- <a href="https://fundly.com/magic-deckmate-1" target="_blank" class="SKSButton primaryColor">TIP THE DEVELOPER</a> -->
-                </div>
-
-                <!-- HAMBURGER MENU -->
-                <!-- ICON -->
-                <div class="visible-xs" style="">
-                    <input type="image" id="SKSMenuIcon" src="images/Menu-Icon-XS.png" class="img img-responsive hamburgerMenuIcon" alt="SKS Menu Icon">
-                </div>
-
-                <!-- HAMBURGER MENU ITEMS ACTIONS -->
-                <script type="text/javascript">
-
-                    var menuIsOpen = false
-
-                    $("#SKSMenuIcon").click(function() {
-                        if(menuIsOpen == false) {
-                            menuIsOpen = true;
-                            $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS-Hover.png");
-                            $(".verticalMenuTopBorderBackground").show();
-                            $(".verticalMenuTopBorder").show("slow");
-                            $(".hamburgerMenuItem").first().show("fast", function showNext() {
-                                $(this).next(".hamburgerMenuItem").show("fast", showNext);
-                            });
-                        } else {
-                            menuIsOpen = false;
-                            $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS.png");
-                            $(".verticalMenuTopBorderBackground").hide();
-                            $(".verticalMenuTopBorder").hide("slow");
-                            $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
-                                $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
-                            });
-                        }
-                    });
-
-                </script>
-
-            </div>
-
-        </div>
-        <div class="col-lg-1 visible-lg"></div>
-    </div>
-
-    <div class="col-xs-12 visible-xs verticalMenuParentDiv" data-spy="affix">
-        <div class="verticalMenu">
-            <!-- HAMBURGER MENU TOP BORDER -->
-            <div class="col-xs-12 verticalMenuTopBorderBackground" hidden>
-                <div class="verticalMenuTopBorder" hidden></div>
-            </div>
-
-            <!-- HAMBURGER MENU ITEMS -->
-            <div class="col-xs-12 hamburgerMenuItem" style="padding-top: 14px;" hidden>
-                <a href="#carouselBlockMDM" class="SKSButton primaryColor">MAGIC DECKMATE</a>
-            </div>
-            <div class="col-xs-12 hamburgerMenuItem" hidden>
-                <a href="index.html#aboutMe" class="SKSButton primaryColor">ABOUT</a>
-            </div>
-            <!-- <div class="col-xs-12 hamburgerMenuItem" hidden style="padding-bottom: 10px;">
-                <a href="https://fundly.com/magic-deckmate-1" target="_blank" class="SKSButton primaryColor">TIP THE DEVELOPER</a>
-            </div> -->
-        </div>
-    </div>
+    <div id="include_header"></div>
 
     <!-- CONTENT -->
     <!-- Section 1: Carousel -->'
@@ -465,6 +378,10 @@
 
     <div>
         <script>
+            $(function(){
+                 $("#include_header").load("header.html");
+             });
+
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
