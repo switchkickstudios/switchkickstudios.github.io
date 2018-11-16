@@ -1,0 +1,22 @@
+#KT_Body {
+    background-color: #E93030;
+}
+
+#KT_Container {
+    background-color: #E93030;
+    padding-top: 150px;
+}
+
+#KT_Logo {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_Art {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

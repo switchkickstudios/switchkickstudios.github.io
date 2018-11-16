@@ -271,20 +271,11 @@ a.SKSButton {
 .primaryColor {
     color: #283f60;
 }
-.justifyRight {
-    text-align: right;
-}
-.justifyCenter {
-    text-align: center;
-}
 .disclaimer {
     color: white;
     font-size: 12px;
     text-align: left;
     font-style: italic;
-}
-.noPadding {
-    padding: 0px;
 }
 .vert-padding-3 {
     padding-top: 3px;
