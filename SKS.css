@@ -225,8 +225,8 @@ a.SKSButton {
         height: inherit;
     }
     .botBar {
-        min-height: 125px;
-        padding-top: 30px;
+        min-height: 80px;
+        padding-top: 15px;
         position: inherit;
     }
     .topRightButton {
