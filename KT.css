@@ -7,8 +7,12 @@
     padding-top: 150px;
 }
 
+#logoDiv {
+    padding-bottom: 60px;
+}
+
 #KT_Logo {
-    width: 80%;
+    width: 56%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -21,4 +25,78 @@
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+/* General Info */
+#KTTitle {
+    text-align: left !important;
+    font-family: DinCondensed;
+    font-size: 30px;
+    padding: 0px;
+    text-decoration: underline;
+}
+
+#KTSubtitle {
+    text-align: left !important;
+    font-family: Futura;
+    font-size: 24px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#KTDescription {
+    text-align: left !important;
+    font-family: Futura;
+    padding: 0px;
+}
+
+.KT_App_Icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.KTSectionHead {
+    text-align: left !important;
+    font-family: Futura;
+    font-size: 24px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contentBlockKT{
+    position: relative;
+    background-color: white;
+    padding: 0px;
+    padding-top: 60px;
+}
+
+.KTSubtitleIndent {
+    padding-left: 15px;
+}
+.KTListIndent {
+    padding-left: 20px;
+}
+.KTDescriptionText {
+    font-family: Futura;
+    padding: 0px;
+}
+
+/* XS */
+@media (max-width: 768px) {
+    #KTDownload {
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+/* SM */
+@media (min-width: 768px) {
+    #KTDownload {
+        text-align: right;
+    }
 }
