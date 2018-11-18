@@ -80,6 +80,12 @@ resetButtonColor = darkerRedColor; */
     padding-bottom: 64px;
 }
 
+/* FEATURES */
+.KTFeaturesBG {
+    background-color: black;
+    padding-bottom: 130px;
+}
+
 /* XS */
 @media (max-width: 768px) {
     #KTDownload {

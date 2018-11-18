@@ -308,6 +308,9 @@ a.SKSButton {
 .primaryColor {
     color: #283f60;
 }
+.blackBackground {
+    background-color: black;
+}
 .disclaimer {
     color: white;
     font-size: 12px;
