@@ -47,14 +47,6 @@
     padding: 0px;
     text-decoration: underline;
 }
-#MDMSubtitle {
-    text-align: left !important;
-    font-family: Futura;
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 #MDMDescription {
     text-align: left !important;
     font-family: Futura;
@@ -67,13 +59,6 @@
     text-align: center;
     font-size: 16px;
     padding-top: 30px;
-}
-#MDMFeaturesTitle {
-    text-align: center !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
 }
 #MDMDiceRollTitle {
     margin-top: 40px;
@@ -89,18 +74,6 @@
     height: 40px;
     width: 40px;
     margin-right: 10px;
-}
-.MDMSectionHead {
-    text-align: left !important;
-    font-family: Futura;
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.MDMDescriptionText {
-    font-family: Futura;
-    padding: 0px;
 }
 
 /* --------------------------------------------------------------- */
@@ -121,9 +94,6 @@
     #MDMDownload {
         text-align: center;
         padding-top: 30px;
-    }
-    #MDMFeaturesTitle {
-        padding-top: 60px;
     }
     #contentBlockMDM{
         padding-top: 10px;
@@ -180,9 +150,6 @@
     #MDMDownload {
         text-align: right;
     }
-    #MDMFeaturesTitle {
-        padding-top: 100px;
-    }
     #contentBlockMDM{
         padding-top: 40px;
         padding-bottom: 100px;
@@ -228,9 +195,6 @@
     }
     #MDMBottomBuffer {
         height: 155px;
-    }
-    #MDMFeaturesTitle {
-        padding-top: 150px;
     }
     #contentBlockMDM{
         padding-top: 80px;
@@ -281,15 +245,6 @@
 }
 
 /* STYLES */
-.whiteText {
-    color:white;
-}
-.MDMListIndent {
-    padding-left: 20px;
-}
-.MDMSubtitleIndent {
-    padding-left: 15px;
-}
 .align-center {
     text-align: center;
 }
@@ -298,9 +253,4 @@
 }
 .align-right {
     text-align: right;
-}
-.screenshot_portrait {
-    max-height: 520px;
-    margin-top: 40px;
-    display: initial;
 }

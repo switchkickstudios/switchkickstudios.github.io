@@ -1,3 +1,16 @@
+/* chocolateNavigationColor = '#431D05';
+chocolateMainBackgroundColor = '#653517';
+chocolateInactiveColor = '#86512F';
+chocolateFontColor = '#A97250';
+chocolateBorderColor = '#7E6251';
+primaryRedColor = '#E93030';
+darkerRedColor = '#9C0101';
+inactiveRedColor = '#C41111';
+startButtonColor = '#7FB710';
+stopButtonColor = '#FCA258';
+resetButtonColor = darkerRedColor; */
+
+
 #KT_Body {
     background-color: #E93030;
 }
@@ -59,31 +72,12 @@
     margin-right: 10px;
 }
 
-.KTSectionHead {
-    text-align: left !important;
-    font-family: Futura;
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 #contentBlockKT{
     position: relative;
     background-color: white;
     padding: 0px;
     padding-top: 60px;
-}
-
-.KTSubtitleIndent {
-    padding-left: 15px;
-}
-.KTListIndent {
-    padding-left: 20px;
-}
-.KTDescriptionText {
-    font-family: Futura;
-    padding: 0px;
+    padding-bottom: 64px;
 }
 
 /* XS */
@@ -92,11 +86,33 @@
         text-align: center;
         padding-top: 30px;
     }
+    .KTLeftScreenshotDiv {
+        text-align: center;
+    }
+    .KTRightScreenshotDiv {
+        text-align: center;
+    }
 }
 
 /* SM */
 @media (min-width: 768px) {
     #KTDownload {
+        text-align: right;
+    }
+    .KTLeftScreenshotDiv {
+        text-align: center;
+    }
+    .KTRightScreenshotDiv {
+        text-align: center;
+    }
+}
+
+/* MD */
+@media (min-width: 992px) {
+    .KTLeftScreenshotDiv {
+        text-align: left;
+    }
+    .KTRightScreenshotDiv {
         text-align: right;
     }
 }
