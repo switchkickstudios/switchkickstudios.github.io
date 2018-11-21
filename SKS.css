@@ -146,6 +146,15 @@ a.SKSButton {
     padding-top: 35px;
     color: white;
 }
+.leftTitle {
+    text-align: left !important;
+    font-family: DinCondensed;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 20px;
+    padding-top: 35px;
+    color: white;
+}
 #aboutMeContent {
     text-align: left;
     font-family: Futura;

@@ -15,6 +15,10 @@ resetButtonColor = darkerRedColor; */
     background-color: black;
 }
 
+#KT_PrivacyPolicy_Body {
+    background-color: #E93030;
+}
+
 #KT_Container {
     background-color: #E93030;
     padding-top: 150px;
@@ -83,7 +87,15 @@ resetButtonColor = darkerRedColor; */
 /* FEATURES */
 .KTFeaturesBG {
     background-color: black;
-    padding-bottom: 130px;
+}
+
+#KT_privacyPolicyDiv {
+    text-align: center;
+    font-family: Futura;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #E93030;
+    padding-top: 60px;
 }
 
 
@@ -98,6 +110,9 @@ resetButtonColor = darkerRedColor; */
     }
     .KTRightScreenshotDiv {
         text-align: center;
+    }
+    .KTFeaturesBG {
+        padding-bottom: 40px;
     }
     .featuresBlock {
         padding-top: 14px;
@@ -127,5 +142,11 @@ resetButtonColor = darkerRedColor; */
     }
     .featuresBlock {
         padding-top: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .KTFeaturesBG {
+        padding-bottom: 130px;
     }
 }
