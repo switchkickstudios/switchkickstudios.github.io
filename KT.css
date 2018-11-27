@@ -117,6 +117,9 @@ resetButtonColor = darkerRedColor; */
     .featuresBlock {
         padding-top: 14px;
     }
+    #header_Art {
+        max-height: 250px;
+    }
 }
 
 /* SM */
@@ -129,6 +132,9 @@ resetButtonColor = darkerRedColor; */
     }
     .KTRightScreenshotDiv {
         text-align: center;
+    }
+    #header_Art {
+        max-height: 400px;
     }
 }
 
