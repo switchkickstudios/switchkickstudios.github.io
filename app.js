@@ -12,7 +12,11 @@ router.get("/magicdeckmate", (req, res) => {
 router.get("/kickticker", (req, res) => {
     res.render(path.join(__dirname+'/partials/kickticker'));
 });
+router.get("/kicktickerprivacypolicy", (req, res) => {
+    res.render(path.join(__dirname+'/partials/kicktickerprivacypolicy'));
+});
 
+app.use('/favicon.ico',express.static(path.join(__dirname+'/favicon.ico')));
 app.use('/dist',express.static(path.join(__dirname+'/dist')));
 app.use('/images',express.static(path.join(__dirname+'/images')));
 app.use('/fonts',express.static(path.join(__dirname+'/fonts')));
