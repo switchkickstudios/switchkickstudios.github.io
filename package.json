@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/switchkickstudios/switchkickstudios.github.io#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.17.1"
   }
 }
