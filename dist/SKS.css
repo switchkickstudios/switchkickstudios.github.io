@@ -302,12 +302,12 @@ a.SKSButton {
 /* FONTS */
 @font-face {
     font-family: Futura;
-    src: url(fonts/Futura.ttc);
+    src: url(../fonts/Futura.ttc);
     font-stretch: condensed;
 }
 @font-face {
     font-family: DinCondensed;
-    src: url(fonts/DINCondensedBold.ttf);
+    src: url(../fonts/DINCondensedBold.ttf);
 }
 
 /* STYLES */
