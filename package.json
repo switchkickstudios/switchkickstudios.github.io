@@ -9,9 +9,9 @@
   "author": "Conor King",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/switchkickstudios/switchkickstudios.github.io/issues"
+    "url": "https://switchkickstudios.herokuapp.com/"
   },
-  "homepage": "https://github.com/switchkickstudios/switchkickstudios.github.io#readme",
+  "homepage": "https://switchkickstudios.herokuapp.com/",
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.17.1"
