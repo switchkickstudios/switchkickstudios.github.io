@@ -370,3 +370,25 @@ ul.listIndent, li.listIndent {
 .fa:focus {
     text-decoration: none;
 }
+
+#imageBG {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    -webkit-mask-mode: alpha;
+    mask-mode: alpha;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
+    mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
+    background-clip: border-box;
+
+}
