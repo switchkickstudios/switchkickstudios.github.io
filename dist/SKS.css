@@ -124,6 +124,13 @@ a.SKSTextButton {
     position: absolute;
     bottom: 28px;
 }
+#section1 {
+    background-color: white;
+}
+.aboutMeText {
+    color: var(--section1TextColor, #333);
+}
+
 /* Main Content */
 #contentBlockSKS{
     position: relative;
@@ -174,9 +181,6 @@ a.SKSTextButton {
 }
 
 /* About Me */
-#aboutDiv {
-    position: relative;
-}
 #aboutMeTitle {
     text-align: center !important;
     font-family: DinCondensed;
@@ -184,7 +188,6 @@ a.SKSTextButton {
     text-decoration: underline;
     padding: 20px;
     padding-top: 35px;
-    color: white;
 }
 .leftTitle {
     text-align: left !important;
@@ -201,51 +204,25 @@ a.SKSTextButton {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
-    color: white;
 }
 
 
 /* BOTTOM */
 #botBar {
-    background-color: var(--primaryColor, white) !important;
-}
-.botBar {
-    /* box-shadow: 0px 15px 75px black; */
-    /* color: blue; */
-    vertical-align:middle;
-    z-index: 3;
+    background-color: var(--secondaryColor, white) !important;
 }
 .contact {
     font-family: Futura;
+    color: white;
 }
-#socialMedia {
-    text-align: right;
-    padding: 0px;
-}
-
 
 /* --------------------------------------------------------------- */
 
 
 /* XS */
 @media (max-width: 768px) {
-    #SKSbody {
-        background-color: #0f1826;
-    }
     .topBar {
         padding-left: 5px;
-    }
-    .botBar {
-        height: 115px;
-        padding-top: 15px;
-        margin-top: 50px;
-    }
-    #aboutDiv {
-        top: -30px;
-        /*padding-bottom: 700px;*/
-    }
-    #socialMedia {
-        text-align: left;
     }
     .contentHeader {
         padding-top: 60px;
@@ -255,23 +232,9 @@ a.SKSTextButton {
 
 /* SM */
 @media (min-width: 768px) {
-    #SKSbody {
-        background-color: #0f1826;
-    }
-    .botBar {
-        min-height: 115px;
-        padding-top: 25px;
-        margin-top: 60px;
-    }
-    #aboutDiv {
-        top: -30px;
-    }
     #switchKickDefinition {
         padding-left: 20px;
         padding-right: 20px;
-    }
-    #socialMedia {
-        text-align: right;
     }
     .contentHeader {
         padding-top: 100px;
@@ -280,14 +243,6 @@ a.SKSTextButton {
 
 /* MD */
 @media (min-width: 992px) {
-    .botBar {
-        min-height: 80px;
-        padding-top: 15px;
-        position: inherit;
-    }
-    #aboutDiv {
-        top: -20px;
-    }
     #switchKickDefinition {
         padding-left: 60px;
         padding-right: 60px;
