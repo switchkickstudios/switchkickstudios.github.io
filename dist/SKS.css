@@ -81,10 +81,16 @@ a.SKSButton {
     font-size: 20px;
 }
 
+.section {
+    /* padding-top: 40px; */
+}
 #section0 {
     background-color: aquamarine;
 }
-
+#section0BGMaskDiv {
+    /* width: 1024px; */
+    /* height: 500px; */
+}
 /* Main Content */
 #contentBlockSKS{
     position: relative;
@@ -121,8 +127,10 @@ a.SKSButton {
 
 /* Main Background */
 #mainBG{
-    width: 100%;
+    width: 1024px;
     height: 100%;
+    object-fit: cover;
+    padding: 2px;
 }
 #photoCred {
     position: relative;
@@ -206,9 +214,6 @@ a.SKSButton {
     #socialMedia {
         text-align: left;
     }
-    #contentBlockSKS {
-        top: 50px;
-    }
     .contentHeader {
         padding-top: 60px;
     }
@@ -235,9 +240,6 @@ a.SKSButton {
     #socialMedia {
         text-align: right;
     }
-    #contentBlockSKS {
-        top: 50px;
-    }
     .contentHeader {
         padding-top: 100px;
     }
@@ -257,9 +259,6 @@ a.SKSButton {
         padding-left: 60px;
         padding-right: 60px;
     }
-    #contentBlockSKS {
-        top: 20px;
-    }
     .contentHeader {
         padding-top: 150px;
     }
@@ -267,14 +266,7 @@ a.SKSButton {
 
 /* LG */
 @media (min-width: 1200px) {
-    /* .botBar {
-        position: fixed;
-        bottom: 0px;
-    } */
-    #contentBlockSKS {
-        top: 0px;
-        margin-bottom: 170px;
-    }
+
 }
 
 /* FONTS */
@@ -349,12 +341,12 @@ ul.listIndent, li.listIndent {
     text-decoration: none;
 }
 
-#imageBG {
+#imageMask {
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: aquamarine;
-    width: 100%;
+    width: 1024px;
     height: 100%;
     z-index: 2;
     -webkit-mask-mode: alpha;
