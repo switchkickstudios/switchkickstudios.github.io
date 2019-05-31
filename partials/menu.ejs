@@ -1,9 +1,3 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type ="text/css"  href ="./dist/SKS.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 <!-- TOP BAR -->
 <div class="topBar col-xs-12" data-spy="affix" id="topNavSKS">
 
@@ -38,36 +32,7 @@
             <div class="visible-xs" style="">
                 <input type="image" id="SKSMenuIcon" src="images/Menu-Icon-XS.png" class="img img-responsive hamburgerMenuIcon" alt="SKS Menu Icon">
             </div>
-
-            <!-- HAMBURGER MENU ITEMS ACTIONS -->
-            <script type="text/javascript">
-
-                var menuIsOpen = false
-
-                $("#SKSMenuIcon").click(function() {
-                    if(menuIsOpen == false) {
-                        menuIsOpen = true;
-                        $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS-Hover.png");
-                        $(".verticalMenuTopBorderBackground").show();
-                        $(".verticalMenuTopBorder").show("slow");
-                        $(".hamburgerMenuItem").first().show("fast", function showNext() {
-                            $(this).next(".hamburgerMenuItem").show("fast", showNext);
-                        });
-                    } else {
-                        menuIsOpen = false;
-                        $("#SKSMenuIcon").attr("src","images/Menu-Icon-XS.png");
-                        $(".verticalMenuTopBorderBackground").hide();
-                        $(".verticalMenuTopBorder").hide("slow");
-                        $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
-                            $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
-                        });
-                    }
-                });
-
-            </script>
-
         </div>
-
     </div>
     <div class="col-lg-1 visible-lg"></div>
 </div>

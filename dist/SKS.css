@@ -13,15 +13,14 @@ body {
 
 /* TOP */
 .topBar {
-    box-shadow: 0px 20px 75px black;
+    /* box-shadow: 0px 20px 75px black; */
     padding: 20px;
     display: flex;
-    z-index: 10;
+    z-index: 3;
     height: 80px;
 }
 #topNavSKS {
-    background-color: white !important;
-
+    background-color: aquamarine !important;
 }
 div.topRightStack {
     position: absolute;
@@ -56,7 +55,7 @@ div.topRightStack {
 .verticalMenuParentDiv {
     margin-top:80px;
     text-align:right;
-    z-index:10;
+    z-index:3;
     padding-left: 0px;
     padding-right:0px;
 }
@@ -168,13 +167,13 @@ a.SKSButton {
 
 /* BOTTOM */
 #botBar {
-    background-color: white !important;
+    background-color: aquamarine !important;
 }
 .botBar {
-    box-shadow: 0px 15px 75px black;
-    color: blue;
+    /* box-shadow: 0px 15px 75px black; */
+    /* color: blue; */
     vertical-align:middle;
-    z-index: 9;
+    z-index: 3;
 }
 .contact {
     font-family: Futura;
@@ -282,10 +281,10 @@ a.SKSButton {
 
 /* LG */
 @media (min-width: 1200px) {
-    .botBar {
+    /* .botBar {
         position: fixed;
         bottom: 0px;
-    }
+    } */
     #contentBlockSKS {
         top: 0px;
         margin-bottom: 170px;
@@ -371,7 +370,7 @@ ul.listIndent, li.listIndent {
     background-color: aquamarine;
     width: 100%;
     height: 100%;
-    z-index: 99;
+    z-index: 2;
     -webkit-mask-mode: alpha;
     mask-mode: alpha;
     -webkit-mask-repeat: no-repeat;

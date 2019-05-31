@@ -21,13 +21,14 @@
         </div>
     </div>
 
+    <% include ./footFiles %>
     <script>
         $(document).ready(function() {
         	$('#contentBlockSKS').fullpage({
         		//options here
                 menu: '#topNavSKS',
                 anchors: ['home', 'about'],
-        		autoScrolling:true,
+        		autoScrolling: false,
                 licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16'
         	});
 
@@ -35,7 +36,5 @@
         	$.fn.fullpage.setAllowScrolling(false);
         });
     </script>
-
-    <% include ./footer %>
 </body>
 </html>
