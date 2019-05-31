@@ -118,9 +118,9 @@ a.SKSTextButton {
 #section0 {
     background-color: var(--primaryColor, white);
 }
-#section0BGMaskDiv {
-    /* width: 1024px; */
-    /* height: 500px; */
+#section0SocialMediaIcons {
+    position: absolute;
+    bottom: 28px;
 }
 /* Main Content */
 #contentBlockSKS{
