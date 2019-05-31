@@ -20,6 +20,7 @@ Fonts: Anurati, DINCondensed, Futura
 
 body {
   overscroll-behavior-y: none;
+  color: var(--section1TextColor, #333);
 }
 
 /* TOP */
@@ -234,7 +235,7 @@ a.SKSTextButton {
 
 /* BOTTOM */
 #botBar {
-    background-color: var(--secondaryColor, white) !important;
+    background-color: var(--section1TextColor, white) !important;
     height: 180px;
 }
 .contact {
