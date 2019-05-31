@@ -13,6 +13,7 @@ Fonts: Anurati, DINCondensed, Futura
     --section1MaskWidth: 1024px;
     --section1TextColor: #333;
     --section1HoverColor: white;
+    --section1AccentTextColor: #7D9EB1;
     --topBarHeight: 80px;
 }
 
@@ -102,11 +103,18 @@ a.SKSTextButton {
     color: var(--section1TextColor, #333);
     font-size: 22pt;
 }
+.socialMediaIconLink > .socialMediaIconWhite {
+    color: white;
+    font-size: 22pt;
+}
 .socialMediaIconLink:link {
     text-decoration: none;
 }
 .socialMediaIconLink > .socialMediaIcon:hover {
     color: var(--section1HoverColor, #333);
+}
+.socialMediaIconLink > .socialMediaIconWhite:hover {
+    color: var(--primaryColor, #333);
 }
 
 .socialMediaIconLink > .fa-instagram {
