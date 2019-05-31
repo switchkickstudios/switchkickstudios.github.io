@@ -14,6 +14,7 @@ Fonts: Anurati, DINCondensed, Futura
     --section1TextColor: #333;
     --section1HoverColor: white;
     --section1AccentTextColor: #7D9EB1;
+    --lightPrimaryColor: #C9E2DB;
     --topBarHeight: 80px;
 }
 
@@ -136,9 +137,6 @@ a.SKSTextButton {
 #section1 {
     background-color: white;
 }
-#aboutMeRow {
-    padding-top: var(--topBarHeight, 80px) !important;
-}
 .aboutMeText {
     color: var(--section1TextColor, #333);
 }
@@ -194,7 +192,7 @@ a.SKSTextButton {
 
 /* About Me */
 #aboutMeTitle {
-    text-align: center !important;
+    text-align: left !important;
     font-family: DinCondensed;
     font-size: 30px;
     text-decoration: underline;
@@ -216,6 +214,21 @@ a.SKSTextButton {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
+}
+#skillsDiv {
+    background-color: var(--lightPrimaryColor, white) !important;
+    font-family: Futura;
+}
+#skillsDiv .captainIcon {
+    font-size: 26pt;
+    padding-top: 15px;
+    padding-right: 16px;
+}
+#skillsDiv div {
+    width: 360px;
+}
+.skillText {
+    font-size: 32pt;
 }
 
 
@@ -285,6 +298,10 @@ a.SKSTextButton {
     font-family: BlankaRegular;
     src: url(../fonts/BlankaRegular.otf) format("opentype");
 }
+@font-face {
+    font-family: CaptainIcon;
+    src: url(../fonts/captainicon.ttf) format("opentype");
+}
 
 /* STYLES */
 .whiteText {
@@ -330,6 +347,9 @@ ul.listIndent, li.listIndent {
     font-family: Futura;
     padding: 0px;
 }
+.captainIcon {
+    font-family: CaptainIcon;
+}
 
 /* SOCIAL MEDIA ICONS */
 .fa {
@@ -366,4 +386,8 @@ ul.listIndent, li.listIndent {
     -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
     mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
     background-clip: border-box;
+}
+
+.topMenuPadding {
+    padding-top: var(--topBarHeight, 80px) !important;
 }
