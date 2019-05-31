@@ -6,6 +6,12 @@ Colors: White, PaleTurquoise, #283f60, Black
 Fonts: Anurati, DINCondensed, Futura
 
 */
+:root {
+    --primaryColor: aquamarine;
+    --section1MaskWidth: 1024px;
+    --section1TextColor: #333;
+    --section1HoverColor: white;
+}
 
 body {
   overscroll-behavior-y: none;
@@ -20,7 +26,18 @@ body {
     height: 80px;
 }
 #topNavSKS {
-    background-color: aquamarine !important;
+    background-color: var(--primaryColor, white) !important;
+}
+.logoText {
+    font-family: BlankaRegular;
+    font-size: 28pt;
+    color: var(--section1TextColor, #333);
+}
+.logoText:link {
+    text-decoration: none;
+}
+.logoText:hover {
+    color: var(--section1HoverColor, #333);
 }
 .logo {
     height: auto;
@@ -74,18 +91,20 @@ body {
 }
 .SKSButton:hover {
     text-decoration: none;
+    color: var(--section1HoverColor, #333);
 }
 a.SKSButton {
     cursor: pointer !important;
     font-family: DinCondensed;
     font-size: 20px;
+    color: var(--section1TextColor, #333);
 }
 
 .section {
     /* padding-top: 40px; */
 }
 #section0 {
-    background-color: aquamarine;
+    background-color: var(--primaryColor, white);
 }
 #section0BGMaskDiv {
     /* width: 1024px; */
@@ -127,7 +146,7 @@ a.SKSButton {
 
 /* Main Background */
 #mainBG{
-    width: 1024px;
+    width: var(--section1MaskWidth, 1024px);
     height: 100%;
     object-fit: cover;
     padding: 2px;
@@ -174,7 +193,7 @@ a.SKSButton {
 
 /* BOTTOM */
 #botBar {
-    background-color: aquamarine !important;
+    background-color: var(--primaryColor, white) !important;
 }
 .botBar {
     /* box-shadow: 0px 15px 75px black; */
@@ -279,6 +298,10 @@ a.SKSButton {
     font-family: DinCondensed;
     src: url(../fonts/DINCondensedBold.ttf);
 }
+@font-face {
+    font-family: BlankaRegular;
+    src: url(../fonts/BlankaRegular.otf) format("opentype");
+}
 
 /* STYLES */
 .whiteText {
@@ -345,8 +368,8 @@ ul.listIndent, li.listIndent {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: aquamarine;
-    width: 1024px;
+    background-color: var(--primaryColor, white);
+    width: var(--section1MaskWidth, 1024px);
     height: 100%;
     z-index: 2;
     -webkit-mask-mode: alpha;
