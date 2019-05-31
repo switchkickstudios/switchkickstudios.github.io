@@ -22,14 +22,9 @@ body {
 #topNavSKS {
     background-color: aquamarine !important;
 }
-div.topRightStack {
-    position: absolute;
-    right: 45px;
-    padding-top: 17px;
-}
 .logo {
-    max-height: 100%;
-    max-width: 100%;
+    height: auto;
+    max-width: 420px;
     padding-top: 6px;
 }
 .logoMini {
@@ -84,6 +79,10 @@ a.SKSButton {
     cursor: pointer !important;
     font-family: DinCondensed;
     font-size: 20px;
+}
+
+#section0 {
+    background-color: aquamarine;
 }
 
 /* Main Content */
@@ -200,10 +199,6 @@ a.SKSButton {
         padding-top: 15px;
         margin-top: 50px;
     }
-    div.topRightStack {
-        right: 20px;
-        padding-top: 0px;
-    }
     #aboutDiv {
         top: -30px;
         /*padding-bottom: 700px;*/
@@ -230,12 +225,6 @@ a.SKSButton {
         padding-top: 25px;
         margin-top: 60px;
     }
-    .topRightButton {
-        padding-right: 20px;
-    }
-    div.topRightStack {
-        right: 45px;
-    }
     #aboutDiv {
         top: -30px;
     }
@@ -260,9 +249,6 @@ a.SKSButton {
         min-height: 80px;
         padding-top: 15px;
         position: inherit;
-    }
-    .topRightButton {
-        padding-right: 40px;
     }
     #aboutDiv {
         top: -20px;
