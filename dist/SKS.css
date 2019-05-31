@@ -13,6 +13,7 @@ Fonts: Anurati, DINCondensed, Futura
     --section1MaskWidth: 1024px;
     --section1TextColor: #333;
     --section1HoverColor: white;
+    --topBarHeight: 80px;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
     padding: 20px;
     display: flex;
     z-index: 3;
-    height: 80px;
+    height: var(--topBarHeight, 80px) !important;
 }
 #topNavSKS {
     background-color: var(--primaryColor, white) !important;
@@ -127,6 +128,9 @@ a.SKSTextButton {
 #section1 {
     background-color: white;
 }
+#aboutMeRow {
+    padding-top: var(--topBarHeight, 80px) !important;
+}
 .aboutMeText {
     color: var(--section1TextColor, #333);
 }
@@ -210,10 +214,12 @@ a.SKSTextButton {
 /* BOTTOM */
 #botBar {
     background-color: var(--secondaryColor, white) !important;
+    height: 180px;
 }
 .contact {
     font-family: Futura;
     color: white;
+    margin-bottom: 0px;
 }
 
 /* --------------------------------------------------------------- */
