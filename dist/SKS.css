@@ -31,13 +31,6 @@ body {
 .logoText {
     font-family: BlankaRegular;
     font-size: 28pt;
-    color: var(--section1TextColor, #333);
-}
-.logoText:link {
-    text-decoration: none;
-}
-.logoText:hover {
-    color: var(--section1HoverColor, #333);
 }
 .logo {
     height: auto;
@@ -86,19 +79,33 @@ body {
     text-align: right;
 }
 
-.SKSButton:active {
-    color: white;
-}
 .SKSButton:hover {
     text-decoration: none;
     color: var(--section1HoverColor, #333);
 }
 a.SKSButton {
     cursor: pointer !important;
-    font-family: DinCondensed;
-    font-size: 20px;
     color: var(--section1TextColor, #333);
 }
+a.SKSTextButton {
+    font-family: DinCondensed;
+    font-size: 20px;
+}
+
+.socialMediaIconLink {
+    z-index: 3;
+}
+.socialMediaIconLink > .socialMediaIcon {
+    color: var(--section1TextColor, #333);
+    font-size: 22pt;
+}
+.socialMediaIconLink:link {
+    text-decoration: none;
+}
+.socialMediaIconLink > .socialMediaIcon:hover {
+    color: var(--section1HoverColor, #333);
+}
+
 
 .section {
     /* padding-top: 40px; */
@@ -384,21 +391,4 @@ ul.listIndent, li.listIndent {
     mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
     background-clip: border-box;
 
-}
-
-.socialMediaIconLink {
-    z-index: 3;
-}
-.socialMediaIconLink > .socialMediaIcon {
-    /* position: absolute;
-    right: 0px;
-    border: 0px; */
-    color: var(--section1TextColor, #333);
-    font-size: 22pt;
-}
-.socialMediaIconLink:link {
-    text-decoration: none;
-}
-.socialMediaIconLink > .socialMediaIcon:hover {
-    color: var(--section1HoverColor, #333);
 }
