@@ -19,6 +19,10 @@
         <div class="section" id="MDM_Section1">
             <% include ./MDM/section1 %>
         </div>
+
+        <div class="section" id="MDM_Section2">
+            <% include ./MDM/section2 %>
+        </div>
     </div>
 
     <%# <!-- Section 2: Reveiws and Download Info -->
@@ -102,10 +106,10 @@
     <script>
         $(document).ready(function() {
             $('#contentBlockMDM').fullpage({
-                anchors: ['top', 'screenshots'],
+                anchors: ['top', 'screenshots', 'info'],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Top', 'Screenshots'],
+                navigationTooltips: ['Top', 'Screenshots', 'Info'],
                 autoScrolling: false,
                 licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16'
             });

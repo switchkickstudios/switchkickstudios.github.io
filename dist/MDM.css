@@ -2,6 +2,7 @@
     --MDM_section0HoverColor: #4e4e4e;
     --MDM_section0PressColor: #4e4e4e;
     --MDM_buttonAnimationLength: 0.25s;
+    --MDM_section3DarkTextColor: #0C0C0C;
 }
 
 /* NAV */
@@ -30,6 +31,7 @@
 /* Main Content */
 #MDMbody {
     background-color: #0f1826;
+    color: white;
 }
 #mdm_magicText {
     height: 170px;
@@ -103,22 +105,31 @@
     background-image: linear-gradient(52deg, black, #383838);
 }
 #MDM_Section1 {
-    background-image: linear-gradient(-52deg, #383838, black);;
+    background-image: linear-gradient(-52deg, #383838, black);
+}
+#MDM_Section2 {
+    /* background-image: linear-gradient(-38deg, white, #383838); */
+    background-color: black;
 }
 
 
-/* General Info */
-#MDMTitle {
-    text-align: left !important;
+/* Info */
+#mdm_infoBG {
+    background-image: linear-gradient(black, var(--MDM_section0HoverColor, gray));
+}
+#mdm_infoBG .titleText {
     font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
+    border-bottom: 3px solid var(--MDM_section0HoverColor, gray);
 }
-#MDMDescription {
-    text-align: left !important;
-    font-family: Futura;
-    padding: 0px;
+#mdm_infoSection2 {
+    background-color: var(--MDM_section0HoverColor, gray);
+}
+#mdm_infoSection3 {
+    background-color: white;
+    color: var(--MDM_section3DarkTextColor,  black);
+    font-family: DinCondensed;
+    font-size: 16pt;
+    height: 212px;
 }
 #MDMFeatures {
     padding-top: 10px;
@@ -137,11 +148,14 @@
 #MDMColorsCircle {
     margin: auto;
 }
-
+#mdm_infoSection3Row {
+}
+#mdm_appInfoCol {
+    height: 170px;
+}
 .MDM_App_Icon {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
 }
 
 /* --------------------------------------------------------------- */
