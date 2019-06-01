@@ -21,10 +21,10 @@
 }
 #MDM_creature_art {
     position: absolute;
-    bottom: -24px;
+    bottom: 0px;
 }
 #MDM_creature_art img {
-    height: 400px;
+    height: 370px;
 }
 #carouselBlockMDM{
     position: relative;
