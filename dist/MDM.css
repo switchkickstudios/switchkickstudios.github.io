@@ -288,3 +288,17 @@
 .align-right {
     text-align: right;
 }
+
+/* FULLPAGEJS */
+#MDMbody #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: white;
+}
+#MDMbody #fp-nav ul li .fp-tooltip  {
+    font-family: DinCondensed !important;
+    font-size: 15pt;
+}
+#MDMbody #fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+}

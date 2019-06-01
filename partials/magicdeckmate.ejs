@@ -15,6 +15,10 @@
         <div class="section" id="MDM_Section0">
             <% include ./MDM/section0 %>
         </div>
+
+        <div class="section" id="MDM_Section1">
+            <% include ./MDM/section1 %>
+        </div>
     </div>
 
 
@@ -341,8 +345,10 @@
     <script>
         $(document).ready(function() {
             $('#contentBlockMDM').fullpage({
-                // menu: '#topNavSKS',
-                // anchors: ['home', 'about'],
+                anchors: ['mdm_home', 'screenshots'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Top', 'Screenshots'],
                 autoScrolling: false,
                 licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16'
             });
