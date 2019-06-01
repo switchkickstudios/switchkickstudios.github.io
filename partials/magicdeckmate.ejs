@@ -11,7 +11,6 @@
 
     <!-- CONTENT -->
     <div class="col-xs-12" id="contentBlockMDM">
-
         <div class="section" id="MDM_Section0">
             <% include ./MDM/section0 %>
         </div>
@@ -25,88 +24,13 @@
         </div>
     </div>
 
-    <%# <!-- Section 2: Reveiws and Download Info -->
-    <div class="row" id="contentBlockMDM">
-        <div class="col-sm-1 hidden-xs"></div>
-
-        <div class="col-xs-12 col-sm-10">
-
-            <!-- Info Section -->
-            <div class="col-xs-12 whiteText">
-
-                <!-- General Info Text -->
-                <div class="col-xs-12 col-sm-9" id="MDMGeneral">
-                    <div class="col-xs-12" id="MDMTitle">
-                        <h1><span itemprop="name">Magic DeckMate</span></h1>
-                    </div>
-                    <div class="col-xs-12 subTitle">
-                        Leave your dice at home. All you need are your cards and your device.
-                    </div>
-                    <div class="col-xs-12" id="MDMDescription">
-                        Magic DeckMate is built to be the world&rsquo;s most robust in-game Magic: The Gathering companion. Featuring interactive touch-controlled virtual tokens and counters, it is all you need to keep track of everything in-game in the most convenient and visual way possible.
-                    </div>
-                </div>
-
-                <!-- Download Info -->
-                <div class="col-xs-12 col-sm-3" id="MDMDownload">
-                    <a href="https://itunes.apple.com/us/app/magic-deckmate/id1186058352?ls=1&mt=8" target="_blank">
-                        <img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store">
-                    </a>
-
-                        <!-- Star Rating -->
-                    <div class="vert-padding-3 margin-top-20">
-                        <img itemprop="image" src="images/MDMAppIcon.png" alt="Magic DeckMate" class="MDM_App_Icon"/>
-                        <div class="star-ratings-css inline-flex">
-                            <div class="star-ratings-css-top" style="width: 100%">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                            </div>
-                            <div class="star-ratings-css-bottom">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vert-padding-3">
-                        <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                            <span itemprop="ratingValue">5.0</span>
-                            out of <span itemprop="bestRating">5</span>
-                            based on <span itemprop="ratingCount">9</span> user ratings.
-                        </div>
-                    </div>
-                    <div class="vert-padding-3">
-                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD" />
-                        <span itemprop="price">FREE</span>
-                    </div>
-                </div>
-
-                <div class="subtitleIndent">
-                    <div class="sectionHeader col-xs-12">
-                        Perfect for:
-                    </div>
-                    <div class="col-xs-12">
-                        <ul class="descriptionText listIndent" style="list-style-type:disc">
-                            <li>Travel &mdash; This app is an absolute necessity for playing on trains and planes.</li>
-                            <li>Being an idiot and forgetting your dice at home.</li>
-                            <li>Being a genius and not needing dice to play Magic.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-sm-1 hidden-xs"></div>
-    </div>
-
     <!-- Section 3: Features -->
-    <div class="row" id="featuresBlockMDM"> %>
+    <%# <div class="row" id="featuresBlockMDM"> %>
 
     <% include ./footFiles %>
     <script>
         $(document).ready(function() {
             $('#contentBlockMDM').fullpage({
-                anchors: ['top', 'screenshots', 'info'],
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['Top', 'Screenshots', 'Info'],
