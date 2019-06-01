@@ -206,8 +206,9 @@ a.SKSTextButton {
     line-height: 0.75;
     width: 117px;
     margin: 20px;
+    margin-top: 0px;
     margin-left: 4px;
-    padding-top: 35px;
+    padding-top: 28px;
 }
 .titleText {
     font-size: 40pt;
@@ -234,22 +235,25 @@ a.SKSTextButton {
     font-family: Futura;
 }
 #skillsDiv .captainIcon {
-    font-size: 26pt;
-    padding-top: 15px;
+    font-size: 30pt;
+    padding-top: 17px;
     padding-right: 16px;
 }
 #skillsDiv div {
     width: 360px;
 }
+#skillsBlock {
+    max-height: 475px;
+}
 .skillText {
-    font-size: 32pt;
+    font-size: 36pt;
 }
 
 
 /* BOTTOM */
 #botBar {
     background-color: var(--section1TextColor, white) !important;
-    height: 180px;
+    height: 150px;
 }
 .contact {
     font-family: Futura;
