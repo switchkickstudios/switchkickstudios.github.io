@@ -1,5 +1,7 @@
 :root {
     --MDM_section0HoverColor: #4e4e4e;
+    --MDM_section0PressColor: #4e4e4e;
+    --MDM_buttonAnimationLength: 0.25s;
 }
 
 /* NAV */
@@ -12,14 +14,17 @@
 #MDMbody .logoText.SKSButton:hover {
     text-decoration: none;
     text-shadow: -8px 8px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow .2s; /* Safari */
-    transition: text-shadow .2s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
 }
 #MDMbody .SKSButton:hover {
     text-decoration: none;
     text-shadow: -6px 6px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow .2s; /* Safari */
-    transition: text-shadow .2s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+}
+#MDMbody .SKSButton:active, #MDMbody .SKSButton:active {
+    color:  var(--MDM_section0PressColor, lightgray);
 }
 
 /* Main Content */
@@ -53,13 +58,8 @@
 #mdm_creature_art {
     height: 370px;
 }
-#carouselBlockMDM{
-    position: relative;
-    background-color: black;
-    padding: 0px;
-    z-index: 1;
-    display: grid;
-}
+
+/* CAROUSEL */
 #featuresBlockMDM{
     position: relative;
     background-color: #0f1826;
@@ -69,19 +69,41 @@
     margin-top: 50px;
 }
 .MDMCarouselImage {
-    height: auto !important;
-    width: auto;
-    margin: auto;
-    margin-bottom: 10px;
+    max-height: 700px;
 }
+#MDMbody .carousel-control-prev, #MDMbody .carousel-control-next {
+    opacity: 1;
+}
+#MDMbody .carousel-arrow {
+    font-size: 24pt;
+}
+#MDMbody .carousel-control-prev:hover {
+    text-shadow: -16px 0px var(--MDM_section0HoverColor, gray);
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+}
+#MDMbody .carousel-control-next:hover {
+    text-shadow: 16px 0px var(--MDM_section0HoverColor, gray);
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+}
+#MDMbody .carousel-control-prev:active, #MDMbody .carousel-control-next:active {
+    color:  var(--MDM_section0PressColor, lightgray);
+}
+
+
 #MDMLogoContainer {
     text-align: center;
     position: relative;
     top: 100px;
 }
 
+/* SECTION BACKGROUNDS */
 #MDM_Section0 {
     background-image: linear-gradient(52deg, black, #383838);
+}
+#MDM_Section1 {
+    background-image: linear-gradient(-52deg, #383838, black);;
 }
 
 
@@ -129,10 +151,6 @@
 @media (max-width: 768px) {
     #MDMCarouselIndicators {
         bottom: -5px;
-    }
-    .MDMCarouselImage {
-        margin-top: 20px;
-        width: 85%;
     }
     #MDMBottomBuffer {
         height: 10px;
@@ -182,10 +200,6 @@
     #MDMCarouselIndicators {
         bottom: 5px;
     }
-    .MDMCarouselImage {
-        max-height: auto;
-        width: 70%;
-    }
     #MDMBottomBuffer {
         height: 120px;
     }
@@ -227,10 +241,6 @@
 
 /* MD */
 @media (min-width: 992px) {
-    .MDMCarouselImage {
-        max-height: 600px;
-        width: auto;
-    }
     #MDMBottomBuffer {
         height: 155px;
     }
@@ -272,9 +282,6 @@
 @media (min-width: 1200px) {
     #MDMCarouselIndicators {
         bottom: 20px;
-    }
-    .MDMCarouselImage {
-        max-height: 700px;
     }
 }
 
