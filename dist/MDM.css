@@ -1,4 +1,5 @@
 :root {
+    --MDM_section0HoverColor: #4e4e4e;
 }
 
 /* NAV */
@@ -7,6 +8,18 @@
 }
 #MDMbody .SKSButton {
     color: white;
+}
+#MDMbody .logoText.SKSButton:hover {
+    text-decoration: none;
+    text-shadow: -8px 8px var(--MDM_section0HoverColor, gray);
+    -webkit-transition: text-shadow .2s; /* Safari */
+    transition: text-shadow .2s;
+}
+#MDMbody .SKSButton:hover {
+    text-decoration: none;
+    text-shadow: -6px 6px var(--MDM_section0HoverColor, gray);
+    -webkit-transition: text-shadow .2s; /* Safari */
+    transition: text-shadow .2s;
 }
 
 /* Main Content */
