@@ -92,6 +92,9 @@ body {
     text-decoration: none;
     color: var(--section1HoverColor, #333);
 }
+.SKSButton:active {
+    color:  var(--secondaryColor, lightgray);
+}
 a.SKSButton {
     cursor: pointer !important;
     color: var(--section1TextColor, #333);
