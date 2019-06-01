@@ -1,10 +1,30 @@
+:root {
+}
+
+/* NAV */
+#MDMbody #topNavSKS {
+    background-color: transparent;
+}
+#MDMbody .SKSButton {
+    color: white;
+}
+
 /* Main Content */
 #MDMbody {
     background-color: #0f1826;
 }
-#MDMLogo {
-    height: 200px;
-    width: auto;
+#mdm_magicText {
+    height: 170px;
+}
+#mdm_deckmateText {
+    height: 180px;
+}
+#MDM_creature_art {
+    position: absolute;
+    bottom: -24px;
+}
+#MDM_creature_art img {
+    height: 400px;
 }
 #carouselBlockMDM{
     position: relative;
@@ -12,11 +32,6 @@
     padding: 0px;
     z-index: 1;
     display: grid;
-}
-#contentBlockMDM{
-    position: relative;
-    background-color: black;
-    padding: 0px;
 }
 #featuresBlockMDM{
     position: relative;
@@ -36,6 +51,10 @@
     text-align: center;
     position: relative;
     top: 100px;
+}
+
+#MDM_Section0 {
+    background-image: linear-gradient(52deg, black, #383838);
 }
 
 
@@ -95,10 +114,6 @@
         text-align: center;
         padding-top: 30px;
     }
-    #contentBlockMDM{
-        padding-top: 10px;
-        padding-bottom: 60px;
-    }
     #MDMLifeCounterTitle {
         padding-top: 40px;
     }
@@ -150,10 +165,6 @@
     #MDMDownload {
         text-align: right;
     }
-    #contentBlockMDM{
-        padding-top: 40px;
-        padding-bottom: 100px;
-    }
     #MDMLifeCounterTitle {
         padding-top: 40px;
     }
@@ -195,10 +206,6 @@
     }
     #MDMBottomBuffer {
         height: 155px;
-    }
-    #contentBlockMDM{
-        padding-top: 80px;
-        padding-bottom: 150px;
     }
     #MDMLifeCounterTitle {
         padding-top: 120px;

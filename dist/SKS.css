@@ -35,7 +35,7 @@ body {
     height: var(--topBarHeight, 80px) !important;
 }
 #topNavSKS {
-    background-color: var(--primaryColor, white) !important;
+    background-color: var(--primaryColor, white);
 }
 .logoText {
     font-family: BlankaRegular;

@@ -10,7 +10,15 @@
     <% include ./menu %>
 
     <!-- CONTENT -->
-    <!-- Section 1: Carousel -->'
+    <div class="col-xs-12" id="contentBlockMDM">
+
+        <div class="section" id="MDM_Section0">
+            <% include ./MDM/section0 %>
+        </div>
+    </div>
+
+
+    <%# <!-- Section 1: Carousel -->
     <div class="row" style="background-color:black">
 
         <div class="col-sm-1 hidden-xs"></div>
@@ -327,8 +335,18 @@
         </div>
 
         <div class="col-sm-1 hidden-xs"></div>
-    </div>
+    </div> %>
 
-    <% include ./footer %>
+    <% include ./footFiles %>
+    <script>
+        $(document).ready(function() {
+            $('#contentBlockMDM').fullpage({
+                // menu: '#topNavSKS',
+                // anchors: ['home', 'about'],
+                autoScrolling: false,
+                licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16'
+            });
+        });
+    </script>
 </body>
 </html>
