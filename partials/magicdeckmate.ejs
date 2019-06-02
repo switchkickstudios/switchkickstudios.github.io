@@ -22,6 +22,10 @@
         <div class="section" id="MDM_Section2">
             <% include ./MDM/section2 %>
         </div>
+
+        <div class="section" id="MDM_Section3">
+            <% include ./MDM/section3 %>
+        </div>
     </div>
 
     <!-- Section 3: Features -->
@@ -33,9 +37,29 @@
             $('#contentBlockMDM').fullpage({
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Top', 'Screenshots', 'Info'],
+                navigationTooltips: ['Top', 'Screenshots', 'Info', 'Features'],
                 autoScrolling: false,
-                licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16'
+                licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16',
+
+                onLeave: function(origin, destination, direction){
+                    if(destination.index <= 1){
+                        $("#MDMbody #topNavSKS").css("background-color", "transparent");
+                    }
+
+                    if(destination.index > 1){
+                        $("#MDMbody #topNavSKS").css("background-color", "black");
+                    }
+
+                    if(destination.index <= 2){
+                        $("#MDMbody #fp-nav ul li .fp-tooltip").css("color", "white");
+                        $("#MDMbody #fp-nav ul li a span").css("background-color", "white");
+
+                    }
+                    if(destination.index > 2){
+                        $("#MDMbody #fp-nav ul li .fp-tooltip").css("color", "#0C0C0C");
+                        $("#MDMbody #fp-nav ul li a span").css("background-color", "#0C0C0C");
+                    }
+                }
             });
         });
     </script>
