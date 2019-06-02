@@ -8,7 +8,15 @@
 <body itemscope itemtype="http://schema.org/Product" data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="KT_Body">
     <% include ./menu %>
 
-    <div id="KT_Container">
+    <!-- CONTENT -->
+    <div class="col-xs-12" id="KT_Container">
+        <div class="section" id="KT_Section0">
+            <% include ./KT/section0 %>
+        </div>
+    </div>
+
+
+    <%# <div id="KT_Container">
 
         <!-- Section 1: Logo and Header -->
         <div class="row" id="logoDiv">
@@ -182,8 +190,22 @@
             <div class="col-sm-1 hidden-xs"></div>
         </div>
         <!-- Container End -->
-    </div>
+    </div> %>
 
-    <% include ./footer %>
+    <% include ./footFiles %>
+    <script>
+        $(document).ready(function() {
+            $('#KT_Container').fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Top', 'Info', 'Features'],
+                autoScrolling: false,
+                licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16',
+
+                onLeave: function(origin, destination, direction){
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -10,6 +10,17 @@ startButtonColor = '#7FB710';
 stopButtonColor = '#FCA258';
 resetButtonColor = darkerRedColor; */
 
+:root {
+    --KT_section0BGColor: #E93030;
+}
+
+
+/* NAV */
+#KT_Body #topNavSKS {
+    background-color: transparent;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
+}
 
 #KT_Body {
     background-color: black;
@@ -21,7 +32,6 @@ resetButtonColor = darkerRedColor; */
 
 #KT_Container {
     background-color: #E93030;
-    padding-top: 150px;
 }
 
 #logoDiv {
@@ -29,19 +39,16 @@ resetButtonColor = darkerRedColor; */
 }
 
 #KT_Logo {
-    width: 56%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    height: 276px;
+    width: 700px;
+    object-fit: contain;
 }
 
-#header_Art {
-    width: auto;
-    max-height: 400px;
-    height: auto;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+#kt_header_Art {
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
 
@@ -117,9 +124,6 @@ resetButtonColor = darkerRedColor; */
     .featuresBlock {
         padding-top: 14px;
     }
-    #header_Art {
-        max-height: 250px;
-    }
 }
 
 /* SM */
@@ -132,9 +136,6 @@ resetButtonColor = darkerRedColor; */
     }
     .KTRightScreenshotDiv {
         text-align: center;
-    }
-    #header_Art {
-        max-height: 400px;
     }
 }
 
