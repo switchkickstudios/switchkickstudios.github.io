@@ -363,8 +363,7 @@ ul.listIndent, li.listIndent {
     padding-left: 15px;
 }
 .screenshot_portrait {
-    max-height: 520px;
-    margin-top: 40px;
+    max-height: 500px;
     display: initial;
 }
 .descriptionText {

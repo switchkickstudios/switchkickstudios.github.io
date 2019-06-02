@@ -1,3 +1,190 @@
-<div class="row d-flex flex-row justify-content-start h-100">
+<div class="row d-flex flex-row justify-content-start topMenuPadding">
+    <div class="col">
 
+        <%# FEATURES %>
+        <div class="row darkText mdm_featureSection">
+            <div class="col-1"></div>
+            <div class="col-10 d-flex flex-column">
+                <div class="row">
+                    <div>
+                        <span class="titleText">Features</span>
+                    </div>
+                    <div class="descriptionText">
+                        Much of the functionality is accessible through the menu. You can find the menu button just below your life counter. This button will change depending on which color scheme you choose.
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# LIFE %>
+        <div class="row darkText mdm_featureSection" id="lifeSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row orientLeft">
+                    <div>
+                        <img src="images/MDM_SC_LifeCounter.png" alt="Life Counter Screenshot" class="img img-responsive screenshot_portrait">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center textSection">
+                        <div class="sectionHeader">
+                            <h2>Life Counter</h2>
+                        </div>
+                        <div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li>Set your starting life to 20, 30, or 40</li>
+                                <li>Easily reset the life counter to the default starting life</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# TOKENS %>
+        <div class="row darkText mdm_featureSection" id="tokenSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row orientRight">
+                    <div class="d-flex flex-column justify-content-center textSection">
+                        <div class="sectionHeader">
+                            <h2>Tokens</h2>
+                        </div>
+                        <div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li>Set your starting life to 20, 30, or 40</li>
+                                <li>Easily reset the life counter to the default starting life</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/MDM_SC_RecentTokens.png" alt="Recent Tokens Screenshot" class="img img-responsive screenshot_portrait">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# COUNTERS %>
+        <div class="row darkText mdm_featureSection" id="counterSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row orientLeft">
+                    <div>
+                        <img src="images/MDM_SC_Storm.png" alt="Storm Screenshot" class="img img-responsive screenshot_portrait">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center textSection">
+                        <div class="sectionHeader">
+                            <h2>Counters</h2>
+                        </div>
+                        <div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li>Every counter in the game.
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>And even non-counters like mana and storm.</li>
+                                    </ul>
+                                </li>
+                                <li>Interactive virtual counters
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Swipe up or down to increase or decrease each counter.</li>
+                                        <li>Press and hold to remove the counter from the battlefield.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# DECKS %>
+        <div class="row darkText mdm_featureSection" id="deckSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row orientRight">
+                    <div class="d-flex flex-column justify-content-center textSection">
+                        <div class="sectionHeader">
+                            <h2>Decks</h2>
+                        </div>
+                        <div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li>Organize your tokens and counters into saved decks</li>
+                                <li>Instantly deploy an entire battlefield's worth of tokens and counters</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/MDM_SC_DeckAdd_Green.png" alt="Adding A Deck" class="img img-responsive screenshot_portrait">
+                        <img src="images/MDM_SC_DeckEdit_Black.png" alt="Adding A Deck" class="img img-responsive screenshot_portrait ml-3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# DICE AND COLORS %>
+        <div class="row">
+            <div class="col-6 mdm_featureSection" id="diceSection">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="row sectionHeader">
+                            <h2>Virtual Dice Rolls and Coin Flips</h2>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-grow-1">
+                                <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                    <li>Simulate coin flip</li>
+                                    <li>Roll dice:
+                                        <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                            <li>d6</li>
+                                            <li>2x d6</li>
+                                            <li>d8</li>
+                                            <li>d20</li>
+                                        </ul>
+                                     </li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center" id="diceIconDiv">
+                                <i class="fas fa-dice-d20 pb-3"></i>
+                                <i class="fas fa-dice"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="col-6 darkText mdm_featureSection" id="colorSection">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="row sectionHeader">
+                            <h2>6 Different Color Schemes</h2>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-grow-1">
+                                <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                    <li>Colorless</li>
+                                    <li>Blue</li>
+                                    <li>Red</li>
+                                    <li>Green</li>
+                                    <li>Black</li>
+                                    <li>White</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="../../images/MDM_Colors_Circle3.png" id="colorsIcon" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <% include ../footer %>
 </div>
