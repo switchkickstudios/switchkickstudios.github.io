@@ -12,6 +12,7 @@ resetButtonColor = darkerRedColor; */
 
 :root {
     --KT_section0BGColor: #E93030;
+    --KT_section0dropShadowColor: #3B0D0E;
 }
 
 
@@ -24,7 +25,19 @@ resetButtonColor = darkerRedColor; */
 
 #KT_Body {
     background-color: black;
+    color: white;
 }
+
+#KT_Body .SKSButton {
+    color: white;
+    text-shadow: 0px 6px var(--KT_section0dropShadowColor, black);
+}
+#KT_Body .logoText.SKSButton {
+    text-shadow: 0px 10px var(--KT_section0dropShadowColor, black);
+}
+#KT_Body .SKSButton:hover {
+}
+
 
 #KT_PrivacyPolicy_Body {
     background-color: #E93030;
