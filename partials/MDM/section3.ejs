@@ -16,8 +16,48 @@
 
                         <p>
                             When you start up the app for the first time, the tutorial will guide you through the controls. If you wish to see the tutorial again, you can find it in the menu:
-                            <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                <li>Menu > Settings > Controls | Help > Tutorial</li>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4">Menu > Settings > Controls | Help > Tutorial</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <div class="sectionHeader">1 Player Mode vs 2 Player Mode</div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4 font-italic">Menu > Settings > Players</li>
+                                <li class="ml-4">In 1 Player Mode a user will be able to have a maximum of 9 tokens and/or counters on the battlefield</li>
+                                <li class="ml-4">In 2 Player Mode a user will be able to have a maxumum of 6 tokens and/or counters on the battlefield</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <div class="sectionHeader">Battlefield Resets</div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4 font-italic">Menu > Battlefield Resets</li>
+                                <li class="ml-4">Reset Life
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Resets current life to the starting life</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Reset Card Values
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Untaps all tokens</li>
+                                        <li>Resets quantity of tokens to 0</li>
+                                        <li>Resets counter values to 0</li>
+                                        <li>Leaves all tokens and counters on the battlefield</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Clear Cards
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Removes all tokens and counters from the battlefield</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Reset All
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Resets current life to the starting life</li>
+                                        <li>Removes all tokens and counters from the battlefield</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </p>
                     </div>
@@ -40,13 +80,13 @@
                         </div>
                         <div>
                             <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li>Use the - and + buttons above the battlefield to decrease or increase your current life total.</li>
+                                <li class="font-italic">Menu > Settings > Starting Life</li>
+                                <li>Use the - and + buttons above the battlefield to decrease or increase your current life.</li>
                                 <li>Set your starting life to 20, 30, or 40
                                     <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li class="font-italic">Menu > Settings > Starting Life</li>
                                         <li>This will reset your current life.</li>
                                         <li>
-                                            When setting a new Starting Life in 2-Player mode, your starting life will be reset to the new Starting Life, but your opponent's current life will remain the same until reset.
+                                            When setting a new starting life in 2-Player mode, your starting life will be reset to the new starting life, but your opponent's current life will remain the same until reset.
                                         </li>
                                     </ul>
                                 </li>
@@ -64,7 +104,7 @@
         </div>
 
         <%# TOKENS %>
-        <div class="row mdm_featureSection" id="tokenSection">
+        <div class="row darkText mdm_featureSection" id="tokenSection">
             <div class="col-1"></div>
             <div class="col-10">
                 <div class="d-flex flex-row orientRight">
@@ -74,9 +114,9 @@
                         </div>
                         <div>
                             <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="font-italic">Menu > Tokens</li>
                                 <li>Just about every single token in the game (except for some from Unglued and Unhinged)
                                     <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li class="font-italic">Menu > Tokens</li>
                                         <li>They are organized by token type in alphabetical order.</li>
                                         <li>Tokens can also be deployed in decks. <i>For more information about decks, see the Decks section below.</i></li>
                                     </ul>
@@ -88,7 +128,7 @@
                                 </li>
                                 <li>Interactive virtual tokens
                                     <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Swipe left or right across the token to tap or untap</li>
+                                        <li>Swipe left or right across the token to tap or untap.</li>
                                         <li>Swipe up or down through the token to keep track of the quantity of each token.</li>
                                         <li>Press and hold to remove the token from the battlefield.</li>
                                     </ul>
@@ -119,10 +159,10 @@
                         </div>
                         <div>
                             <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="font-italic">Menu > Counters</li>
                                 <li>Every counter in the game
                                     <ul class="descriptionText listIndent" style="list-style-type:circle">
                                         <li>And even non-counters like mana and storm.</li>
-                                        <li class="font-italic">Menu > Counters</li>
                                         <li>Counters are organized by alphabetical order, with Mana Counters and +X/+X counters on the top.</li>
                                         <li>Counters can also be deployed in decks. <i>For more information about decks, see the Decks section below.</i></li>
                                     </ul>
