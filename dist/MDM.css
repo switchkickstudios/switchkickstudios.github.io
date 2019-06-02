@@ -1,15 +1,16 @@
 :root {
     --MDM_section0HoverColor: #4e4e4e;
     --MDM_section0PressColor: #4e4e4e;
-    --MDM_buttonAnimationLength: 0.25s;
     --MDM_section3DarkTextColor: #0C0C0C;
+    --MDM_buttonAnimationLength: 0.25s;
+    --MDM_sectionAnimationLength: 1s;
 }
 
 /* NAV */
 #MDMbody #topNavSKS {
     background-color: transparent;
-    -webkit-transition: background-color 1s; /* Safari */
-    transition: background-color 1s;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
 #MDMbody .SKSButton {
     color: white;
@@ -44,12 +45,12 @@
     padding-top: 9px;
 }
 #MDMbody #fp-nav ul li .fp-tooltip {
-    -webkit-transition: color 1s; /* Safari */
-    transition: color 1s;
+    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: color var(--MDM_sectionAnimationLength, 1s);
 }
 #MDMbody #fp-nav ul li a span {
-    -webkit-transition: background-color 1s; /* Safari */
-    transition: background-color 1s;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
 
 /* Main Content */
