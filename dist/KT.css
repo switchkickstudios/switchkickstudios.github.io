@@ -19,14 +19,14 @@ resetButtonColor = darkerRedColor; */
 
 /* NAV */
 #KT_Body #topNavSKS {
-    background-color: transparent;
+    background-color: var(--KT_section0BGColor, transparent);
     -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
 
 #KT_Body {
     background-color: black;
-    color: white;
+    color: black;
 }
 
 #KT_Body .SKSButton {
@@ -52,10 +52,6 @@ resetButtonColor = darkerRedColor; */
     background-color: #E93030;
 }
 
-#KT_Container {
-    background-color: #E93030;
-}
-
 #logoDiv {
     padding-bottom: 60px;
 }
@@ -72,6 +68,38 @@ resetButtonColor = darkerRedColor; */
     object-fit: contain;
 }
 
+#KT_Section0 {
+    background-color: var(--KT_section0BGColor, #E93030);
+}
+#KT_Section1 {
+    background-color: white;
+}
+
+
+/* FULLPAGEJS */
+#KT_Body #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: black;
+}
+#KT_Body #fp-nav ul li .fp-tooltip {
+    color: black;
+}
+#KT_Body #fp-nav ul li .fp-tooltip  {
+    font-family: DinCondensed !important;
+    font-size: 15pt;
+}
+#KT_Body #fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+}
+#KT_Body #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: color var(--MDM_sectionAnimationLength, 1s);
+}
+#KT_Body #fp-nav ul li a span {
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
+}
 
 
 /* General Info */
