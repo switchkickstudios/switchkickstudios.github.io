@@ -373,6 +373,10 @@ ul.listIndent, li.listIndent {
 .captainIcon {
     font-family: CaptainIcon;
 }
+.sks_App_Icon {
+    height: 40px;
+    width: 40px;
+}
 
 /* SOCIAL MEDIA ICONS */
 .fa {

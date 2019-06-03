@@ -92,17 +92,12 @@ resetButtonColor = darkerRedColor; */
     margin-bottom: 12px;
     padding-top: 9px;
 }
-#KT_Body #fp-nav ul li .fp-tooltip {
-    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
-    transition: color var(--MDM_sectionAnimationLength, 1s);
-}
-#KT_Body #fp-nav ul li a span {
-    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
-    transition: background-color var(--MDM_sectionAnimationLength, 1s);
-}
-
 
 /* General Info */
+#KT_Body .titleText {
+    font-family: DinCondensed;
+    border-bottom: 3px solid var(--MDM_section0HoverColor, gray);
+}
 #KTTitle {
     text-align: left !important;
     font-family: DinCondensed;
@@ -126,18 +121,18 @@ resetButtonColor = darkerRedColor; */
     padding: 0px;
 }
 
-.KT_App_Icon {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-}
-
 #contentBlockKT{
     position: relative;
     background-color: white;
     padding: 0px;
     padding-top: 60px;
     padding-bottom: 64px;
+}
+#kt_infoSection2 {
+    background-color: var(--KT_section0BGColor, black);
+}
+#kt_appInfoCol {
+    height: 126px;
 }
 
 /* FEATURES */
