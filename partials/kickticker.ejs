@@ -17,80 +17,13 @@
         <div class="section" id="KT_Section1">
             <% include ./KT/section1 %>
         </div>
+
+        <div class="section" id="KT_Section2">
+            <% include ./KT/section2 %>
+        </div>
     </div>
 
-
-    <%# <div id="KT_Container">
-
-        <!-- Section 2: Reveiws and Download Info -->
-        <div class="row" id="contentBlockKT">
-            <div class="col-sm-1 hidden-xs"></div>
-
-            <div class="col-xs-12 col-sm-10">
-
-                <!-- Info Section -->
-                <div class="col-xs-12">
-
-                    <!-- General Info Text -->
-                    <div class="col-xs-12 col-sm-9" id="KTGeneral">
-                        <div class="col-xs-12" id="KTTitle">
-                            <h1><span itemprop="name">Kick Ticker</span></h1>
-                        </div>
-                        <div class="col-xs-12 subTitle">
-                            A simple and easy-to-use timer for your favorite ass-kicking activities.
-                        </div>
-                        <div class="col-xs-12" id="KTDescription">
-                            Whether you're a boxer, kickboxer, grappler, or weight-lifter,
-                            you likely often find yourself in need of a quick and effective way to keep track of your rounds and rest periods.
-                            Kick Ticker functions similarly to any other timer, following the familiar control scheme of "start, pause, reset"
-                             - just with a few more useful features.
-                            It's designed to work perfectly into your session,
-                            including adjustable buzzer volume and audio that momentarily ducks the volume of your music.
-                            So if you want to blast Wu-Tang in your gym via bluetooth, you will be able to clearly hear
-                            Kick Ticker's buzzer sounds but also clearly hear the Wu.
-                            <!-- Magic DeckMate is built to be the world&rsquo;s most robust in-game Magic: The Gathering companion. Featuring interactive touch-controlled virtual tokens and counters, it is all you need to keep track of everything in-game in the most convenient and visual way possible. -->
-                        </div>
-                    </div>
-
-                    <!-- Download Info -->
-                    <div class="col-xs-12 col-sm-3" id="KTDownload">
-                        <a href="https://itunes.apple.com/us/app/kick-ticker/id1436800669?ls=1&mt=8" target="_blank">
-                            <img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store">
-                        </a>
-
-                            <!-- Star Rating -->
-                        <div class="vert-padding-3 margin-top-20">
-                            <img itemprop="image" src="images/kickticker/kickTickerIcon.png" alt="Magic DeckMate" class="KT_App_Icon"/>
-                        </div>
-
-                        <div class="vert-padding-3 padding-right-10">
-                            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="USD" />
-                            <span itemprop="price">FREE</span>
-                        </div>
-                    </div>
-
-                    <div class="subtitleIndent">
-                        <div class="sectionHeader col-xs-12">
-                            Perfect for:
-                        </div>
-                        <div class="col-xs-12">
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li>Bag workouts</li>
-                                <li>Sparring sessions</li>
-                                <li>Interval training</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-sm-1 hidden-xs"></div>
-        </div>
-
-        <!-- Section 3: Features -->
+        <%# <!-- Section 3: Features -->
         <div class="row KTFeaturesBG">
             <!-- <img src="images/kickticker/KT_ScreenShot_Timer.png">
             <img src="images/kickticker/KT_ScreenShot_Setup.png"> -->
@@ -187,6 +120,15 @@
                 licenseKey: '2A78C148-FC9343F4-9251B43F-05693B16',
 
                 onLeave: function(origin, destination, direction){
+                    if(destination.index <= 1){
+                        $("#KT_Body #fp-nav ul li .fp-tooltip").css("color", "black");
+                        $("#KT_Body #fp-nav ul li a span").css("background-color", "black");
+
+                    }
+                    if(destination.index > 1){
+                        $("#KT_Body #fp-nav ul li .fp-tooltip").css("color", "white");
+                        $("#KT_Body #fp-nav ul li a span").css("background-color", "white");
+                    }
                 }
             });
         });

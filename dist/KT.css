@@ -74,6 +74,9 @@ resetButtonColor = darkerRedColor; */
 #KT_Section1 {
     background-color: white;
 }
+#KT_Section2 {
+    background-color: black;
+}
 
 
 /* FULLPAGEJS */
@@ -87,6 +90,10 @@ resetButtonColor = darkerRedColor; */
     font-family: DinCondensed !important;
     font-size: 15pt;
 }
+#KT_Body #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: color var(--MDM_sectionAnimationLength, 1s);
+}
 #KT_Body #fp-nav ul li, .fp-slidesNav ul li {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -96,7 +103,7 @@ resetButtonColor = darkerRedColor; */
 /* General Info */
 #KT_Body .titleText {
     font-family: DinCondensed;
-    border-bottom: 3px solid var(--MDM_section0HoverColor, gray);
+    border-bottom: 3px solid var(--KT_section0BGColor, gray);
 }
 #KTTitle {
     text-align: left !important;
