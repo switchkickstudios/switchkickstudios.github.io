@@ -1,13 +1,4 @@
-/*
-
-Style Guidelines:
-
-Colors: White, PaleTurquoise, #283f60, Black
-Fonts: Anurati, DINCondensed, Futura
-
-*/
 :root {
-    /* --primaryColor: aquamarine; */
     --primaryColor: #9AC6B9;
     --secondaryColor: #946841;
     --section1MaskWidth: 1024px;
@@ -40,17 +31,6 @@ body {
 .logoText {
     font-family: BlankaRegular;
     font-size: 28pt;
-}
-.logo {
-    height: auto;
-    max-width: 420px;
-    padding-top: 6px;
-}
-.logoMini {
-    max-height: 45px;
-    max-width: 50%;
-    padding-top: 6px;
-    padding-bottom: 6px;
 }
 .hamburgerMenuIcon {
     max-height: 45px;
@@ -133,10 +113,6 @@ a.SKSTextButton {
     padding-right: 1px;
 }
 
-
-.section {
-    /* padding-top: 40px; */
-}
 #section0 {
     background-color: var(--primaryColor, white);
 }
@@ -159,14 +135,6 @@ a.SKSTextButton {
     z-index: 1;
 }
 
-.contentHeader {
-    text-align: center !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
-}
-
 .subTitle {
     text-align: left !important;
     font-family: Futura;
@@ -186,18 +154,11 @@ a.SKSTextButton {
 }
 
 /* Main Background */
-#mainBG{
+#mainBG {
     width: var(--section1MaskWidth, 1024px);
     height: 100%;
     object-fit: cover;
     padding: 2px;
-}
-#photoCred {
-    position: relative;
-    top: -45px;
-    text-align: right;
-    z-index: 2;
-    color: paleturquoise;
 }
 
 /* About Me */
@@ -215,15 +176,6 @@ a.SKSTextButton {
 }
 .titleText {
     font-size: 40pt;
-}
-.leftTitle {
-    text-align: left !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    text-decoration: underline;
-    padding: 20px;
-    padding-top: 35px;
-    color: white;
 }
 #aboutMeContent {
     text-align: left;
@@ -255,7 +207,7 @@ a.SKSTextButton {
 
 /* BOTTOM */
 #botBar {
-    background-color: var(--section1TextColor, white) !important;
+    background-color: var(--section1TextColor, #333) !important;
     height: 150px;
 }
 .contact {
@@ -272,35 +224,17 @@ a.SKSTextButton {
 
 /* XS */
 @media (max-width: 768px) {
-    .topBar {
-        padding-left: 5px;
-    }
-    .contentHeader {
-        padding-top: 60px;
-    }
 
 }
 
 /* SM */
 @media (min-width: 768px) {
-    #switchKickDefinition {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .contentHeader {
-        padding-top: 100px;
-    }
+
 }
 
 /* MD */
 @media (min-width: 992px) {
-    #switchKickDefinition {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    .contentHeader {
-        padding-top: 150px;
-    }
+
 }
 
 /* LG */
@@ -334,33 +268,14 @@ a.SKSTextButton {
 .primaryColor {
     color: #283f60;
 }
-.blackBackground {
-    background-color: black;
-}
 .disclaimer {
     color: white;
     font-size: 12px;
     text-align: left;
     font-style: italic;
 }
-.vert-padding-3 {
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-.margin-top-20 {
-    margin-top: 20px;
-}
-.padding-right-10 {
-    padding-right: 10px;
-}
-.inline-flex {
-    display: inline-flex;
-}
 ul.listIndent, li.listIndent {
     padding-left: 20px;
-}
-.subtitleIndent {
-    padding-left: 15px;
 }
 .screenshot_portrait {
     max-height: 500px;
