@@ -16,7 +16,6 @@ resetButtonColor = darkerRedColor; */
     --KT_menuNavigationDuration: .15s;
 }
 
-
 /* NAV */
 #KT_Body #topNavSKS {
     background-color: var(--KT_section0BGColor, transparent);
@@ -54,10 +53,6 @@ resetButtonColor = darkerRedColor; */
 #KT_PrivacyPolicy_Body .titleText {
     font-family: DinCondensed;
     border-bottom: 3px solid var(--secondaryColor, #333);
-}
-
-#logoDiv {
-    padding-bottom: 60px;
 }
 
 #KT_Logo {
@@ -109,36 +104,8 @@ resetButtonColor = darkerRedColor; */
     font-family: DinCondensed;
     border-bottom: 3px solid var(--KT_section0BGColor, gray);
 }
-#KTTitle {
-    text-align: left !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
-}
 
-#KTSubtitle {
-    text-align: left !important;
-    font-family: Futura;
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#KTDescription {
-    text-align: left !important;
-    font-family: Futura;
-    padding: 0px;
-}
-
-#contentBlockKT{
-    position: relative;
-    background-color: white;
-    padding: 0px;
-    padding-top: 60px;
-    padding-bottom: 64px;
-}
+/* FEATURES */
 #kt_infoSection2 {
     background-color: var(--KT_section0BGColor, black);
     box-shadow: 0px 6px var(--KT_section0dropShadowColor, black);
@@ -146,12 +113,6 @@ resetButtonColor = darkerRedColor; */
 #kt_appInfoCol {
     height: 126px;
 }
-
-/* FEATURES */
-.KTFeaturesBG {
-    background-color: black;
-}
-
 #KT_privacyPolicyDiv {
     font-family: Futura;
     font-size: 13px;
@@ -163,52 +124,20 @@ resetButtonColor = darkerRedColor; */
 
 /* XS */
 @media (max-width: 768px) {
-    #KTDownload {
-        text-align: center;
-        padding-top: 30px;
-    }
-    .KTLeftScreenshotDiv {
-        text-align: center;
-    }
-    .KTRightScreenshotDiv {
-        text-align: center;
-    }
-    .KTFeaturesBG {
-        padding-bottom: 40px;
-    }
-    .featuresBlock {
-        padding-top: 14px;
-    }
+
 }
 
 /* SM */
 @media (min-width: 768px) {
-    #KTDownload {
-        text-align: right;
-    }
-    .KTLeftScreenshotDiv {
-        text-align: center;
-    }
-    .KTRightScreenshotDiv {
-        text-align: center;
-    }
+
 }
 
 /* MD */
 @media (min-width: 992px) {
-    .KTLeftScreenshotDiv {
-        text-align: left;
-    }
-    .KTRightScreenshotDiv {
-        text-align: right;
-    }
-    .featuresBlock {
-        padding-top: 70px;
-    }
+
 }
 
+/* LG */
 @media (min-width: 1200px) {
-    .KTFeaturesBG {
-        padding-bottom: 130px;
-    }
+
 }
