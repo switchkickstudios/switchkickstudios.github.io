@@ -421,3 +421,8 @@ ul.listIndent, li.listIndent {
 .botMenuPadding {
     padding-bottom: var(--topBarHeight, 80px) !important;
 }
+
+.pinFooter {
+    position: absolute;
+    bottom: 0;
+}

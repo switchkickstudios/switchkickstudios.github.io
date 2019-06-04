@@ -47,9 +47,13 @@ resetButtonColor = darkerRedColor; */
     opacity: 0;
 }
 
-
+/* PRIVACY POLICY */
 #KT_PrivacyPolicy_Body {
-    background-color: #E93030;
+    background-color: white;
+}
+#KT_PrivacyPolicy_Body .titleText {
+    font-family: DinCondensed;
+    border-bottom: 3px solid var(--secondaryColor, #333);
 }
 
 #logoDiv {
@@ -148,7 +152,6 @@ resetButtonColor = darkerRedColor; */
 }
 
 #KT_privacyPolicyDiv {
-    text-align: center;
     font-family: Futura;
     font-size: 13px;
     text-decoration: underline;
