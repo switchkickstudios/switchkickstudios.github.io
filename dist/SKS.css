@@ -156,7 +156,7 @@ a.SKSTextButton {
 /* Main Background */
 #mainBG {
     width: var(--section1MaskWidth, 1024px);
-    height: 100%;
+    height: 650px;
     object-fit: cover;
     padding: 2px;
 }
@@ -325,8 +325,8 @@ ul.listIndent, li.listIndent {
     mask-position: top;
     -webkit-mask-size: contain;
     mask-size: contain;
-    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
-    mask-image: url(../images/SKS_Mask_BG_Reverse.svg);
+    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
+    mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
     background-clip: border-box;
 }
 
