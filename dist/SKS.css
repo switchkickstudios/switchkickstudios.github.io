@@ -58,6 +58,9 @@ body {
     z-index: 2;
     background-color: var(--primaryColor, white);
 }
+#SKSMenuIcon {
+    font-size: 20pt;
+}
 
 .SKSButton:hover {
     text-decoration: none;
