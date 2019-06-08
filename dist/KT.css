@@ -59,8 +59,8 @@ resetButtonColor = darkerRedColor; */
 }
 
 #KT_Logo {
-    height: 276px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     object-fit: contain;
 }
 
@@ -126,21 +126,26 @@ resetButtonColor = darkerRedColor; */
 
 
 /* XS */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
 
 }
 
 /* SM */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 
 }
 
 /* MD */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
 }
 
 /* LG */
+@media (min-width: 992px) {
+
+}
+
+/* XL */
 @media (min-width: 1200px) {
 
 }
