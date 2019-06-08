@@ -50,30 +50,14 @@ body {
     outline: none;
 }
 .hamburgerMenuItem {
-    background-color:white;
+    /* background-color: var(--lightPrimaryColor, white); */
     padding: 8px;
     padding-right: 16px;
 }
-.verticalMenuParentDiv {
-    margin-top:80px;
-    text-align:right;
-    z-index:3;
-    padding-left: 0px;
-    padding-right:0px;
-}
-.verticalMenuTopBorderBackground {
-    padding: 0px;
-    width:100%;
-    background-color: white;
-}
-.verticalMenuTopBorder {
-    background-color: #e5e5e5;
-    height:2px;
-}
-.verticalMenu {
-    width:160px;
-    float:right;
-    text-align: right;
+
+#verticalMenuDiv {
+    z-index: 2;
+    background-color: var(--primaryColor, white);
 }
 
 .SKSButton:hover {
@@ -260,6 +244,12 @@ a.SKSTextButton {
     #Logo_Button_Large {
         display: none;
     }
+    #Menu_Row_Large {
+        display: none;
+    }
+    #Menu_Row_Small {
+        display: block;
+    }
 }
 
 /* SM */
@@ -275,7 +265,13 @@ a.SKSTextButton {
         display: none;
     }
     #Logo_Button_Small {
-        display: black;
+        display: block;
+    }
+    #Menu_Row_Large {
+        display: block;
+    }
+    #Menu_Row_Small {
+        display: none;
     }
 }
 
@@ -374,6 +370,9 @@ ul.listIndent, li.listIndent {
 }
 .botMenuPadding {
     padding-bottom: var(--topBarHeight, 80px) !important;
+}
+.topMenuMargin {
+    margin-top: var(--topBarHeight, 80px) !important;
 }
 
 .pinFooter {

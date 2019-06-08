@@ -16,41 +16,36 @@
         <div class="d-flex flex-column justify-content-end">
 
             <!-- STANDARD NAVIGATION MENU -->
-            <div class="">
+            <div class="" id="Menu_Row_Large">
                 <a href="/magicdeckmate" class="SKSButton SKSTextButton pr-4">MAGIC DECKMATE</a>
                 <a href="/kickticker" class="SKSButton SKSTextButton pr-4">KICK TICKER</a>
                 <a href="/#about" class="SKSButton SKSTextButton" data-menuanchor="about">ABOUT</a>
             </div>
 
             <!-- HAMBURGER MENU -->
-            <!-- ICON -->
-            <%# <div class="visible-xs" style="">
-                <input type="image" id="SKSMenuIcon" src="images/Menu-Icon-XS.png" class="img img-responsive hamburgerMenuIcon" alt="SKS Menu Icon">
-            </div> %>
+            <div class="" id="Menu_Row_Small">
+                <a id="SKSMenuIcon">
+                    <span class="captainIcon icon-316"></span>
+                </a>
+            </div>
         </div>
     </div>
     <div class="col-1"></div>
 </div>
 
-<%# <div class="col-xs-12 visible-xs verticalMenuParentDiv" data-spy="affix">
-    <div class="verticalMenu">
-        <!-- HAMBURGER MENU TOP BORDER -->
-        <div class="col-xs-12 verticalMenuTopBorderBackground" hidden>
-            <div class="verticalMenuTopBorder" hidden></div>
-        </div>
-
+<div class="row no-gutters w-100 verticalMenuParentDiv topMenuMargin position-fixed" id="verticalMenuDiv">
+    <div class="col-1"></div>
+    <div class="col-10">
         <!-- HAMBURGER MENU ITEMS -->
-        <div class="col-xs-12 hamburgerMenuItem" style="padding-top: 14px;" hidden>
-            <a href="/magicdeckmate" class="SKSButton primaryColor">MAGIC DECKMATE</a>
+        <div class="hamburgerMenuItem text-right" style="padding-top: 14px; display:none;">
+            <a href="/magicdeckmate" class="SKSButton SKSTextButton primaryColor">MAGIC DECKMATE</a>
         </div>
-        <div class="col-xs-12 hamburgerMenuItem" hidden>
-            <a href="/kickticker" class="SKSButton primaryColor">KICK TICKER</a>
+        <div class="hamburgerMenuItem text-right" style="display:none;">
+            <a href="/kickticker" class="SKSButton SKSTextButton primaryColor">KICK TICKER</a>
         </div>
-        <div class="col-xs-12 hamburgerMenuItem" hidden>
-            <a href="/#about" class="SKSButton primaryColor">ABOUT</a>
+        <div class="hamburgerMenuItem text-right" style="display:none;">
+            <a href="/#about" class="SKSButton SKSTextButton primaryColor">ABOUT</a>
         </div>
-        <!-- <div class="col-xs-12 hamburgerMenuItem" hidden style="padding-bottom: 10px;">
-            <a href="https://fundly.com/magic-deckmate-1" target="_blank" class="SKSButton primaryColor">TIP THE DEVELOPER</a>
-        </div> -->
     </div>
-</div> %>
+    <div class="col-1"></div>
+</div>
