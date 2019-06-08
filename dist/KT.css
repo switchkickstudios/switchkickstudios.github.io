@@ -45,6 +45,9 @@ resetButtonColor = darkerRedColor; */
 #KT_Body .SKSButton:active {
     opacity: 0;
 }
+#KT_Body #verticalMenuDiv {
+    background-color: var(--KT_section0BGColor, transparent);
+}
 
 /* PRIVACY POLICY */
 #KT_PrivacyPolicy_Body {
