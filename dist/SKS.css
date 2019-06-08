@@ -206,9 +206,6 @@ a.SKSTextButton {
     padding-top: 17px;
     padding-right: 16px;
 }
-#skillsDiv div {
-    width: 394px;
-}
 #skillsBlock {
     max-height: 475px;
 }
@@ -235,7 +232,7 @@ a.SKSTextButton {
 
 
 /* XS */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     #imageMask {
         width: var(--section1MaskWidthXS, 700px);
     }
@@ -243,9 +240,27 @@ a.SKSTextButton {
         width: var(--section1MaskWidthXS, 1024px);
         height: 260px;
     }
+    #skillsDivSmall {
+        height: 500px;
+        padding-left: 32px;
+    }
 }
 
 /* SM */
+@media (min-width: 576px) {
+    #imageMask {
+        width: var(--section1MaskWidthXS, 700px);
+    }
+    #mainBG {
+        width: var(--section1MaskWidthXS, 1024px);
+        height: 260px;
+    }
+    #skillsDivSmall {
+        height: 500px;
+    }
+}
+
+/* MD */
 @media (min-width: 768px) {
     #imageMask {
         width: var(--section1MaskWidthSM, 700px);
@@ -257,9 +272,12 @@ a.SKSTextButton {
     .hamburgerMenuItem {
         display: none;
     }
+    #skillsDivSmall {
+        height: 400px;
+    }
 }
 
-/* MD */
+/* LG */
 @media (min-width: 992px) {
     #imageMask {
         width: var(--section1MaskWidthLG, 1024px);
@@ -269,9 +287,12 @@ a.SKSTextButton {
         height: 650px;
         padding: 20px;
     }
+    #skillsDiv div {
+        width: 394px;
+    }
 }
 
-/* LG */
+/* XL */
 @media (min-width: 1200px) {
 
 }
