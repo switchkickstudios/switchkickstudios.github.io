@@ -1,7 +1,6 @@
 :root {
     --primaryColor: #9AC6B9;
     --secondaryColor: #946841;
-    --section1MaskWidth: 1024px;
     --section1TextColor: #333;
     --section1HoverColor: white;
     --section1AccentTextColor: #7D9EB1;
@@ -10,6 +9,15 @@
     --ultralightAccentColor: #CBD6E2;
     --ultralightSecondaryColor: #F9D69F;
     --topBarHeight: 80px;
+
+    /* xs : < 768px */
+    /* sm >= 768px */
+    /* md > 992px */
+    /* lg > 1200px */
+
+    --section1MaskWidthLG: 1024px;
+    --section1MaskWidthSM: 780px;
+    --section1MaskWidthXS: 400px;
 }
 
 body {
@@ -155,10 +163,28 @@ a.SKSTextButton {
 
 /* Main Background */
 #mainBG {
-    width: var(--section1MaskWidth, 1024px);
-    height: 650px;
     object-fit: cover;
     padding: 2px;
+}
+
+#imageMask {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primaryColor, white);
+    height: 100%;
+    z-index: 2;
+    -webkit-mask-mode: alpha;
+    mask-mode: alpha;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
+    mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
+    background-clip: border-box;
 }
 
 /* About Me */
@@ -224,17 +250,36 @@ a.SKSTextButton {
 
 /* XS */
 @media (max-width: 768px) {
-
+    #imageMask {
+        width: var(--section1MaskWidthXS, 700px);
+    }
+    #mainBG {
+        width: var(--section1MaskWidthXS, 1024px);
+        height: 260px;
+    }
 }
 
 /* SM */
 @media (min-width: 768px) {
-
+    #imageMask {
+        width: var(--section1MaskWidthSM, 700px);
+    }
+    #mainBG {
+        width: var(--section1MaskWidthSM, 1024px);
+        height: 500px;
+    }
 }
 
 /* MD */
 @media (min-width: 992px) {
-
+    #imageMask {
+        width: var(--section1MaskWidthLG, 1024px);
+    }
+    #mainBG {
+        width: var(--section1MaskWidthLG, 1024px);
+        height: 650px;
+        padding: 20px;
+    }
 }
 
 /* LG */
@@ -307,27 +352,6 @@ ul.listIndent, li.listIndent {
 }
 .fa:focus {
     text-decoration: none;
-}
-
-#imageMask {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--primaryColor, white);
-    width: var(--section1MaskWidth, 1024px);
-    height: 100%;
-    z-index: 2;
-    -webkit-mask-mode: alpha;
-    mask-mode: alpha;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: top;
-    mask-position: top;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
-    mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
-    background-clip: border-box;
 }
 
 .topMenuPadding {
