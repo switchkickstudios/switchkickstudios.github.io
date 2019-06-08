@@ -131,7 +131,7 @@ a.SKSTextButton {
 
 .subTitle {
     text-align: left !important;
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -140,7 +140,7 @@ a.SKSTextButton {
 
 .sectionHeader {
     text-align: left !important;
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -191,14 +191,14 @@ a.SKSTextButton {
 }
 #aboutMeContent {
     text-align: left;
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
     padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
 }
 #skillsDiv {
     background-color: var(--lightPrimaryColor, white) !important;
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
 }
 #skillsDiv .captainIcon {
     font-size: 30pt;
@@ -219,7 +219,7 @@ a.SKSTextButton {
     height: 150px;
 }
 .contact {
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
     color: var(--ultralightAccentColor, white);
     margin-bottom: 0px;
 }
@@ -302,7 +302,12 @@ a.SKSTextButton {
 /* FONTS */
 @font-face {
     font-family: Futura;
-    src: url(../fonts/Futura.ttc);
+    src: url(../fonts/FuturaMedium.ttf);
+    font-stretch: condensed;
+}
+@font-face {
+    font-family: FuturaBackup;
+    src: url(../fonts/FuturaMedium.ttf);
     font-stretch: condensed;
 }
 @font-face {
@@ -339,7 +344,7 @@ ul.listIndent, li.listIndent {
     display: initial;
 }
 .descriptionText {
-    font-family: Futura;
+    font-family: Futura, FuturaBackup;
     padding: 0px;
 }
 .captainIcon {
@@ -379,4 +384,10 @@ ul.listIndent, li.listIndent {
 .pinFooter {
     position: absolute;
     bottom: 0;
+}
+
+
+/* FULLPAGE */
+.section .fp-tableCell {
+    height: auto !important;
 }
