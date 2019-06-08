@@ -70,34 +70,14 @@
         <div class="row darkText mdm_featureSection" id="lifeSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientLeft">
-                    <div class="d-flex">
-                        <img src="images/MDM_SC_LifeCounter.png" alt="Life Counter Screenshot" class="img img-responsive screenshot_portrait">
-                    </div>
-                    <div class="d-flex flex-grow-1 flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Life Counter</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li class="font-italic">Menu > Settings > Starting Life</li>
-                                <li>Use the - and + buttons above the battlefield to decrease or increase your current life.</li>
-                                <li>Set your starting life to 20, 30, or 40
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>This will reset your current life.</li>
-                                        <li>
-                                            When setting a new starting life in 2-Player mode, your starting life will be reset to the new starting life, but your opponent's current life will remain the same until reset.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>Easily reset the life counter to the default starting life
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li class="font-italic">Menu > Battlefield Resets > Reset Life</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./lifeCounterContent %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./lifeCounterContent %>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -107,39 +87,14 @@
         <div class="row mdm_featureSection" id="tokenSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientRight">
-                    <div class="d-flex flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Tokens</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li class="font-italic">Menu > Tokens</li>
-                                <li>Just about every single token in the game (except for some from Unglued and Unhinged)
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>They are organized by token type in alphabetical order.</li>
-                                        <li>Tokens can also be deployed in decks. <i>For more information about decks, see the Decks section below.</i></li>
-                                    </ul>
-                                </li>
-                                <li>Quickly deploy your most recent tokens
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li class="font-italic">Menu > Tokens > Recent Tokens</li>
-                                    </ul>
-                                </li>
-                                <li>Interactive virtual tokens
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Swipe left or right across the token to tap or untap.</li>
-                                        <li>Swipe up or down through the token to keep track of the quantity of each token.</li>
-                                        <li>Press and hold to remove the token from the battlefield.</li>
-                                    </ul>
-                                </li>
-                                <li><i>If you find that any tokens that are missing, feel free to contact support.</i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/MDM_SC_RecentTokens.png" alt="Recent Tokens Screenshot" class="img img-responsive screenshot_portrait">
-                    </div>
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientRight">
+                    <% include ./tokensContent %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./tokensContent %>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -149,34 +104,14 @@
         <div class="row mdm_featureSection" id="counterSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientLeft">
-                    <div>
-                        <img src="images/MDM_SC_Storm.png" alt="Storm Screenshot" class="img img-responsive screenshot_portrait">
-                    </div>
-                    <div class="d-flex flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Counters</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li class="font-italic">Menu > Counters</li>
-                                <li>Every counter in the game
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>And even non-counters like mana and storm.</li>
-                                        <li>Counters are organized by alphabetical order, with Mana Counters and +X/+X counters on the top.</li>
-                                        <li>Counters can also be deployed in decks. <i>For more information about decks, see the Decks section below.</i></li>
-                                    </ul>
-                                </li>
-                                <li>Interactive virtual counters
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Swipe up or down across the counter to increase or decrease each counter.</li>
-                                        <li>Press and hold the counter to remove the it from the battlefield.</li>
-                                    </ul>
-                                </li>
-                                <li><i>If you find that any counters that are missing, feel free to contact support.</i></li>
-                            </ul>
-                        </div>
-                    </div>
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./countersSection %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./countersSection %>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -186,32 +121,14 @@
         <div class="row darkText mdm_featureSection" id="deckSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientRight">
-                    <div class="d-flex flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Decks</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li class="font-italic">Menu > Decks</li>
-                                <li>Organize your tokens and counters into saved decks
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Selecting a Add will bring up a dialog to create a new deck, which will be saved to your device. <i>Uninstalling Magic DeckMate will erase all deck data.</i></li>
-                                        <li>Selecting Edit will allow users to edit the composition of each deck, as well as rename it. <i>A maximum of 9 tokens and/or counters is allowed in each deck.</i></li>
-                                    </ul>
-                                </li>
-                                <li>Instantly deploy an entire battlefield's worth of tokens and counters
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Selecting a deck will allow you to either deploy an individual token or counter from the deck or select All and deploy all the tokens and counters at once. </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <img src="images/MDM_SC_DeckAdd_Green.png" alt="Adding A Deck" class="img img-responsive screenshot_portrait">
-                        <img src="images/MDM_SC_DeckEdit_Black.png" alt="Adding A Deck" class="img img-responsive screenshot_portrait ml-3">
-                    </div>
+                <%# LARGE SCREEN %>
+                <div class="d-none d-xl-flex flex-row orientRight">
+                    <% include ./decksSection %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-xl-none flex-column orientCenter">
+                    <% include ./decksSection %>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -219,7 +136,7 @@
 
         <%# DICE AND COLORS %>
         <div class="row">
-            <div class="col-6 mdm_featureSection" id="diceSection">
+            <div class="col-sm-6 mdm_featureSection" id="diceSection">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
@@ -251,7 +168,7 @@
                     <div class="col-2"></div>
                 </div>
             </div>
-            <div class="col-6 darkText mdm_featureSection" id="colorSection">
+            <div class="col-sm-6 darkText mdm_featureSection" id="colorSection">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">

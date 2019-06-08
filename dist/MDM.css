@@ -158,7 +158,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.mdm_featureSection .orientLeft {
+.mdm_featureSection .orientCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mdm_featureSection .orientRight {
     display: flex;
