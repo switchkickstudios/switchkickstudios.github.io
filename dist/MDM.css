@@ -62,12 +62,7 @@
     background-color: #0f1826;
     color: white;
 }
-#mdm_magicText {
-    height: 170px;
-}
-#mdm_deckmateText {
-    height: 180px;
-}
+
 #MDM_creature_art_div {
 
 }
@@ -95,6 +90,7 @@
 }
 .MDMCarouselImage {
     max-height: 700px;
+    max-width: 92%;
 }
 #MDMbody .titleText {
     font-family: DinCondensed;
@@ -203,21 +199,38 @@
 
 
 /* XS */
-@media (max-width: 768px) {
-
+@media (max-width: 576px) {
+    #mdm_deckmateText {
+        width: 100%;
+        max-width: 460px;
+    }
+    #mdm_magicText {
+        width: 100%;
+        max-width: 293px;
+    }
 }
 
 /* SM */
+@media (min-width: 576px) {
+    #mdm_deckmateText {
+        height: 180px;
+    }
+    #mdm_magicText {
+        height: 170px;
+    }
+}
+
+/* MD */
 @media (min-width: 768px) {
 
 }
 
-/* MD */
+/* LG */
 @media (min-width: 992px) {
 
 }
 
-/* LG */
+/* XL */
 @media (min-width: 1200px) {
 
 }
