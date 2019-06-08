@@ -257,6 +257,9 @@ a.SKSTextButton {
         width: var(--section1MaskWidthXS, 1024px);
         height: 260px;
     }
+    #Logo_Button_Large {
+        display: none;
+    }
 }
 
 /* SM */
@@ -267,6 +270,12 @@ a.SKSTextButton {
     #mainBG {
         width: var(--section1MaskWidthSM, 1024px);
         height: 500px;
+    }
+    #Logo_Button_Large {
+        display: none;
+    }
+    #Logo_Button_Small {
+        display: black;
     }
 }
 
@@ -279,6 +288,12 @@ a.SKSTextButton {
         width: var(--section1MaskWidthLG, 1024px);
         height: 650px;
         padding: 20px;
+    }
+    #Logo_Button_Large {
+        display: block;
+    }
+    #Logo_Button_Small {
+        display: none;
     }
 }
 
