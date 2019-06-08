@@ -195,7 +195,6 @@ a.SKSTextButton {
     padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
-    padding-right: 80px
 }
 #skillsDiv {
     background-color: var(--lightPrimaryColor, white) !important;
@@ -289,6 +288,9 @@ a.SKSTextButton {
     }
     #skillsDiv div {
         width: 394px;
+    }
+    #aboutMeContent {
+        padding-right: 80px
     }
 }
 
