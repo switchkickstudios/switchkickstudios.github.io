@@ -243,15 +243,6 @@ a.SKSTextButton {
         width: var(--section1MaskWidthXS, 1024px);
         height: 260px;
     }
-    #Logo_Button_Large {
-        display: none;
-    }
-    #Menu_Row_Large {
-        display: none;
-    }
-    #Menu_Row_Small {
-        display: block;
-    }
 }
 
 /* SM */
@@ -262,18 +253,6 @@ a.SKSTextButton {
     #mainBG {
         width: var(--section1MaskWidthSM, 1024px);
         height: 500px;
-    }
-    #Logo_Button_Large {
-        display: none;
-    }
-    #Logo_Button_Small {
-        display: block;
-    }
-    #Menu_Row_Large {
-        display: block;
-    }
-    #Menu_Row_Small {
-        display: none;
     }
     .hamburgerMenuItem {
         display: none;
@@ -290,13 +269,6 @@ a.SKSTextButton {
         height: 650px;
         padding: 20px;
     }
-    #Logo_Button_Large {
-        display: block;
-    }
-    #Logo_Button_Small {
-        display: none;
-    }
-
 }
 
 /* LG */

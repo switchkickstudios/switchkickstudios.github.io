@@ -5,10 +5,10 @@
     <div class="col-10 d-flex flex-row justify-content-between">
 
         <div class="">
-            <a href="/#home" data-menuanchor="home" class="active logoText SKSButton" id="Logo_Button_Large">
+            <a href="/#home" data-menuanchor="home" class="active logoText SKSButton d-none d-lg-block" id="Logo_Button_Large">
                 Switch Kick Studios
             </a>
-            <a href="/#home" data-menuanchor="home" class="active logoText SKSButton" id="Logo_Button_Small">
+            <a href="/#home" data-menuanchor="home" class="active logoText SKSButton d-block d-lg-none" id="Logo_Button_Small">
                 SKS
             </a>
         </div>
@@ -16,14 +16,14 @@
         <div class="d-flex flex-column justify-content-end">
 
             <!-- STANDARD NAVIGATION MENU -->
-            <div class="" id="Menu_Row_Large">
+            <div class="d-none d-md-block" id="Menu_Row_Large">
                 <a href="/magicdeckmate" class="SKSButton SKSTextButton pr-4">MAGIC DECKMATE</a>
                 <a href="/kickticker" class="SKSButton SKSTextButton pr-4">KICK TICKER</a>
                 <a href="/#about" class="SKSButton SKSTextButton" data-menuanchor="about">ABOUT</a>
             </div>
 
             <!-- HAMBURGER MENU -->
-            <div class="" id="Menu_Row_Small">
+            <div class="d-xs-block d-md-none" id="Menu_Row_Small">
                 <a id="SKSMenuIcon">
                     <span class="captainIcon icon-316 SKSButton"></span>
                 </a>
