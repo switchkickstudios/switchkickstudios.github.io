@@ -17,32 +17,13 @@
         <div class="row mdm_featureSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientLeft">
-                    <div>
-                        <img src="images/kickticker/KT_Screenshot_Timer.png" alt="Recent Tokens Screenshot" class="img img-responsive screenshot_portrait">
-                    </div>
-                    <div class="d-flex flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Timer</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li>Familiar control scheme:
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Start</li>
-                                        <li>Pause</li>
-                                        <li>Reset</li>
-                                    </ul>
-                                </li>
-                                <li>Sound effects that duck background sound, like music.
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>3 second countdown at the end of each round and rest period</li>
-                                        <li>Distinct sounds for the start of rounds and rest periods</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./timerSection %>
+                </div>
+
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./timerSection %>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -51,43 +32,13 @@
         <div class="row mdm_featureSection">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="d-flex flex-row orientRight">
-                    <div class="d-flex flex-column justify-content-center textSection">
-                        <div class="sectionHeader">
-                            <h2>Setup</h2>
-                        </div>
-                        <div>
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li>Number of rounds</li>
-                                <li>Length of each round</li>
-                                <li>Length of each rest period
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Only applies when there are multiple rounds.</li>
-                                    </ul>
-                                </li>
-                                <li>Volume setting
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>This value is relative to your device's system volume. So, if Kick Ticker's
-                                            volume is set to 100, but it still doesn't seem loud enough, you should raise
-                                            your device volume in your device's settings.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>Chocolate Mode
-                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                        <li>Idk. Why not?
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pt-4" id="KT_privacyPolicyDiv">
-                            <a href="/kicktickerprivacypolicy">PRIVACY POLICY</a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/kickticker/KT_Screenshot_Setup.png" alt="Recent Tokens Screenshot" class="img img-responsive screenshot_portrait">
-                    </div>
+                <%# SMALL SCREEN %>
+                <div class="d-none d-md-flex flex-row orientRight">
+                    <% include ./setupSection %>
+                </div>
+
+                <div class="d-flex d-md-none flex-column-reverse orientCenter">
+                    <% include ./setupSection %>
                 </div>
             </div>
             <div class="col-1"></div>
