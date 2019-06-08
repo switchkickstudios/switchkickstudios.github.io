@@ -50,7 +50,6 @@ body {
     outline: none;
 }
 .hamburgerMenuItem {
-    /* background-color: var(--lightPrimaryColor, white); */
     padding: 8px;
     padding-right: 16px;
 }
@@ -273,6 +272,9 @@ a.SKSTextButton {
     #Menu_Row_Small {
         display: none;
     }
+    .hamburgerMenuItem {
+        display: none;
+    }
 }
 
 /* MD */
@@ -291,6 +293,7 @@ a.SKSTextButton {
     #Logo_Button_Small {
         display: none;
     }
+
 }
 
 /* LG */

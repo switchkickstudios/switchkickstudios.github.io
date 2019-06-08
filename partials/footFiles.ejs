@@ -11,23 +11,13 @@
     var menuIsOpen = false;
 
     $("#SKSMenuIcon").click(function() {
-        console.log('clicked');
-
         if(menuIsOpen == false) {
-            console.log('showing');
-
             menuIsOpen = true;
-
-            $(".verticalMenuTopBorderBackground").show();
-            $(".verticalMenuTopBorder").show("slow");
             $(".hamburgerMenuItem").first().show("fast", function showNext() {
                 $(this).next(".hamburgerMenuItem").show("fast", showNext);
             });
         } else {
             menuIsOpen = false;
-
-            $(".verticalMenuTopBorderBackground").hide();
-            $(".verticalMenuTopBorder").hide("slow");
             $(".hamburgerMenuItem").last().hide("fast", function hidePrevious() {
                 $(this).prev(".hamburgerMenuItem").hide("fast", hidePrevious);
             });
