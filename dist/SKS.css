@@ -124,7 +124,7 @@ a.SKSTextButton {
 /* Main Content */
 #contentBlockSKS{
     position: relative;
-    background-color: #0f1826;
+    background-color: black;
     padding: 0px;
     z-index: 1;
 }
