@@ -18,13 +18,13 @@ resetButtonColor = darkerRedColor; */
 
 /* NAV */
 #KT_Body #topNavSKS {
-    background-color: var(--KT_section0BGColor, transparent);
+    background-color: var(--KT_section0BGColor, #E93030);
     -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
 
 #KT_Body {
-    background-color: black;
+    background-color: #E93030;
     color: black;
 }
 
@@ -71,7 +71,7 @@ resetButtonColor = darkerRedColor; */
 }
 
 #KT_Section0 {
-    background-color: var(--KT_section0BGColor, #E93030);
+    background-color: #E93030;
 }
 #KT_Section1 {
     background-color: white;

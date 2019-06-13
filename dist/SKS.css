@@ -108,7 +108,7 @@ a.SKSTextButton {
 }
 
 #section0 {
-    background-color: var(--primaryColor, white);
+    background-color: var(--primaryColor, #9AC6B9);
 }
 #section0SocialMediaIcons {
     position: absolute;
@@ -124,7 +124,7 @@ a.SKSTextButton {
 /* Main Content */
 #contentBlockSKS{
     position: relative;
-    background-color: black;
+    background-color: #9AC6B9;
     padding: 0px;
     z-index: 1;
 }
