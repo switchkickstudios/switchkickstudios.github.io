@@ -153,26 +153,6 @@ a.SKSTextButton {
     padding: 2px;
 }
 
-#imageMask {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--primaryColor, white);
-    height: 100%;
-    z-index: 2;
-    -webkit-mask-mode: alpha;
-    mask-mode: alpha;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: top;
-    mask-position: top;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
-    mask-image: url(../images/SKS_Mask_BG_Reverse2.svg);
-    background-clip: border-box;
-}
-
 /* About Me */
 #aboutMeTitle {
     text-align: left !important;
@@ -232,9 +212,6 @@ a.SKSTextButton {
 
 /* XS */
 @media (max-width: 576px) {
-    #imageMask {
-        width: var(--section1MaskWidthXS, 700px);
-    }
     #mainBG {
         width: var(--section1MaskWidthXS, 1024px);
         height: 260px;
@@ -247,9 +224,6 @@ a.SKSTextButton {
 
 /* SM */
 @media (min-width: 576px) {
-    #imageMask {
-        width: var(--section1MaskWidthXS, 700px);
-    }
     #mainBG {
         width: var(--section1MaskWidthXS, 1024px);
         height: 260px;
@@ -261,9 +235,6 @@ a.SKSTextButton {
 
 /* MD */
 @media (min-width: 768px) {
-    #imageMask {
-        width: var(--section1MaskWidthSM, 700px);
-    }
     #mainBG {
         width: var(--section1MaskWidthSM, 1024px);
         height: 500px;
@@ -278,9 +249,6 @@ a.SKSTextButton {
 
 /* LG */
 @media (min-width: 992px) {
-    #imageMask {
-        width: var(--section1MaskWidthLG, 1024px);
-    }
     #mainBG {
         width: var(--section1MaskWidthLG, 1024px);
         height: 650px;
@@ -302,13 +270,13 @@ a.SKSTextButton {
 /* FONTS */
 @font-face {
     font-family: Futura;
-    src: url(../fonts/FuturaMedium.ttf);
+    src: url(../fonts/Futura.ttc);
     font-stretch: condensed;
 }
 @font-face {
     font-family: FuturaBackup;
-    src: url(../fonts/FuturaMedium.ttf);
-    font-stretch: condensed;
+    src: url(../fonts/futur.ttf) format('truetype');
+    /* font-stretch: condensed; */
 }
 @font-face {
     font-family: DinCondensed;
