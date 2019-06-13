@@ -34,6 +34,7 @@ body {
     height: var(--topBarHeight, 80px) !important;
 }
 #topNavSKS {
+    background-color: #9AC6B9;
     background-color: var(--primaryColor, white);
 }
 .logoText {
