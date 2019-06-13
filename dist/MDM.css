@@ -9,6 +9,8 @@
 /* NAV */
 #MDMbody #topNavSKS {
     background-color: transparent;
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
     -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
@@ -17,18 +19,25 @@
 }
 #MDMbody .logoText.SKSButton:hover {
     text-decoration: none;
-    text-shadow: -8px 8px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
-    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+    text-shadow: -8px 8px #4e4e4e;
+    text-shadow: -8px 8px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow 0.25s; /* Safari */
+    transition: text-shadow 0.25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
 }
 #MDMbody .SKSButton:hover {
     text-decoration: none;
-    text-shadow: -6px 6px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
-    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+    text-shadow: -6px 6px #4e4e4e;
+    text-shadow: -6px 6px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow 0.25s; /* Safari */
+    transition: text-shadow 0.25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
 }
 #MDMbody .SKSButton:active, #MDMbody .SKSButton:active {
-    color:  var(--MDM_section0PressColor, lightgray);
+    color: #4e4e4e;
+    color:  var(--MDM_section0PressColor, #4e4e4e);
 }
 #MDMbody #verticalMenuDiv {
     background-color: transparent;
@@ -49,10 +58,14 @@
     padding-top: 9px;
 }
 #MDMbody #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
     -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: color var(--MDM_sectionAnimationLength, 1s);
 }
 #MDMbody #fp-nav ul li a span {
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
     -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
@@ -94,7 +107,8 @@
 }
 #MDMbody .titleText {
     font-family: DinCondensed;
-    border-bottom: 3px solid var(--MDM_section0HoverColor, gray);
+    border-bottom: 3px solid #4e4e4e;
+    border-bottom: 3px solid var(--MDM_section0HoverColor, #4e4e4e);
 }
 #MDMbody .carousel-control-prev, #MDMbody .carousel-control-next {
     opacity: 1;
@@ -103,17 +117,24 @@
     font-size: 24pt;
 }
 #MDMbody .carousel-control-prev:hover {
-    text-shadow: -16px 0px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
-    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+    text-shadow: -16px 0px #4e4e4e;
+    text-shadow: -16px 0px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow .25s; /* Safari */
+    transition: text-shadow .25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
 }
 #MDMbody .carousel-control-next:hover {
-    text-shadow: 16px 0px var(--MDM_section0HoverColor, gray);
-    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .2s); /* Safari */
-    transition: text-shadow var(--MDM_buttonAnimationLength, .2s);
+    text-shadow: 16px 0px #4e4e4e;
+    text-shadow: 16px 0px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow .25s; /* Safari */
+    transition: text-shadow .25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
 }
 #MDMbody .carousel-control-prev:active, #MDMbody .carousel-control-next:active {
-    color:  var(--MDM_section0PressColor, lightgray);
+    color:  #4e4e4e;
+    color:  var(--MDM_section0PressColor, #4e4e4e);
 }
 
 /* SECTION BACKGROUNDS */
@@ -133,14 +154,17 @@
 
 /* Info */
 #mdm_infoBG {
-    background-image: linear-gradient(black, var(--MDM_section0HoverColor, gray));
+    background-image: linear-gradient(black, #4e4e4e);
+    background-image: linear-gradient(black, var(--MDM_section0HoverColor, #4e4e4e));
 }
 #mdm_infoSection2 {
-    background-color: var(--MDM_section0HoverColor, gray);
+    background-color: #4e4e4e;
+    background-color: var(--MDM_section0HoverColor, #4e4e4e);
 }
 #mdm_infoSection3 {
     background-color: white;
-    color: var(--MDM_section3DarkTextColor,  black);
+    color: #0C0C0C;
+    color: var(--MDM_section3DarkTextColor,  #0C0C0C);
     font-family: DinCondensed;
     font-size: 16pt;
     height: 212px;
@@ -242,5 +266,6 @@
 
 /* STYLES */
 .darkText {
-    color: var(--MDM_section3DarkTextColor,  black);
+    color: #0C0C0C;
+    color: var(--MDM_section3DarkTextColor,  #0C0C0C);
 }
