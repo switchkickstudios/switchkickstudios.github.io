@@ -136,10 +136,10 @@ a.SKSTextButton {
 
 /* Main Content */
 #contentBlockSKS{
-    position: relative;
+    /* position: relative; */
     background-color: #9AC6B9;
     padding: 0px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .subTitle {
