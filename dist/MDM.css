@@ -201,7 +201,9 @@
 .mdm_featureSection .orientRight .textSection {
     padding-right: 80px;
 }
-
+.mdm_screenshot_flex {
+    -ms-flex: 0 1 281px;
+}
 #diceIconDiv {
     font-size: 24pt;
 }
