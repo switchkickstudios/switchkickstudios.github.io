@@ -172,7 +172,7 @@ a.SKSTextButton {
 #aboutMeTitle {
     font-family: din-condensed, DinCondensed;
     line-height: 1;
-    border-bottom: 3px solid #946841);
+    border-bottom: 3px solid #946841;
     border-bottom: 3px solid var(--secondaryColor, #946841);
 }
 .titleText {
