@@ -81,7 +81,7 @@ a.SKSButton {
     color: var(--section1TextColor, #333);
 }
 a.SKSTextButton {
-    font-family: DinCondensed;
+    font-family: din-condensed, DinCondensed;
     font-size: 15pt;
 }
 .accentText {
