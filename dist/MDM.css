@@ -204,6 +204,9 @@
 .mdm_screenshot_flex {
     -ms-flex: 0 1 281px;
 }
+.mdm_screenshot_flex_double {
+    -ms-flex: 0 1 578px;
+}
 #diceIconDiv {
     font-size: 24pt;
 }
