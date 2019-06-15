@@ -390,6 +390,9 @@ ul.listIndent, li.listIndent {
 .flex-1 {
     flex: 1 1 0px;
 }
+.flex-1-ms {
+    -ms-flex: 1 1 0px;
+}
 .bg-white {
     background-color: white;
 }

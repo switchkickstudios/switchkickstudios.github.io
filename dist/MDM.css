@@ -202,10 +202,10 @@
     padding-right: 80px;
 }
 .mdm_screenshot_flex {
-    flex: 0 1 281px;
+    -ms-flex: 0 1 281px;
 }
 .mdm_screenshot_flex_double {
-    flex: 0 1 578px;
+    -ms-flex: 0 1 578px;
 }
 #diceIconDiv {
     font-size: 24pt;
