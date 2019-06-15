@@ -169,7 +169,7 @@ a.SKSTextButton {
 /* About Me */
 #aboutMeTitle {
     text-align: left !important;
-    font-family: DinCondensed;
+    font-family: din-condensed, DinCondensed;
     font-size: 30px;
     border-bottom: 3px solid #946841);
     border-bottom: 3px solid var(--secondaryColor, #946841);
