@@ -366,8 +366,8 @@ ul.listIndent, li.listIndent {
     padding-top: var(--topBarHeight, 80px) !important;
 }
 .botMenuPadding {
-    padding-top: 80px !important;
-    padding-top: var(--topBarHeight, 80px) !important;
+    padding-bottom: 80px !important;
+    padding-bottom: var(--topBarHeight, 80px) !important;
 }
 .topMenuMargin {
     margin-top: 80px !important;
