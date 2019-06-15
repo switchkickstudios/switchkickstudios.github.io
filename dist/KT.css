@@ -18,7 +18,10 @@ resetButtonColor = darkerRedColor; */
 
 /* NAV */
 #KT_Body #topNavSKS {
+    background-color: #E93030;
     background-color: var(--KT_section0BGColor, #E93030);
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
     -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: background-color var(--MDM_sectionAnimationLength, 1s);
 }
@@ -30,23 +33,30 @@ resetButtonColor = darkerRedColor; */
 
 #KT_Body .SKSButton {
     color: white;
-    text-shadow: 0px 6px var(--KT_section0dropShadowColor, black);
-    -webkit-transition: color var(--KT_menuNavigationDuration, 0.2s), text-shadow var(--KT_menuNavigationDuration, 0.2s); /* Safari */
-    transition: color var(--KT_menuNavigationDuration, 0.2s), text-shadow var(--KT_menuNavigationDuration, 0.2s);
+    text-shadow: 0px 6px #3B0D0E;
+    text-shadow: 0px 6px var(--KT_section0dropShadowColor, #3B0D0E);
+    -webkit-transition: color 0.15s, text-shadow 0.15s; /* Safari */
+    transition: color 0.15s, text-shadow 0.15s;
+    -webkit-transition: color var(--KT_menuNavigationDuration, 0.15s), text-shadow var(--KT_menuNavigationDuration, 0.15s); /* Safari */
+    transition: color var(--KT_menuNavigationDuration, 0.15s), text-shadow var(--KT_menuNavigationDuration, 0.15s);
     opacity: 1;
 }
 #KT_Body .logoText.SKSButton {
-    text-shadow: 0px 10px var(--KT_section0dropShadowColor, black);
+    text-shadow: 0px 10px #3B0D0E;
+    text-shadow: 0px 10px var(--KT_section0dropShadowColor, #3B0D0E);
 }
 #KT_Body .SKSButton:hover {
-    text-shadow: 0px 0px var(--KT_section0dropShadowColor, black);
-    color: var(--KT_section0dropShadowColor, black);
+    text-shadow: 0px 0px #3B0D0E;
+    text-shadow: 0px 0px var(--KT_section0dropShadowColor, #3B0D0E);
+    color: #3B0D0E;
+    color: var(--KT_section0dropShadowColor, #3B0D0E);
 }
 #KT_Body .SKSButton:active {
     opacity: 0;
 }
 #KT_Body #verticalMenuDiv {
-    background-color: var(--KT_section0BGColor, transparent);
+    background-color: #E93030;
+    background-color: var(--KT_section0BGColor, #E93030);
 }
 
 /* PRIVACY POLICY */
@@ -55,7 +65,8 @@ resetButtonColor = darkerRedColor; */
 }
 #KT_PrivacyPolicy_Body .titleText {
     font-family: DinCondensed;
-    border-bottom: 3px solid var(--secondaryColor, #333);
+    border-bottom: 3px solid #946841;
+    border-bottom: 3px solid var(--secondaryColor, #946841);
 }
 
 #KT_Logo {
@@ -93,6 +104,8 @@ resetButtonColor = darkerRedColor; */
     font-size: 15pt;
 }
 #KT_Body #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
     -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
     transition: color var(--MDM_sectionAnimationLength, 1s);
 }
@@ -105,13 +118,16 @@ resetButtonColor = darkerRedColor; */
 /* General Info */
 #KT_Body .titleText {
     font-family: DinCondensed;
-    border-bottom: 3px solid var(--KT_section0BGColor, gray);
+    border-bottom: 3px solid #E93030;
+    border-bottom: 3px solid var(--KT_section0BGColor, #E93030);
 }
 
 /* FEATURES */
 #kt_infoSection2 {
-    background-color: var(--KT_section0BGColor, black);
-    box-shadow: 0px 6px var(--KT_section0dropShadowColor, black);
+    background-color: #E93030;
+    background-color: var(--KT_section0BGColor, #E93030);
+    box-shadow: 0px 6px #3B0D0E;
+    box-shadow: 0px 6px var(--KT_section0dropShadowColor, #3B0D0E);
 }
 #kt_appInfoCol {
     height: 126px;
