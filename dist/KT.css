@@ -134,6 +134,8 @@ resetButtonColor = darkerRedColor; */
 }
 #KT_privacyPolicyDiv {
     font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 500;
     font-size: 13px;
     padding-top: 60px;
 }
