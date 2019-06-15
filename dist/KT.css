@@ -158,9 +158,7 @@ resetButtonColor = darkerRedColor; */
 
 /* LG */
 @media (min-width: 992px) {
-    .kt_section1Div {
-        height: 100% !important;
-    }
+
 }
 
 /* XL */

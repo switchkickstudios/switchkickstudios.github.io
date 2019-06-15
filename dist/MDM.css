@@ -258,6 +258,9 @@
 
 /* MD */
 @media (min-width: 768px) {
+    #mdm_infoSection2 {
+        height: 100%;
+    }
     #mdm_infoSection3 {
         height: 100%;
     }

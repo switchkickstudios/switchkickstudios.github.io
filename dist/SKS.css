@@ -284,6 +284,9 @@ a.SKSTextButton {
     #aboutMeContent {
         padding-right: 80px
     }
+    .dynamicHeightDivLG {
+        height: 100% !important;
+    }
 }
 
 /* XL */
@@ -380,10 +383,13 @@ ul.listIndent, li.listIndent {
 }
 
 
-/* FULLPAGE */
+/* UTILITY */
 .section .fp-tableCell {
     /* height: auto !important; */
 }
 .flex-1 {
-    flex: 1;
+    flex: 1 1 0px;
+}
+.bg-white {
+    background-color: white;
 }
