@@ -83,6 +83,10 @@
     height: 270px;
     position: absolute;
     bottom: 145px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
 
     -webkit-animation:spin 10s linear infinite;
     -moz-animation:spin 10s linear infinite;

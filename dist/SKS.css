@@ -382,5 +382,5 @@ ul.listIndent, li.listIndent {
 
 /* FULLPAGE */
 .section .fp-tableCell {
-    height: auto !important;
+    /* height: auto !important; */
 }
