@@ -144,7 +144,7 @@ a.SKSTextButton {
 
 .subTitle {
     text-align: left !important;
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -153,7 +153,7 @@ a.SKSTextButton {
 
 .sectionHeader {
     text-align: left !important;
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -185,7 +185,7 @@ a.SKSTextButton {
 }
 #aboutMeContent {
     text-align: left;
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
@@ -193,7 +193,7 @@ a.SKSTextButton {
 #skillsDiv {
     background-color: #C9E2DB !important;
     background-color: var(--lightPrimaryColor, #C9E2DB) !important;
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
 }
 #skillsDiv .captainIcon {
     font-size: 30pt;
@@ -215,7 +215,7 @@ a.SKSTextButton {
     height: 150px;
 }
 .contact {
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     color: #CBD6E2;
     color: var(--ultralightAccentColor, #CBD6E2);
     margin-bottom: 0px;
@@ -296,11 +296,6 @@ a.SKSTextButton {
     font-stretch: condensed;
 }
 @font-face {
-    font-family: FuturaBackup;
-    src: url(../fonts/futur.ttf) format('truetype');
-    /* font-stretch: condensed; */
-}
-@font-face {
     font-family: DinCondensed;
     src: url(../fonts/DINCondensedBold.ttf) format('truetype');
 }
@@ -334,7 +329,7 @@ ul.listIndent, li.listIndent {
     display: initial;
 }
 .descriptionText {
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     padding: 0px;
 }
 .captainIcon {

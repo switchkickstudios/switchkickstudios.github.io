@@ -133,7 +133,7 @@ resetButtonColor = darkerRedColor; */
     height: 126px;
 }
 #KT_privacyPolicyDiv {
-    font-family: Futura, FuturaBackup;
+    font-family: futura-pt, Futura;
     font-size: 13px;
     padding-top: 60px;
 }
