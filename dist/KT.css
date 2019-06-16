@@ -10,149 +10,158 @@ startButtonColor = '#7FB710';
 stopButtonColor = '#FCA258';
 resetButtonColor = darkerRedColor; */
 
+:root {
+    --KT_section0BGColor: #E93030;
+    --KT_section0dropShadowColor: #3B0D0E;
+    --KT_menuNavigationDuration: .15s;
+}
+
+/* NAV */
+#KT_Body #topNavSKS {
+    background-color: #E93030;
+    background-color: var(--KT_section0BGColor, #E93030);
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
+}
 
 #KT_Body {
-    background-color: black;
+    background-color: #E93030;
+    color: black;
 }
 
+#KT_Body .SKSButton {
+    color: white;
+    text-shadow: 0px 6px #3B0D0E;
+    text-shadow: 0px 6px var(--KT_section0dropShadowColor, #3B0D0E);
+    -webkit-transition: color 0.15s, text-shadow 0.15s; /* Safari */
+    transition: color 0.15s, text-shadow 0.15s;
+    -webkit-transition: color var(--KT_menuNavigationDuration, 0.15s), text-shadow var(--KT_menuNavigationDuration, 0.15s); /* Safari */
+    transition: color var(--KT_menuNavigationDuration, 0.15s), text-shadow var(--KT_menuNavigationDuration, 0.15s);
+    opacity: 1;
+}
+#KT_Body .logoText.SKSButton {
+    text-shadow: 0px 10px #3B0D0E;
+    text-shadow: 0px 10px var(--KT_section0dropShadowColor, #3B0D0E);
+}
+#KT_Body .SKSButton:hover {
+    text-shadow: 0px 0px #3B0D0E;
+    text-shadow: 0px 0px var(--KT_section0dropShadowColor, #3B0D0E);
+    color: #3B0D0E;
+    color: var(--KT_section0dropShadowColor, #3B0D0E);
+}
+#KT_Body .SKSButton:active {
+    opacity: 0;
+}
+#KT_Body #verticalMenuDiv {
+    background-color: #E93030;
+    background-color: var(--KT_section0BGColor, #E93030);
+}
+
+/* PRIVACY POLICY */
 #KT_PrivacyPolicy_Body {
-    background-color: #E93030;
+    background-color: white;
 }
-
-#KT_Container {
-    background-color: #E93030;
-    padding-top: 150px;
-}
-
-#logoDiv {
-    padding-bottom: 60px;
+#KT_PrivacyPolicy_Body .titleText {
+    font-family: din-condensed, DinCondensed;
+    border-bottom: 3px solid #946841;
+    border-bottom: 3px solid var(--secondaryColor, #946841);
 }
 
 #KT_Logo {
-    width: 56%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 700px;
+    object-fit: contain;
 }
 
-#header_Art {
-    width: auto;
-    max-height: 400px;
-    height: auto;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+#kt_header_Art {
+    max-height: 360px;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
-
-
-/* General Info */
-#KTTitle {
-    text-align: left !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
+#KT_Section0 {
+    background-color: #E93030;
 }
-
-#KTSubtitle {
-    text-align: left !important;
-    font-family: Futura;
-    font-size: 24px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#KTDescription {
-    text-align: left !important;
-    font-family: Futura;
-    padding: 0px;
-}
-
-.KT_App_Icon {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-}
-
-#contentBlockKT{
-    position: relative;
+#KT_Section1 {
     background-color: white;
-    padding: 0px;
-    padding-top: 60px;
-    padding-bottom: 64px;
 }
-
-/* FEATURES */
-.KTFeaturesBG {
+#KT_Section2 {
     background-color: black;
 }
 
+
+/* FULLPAGEJS */
+#KT_Body #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: black;
+}
+#KT_Body #fp-nav ul li .fp-tooltip {
+    color: black;
+}
+#KT_Body #fp-nav ul li .fp-tooltip  {
+    font-family: din-condensed, DinCondensed !important;
+    font-size: 15pt;
+}
+#KT_Body #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: color var(--MDM_sectionAnimationLength, 1s);
+}
+#KT_Body #fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+}
+
+/* General Info */
+#KT_Body .titleText {
+    font-family: din-condensed, DinCondensed;
+    border-bottom: 3px solid #E93030;
+    border-bottom: 3px solid var(--KT_section0BGColor, #E93030);
+}
+
+/* FEATURES */
+#kt_infoSection2 {
+    background-color: #E93030;
+    background-color: var(--KT_section0BGColor, #E93030);
+    box-shadow: 0px 6px #3B0D0E;
+    box-shadow: 0px 6px var(--KT_section0dropShadowColor, #3B0D0E);
+}
+#kt_appInfoCol {
+    height: 126px;
+}
 #KT_privacyPolicyDiv {
-    text-align: center;
-    font-family: Futura;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 500;
     font-size: 13px;
-    text-decoration: underline;
-    color: #E93030;
     padding-top: 60px;
 }
 
 
 /* XS */
-@media (max-width: 768px) {
-    #KTDownload {
-        text-align: center;
-        padding-top: 30px;
-    }
-    .KTLeftScreenshotDiv {
-        text-align: center;
-    }
-    .KTRightScreenshotDiv {
-        text-align: center;
-    }
-    .KTFeaturesBG {
-        padding-bottom: 40px;
-    }
-    .featuresBlock {
-        padding-top: 14px;
-    }
-    #header_Art {
-        max-height: 250px;
-    }
+@media (max-width: 576px) {
+
 }
 
 /* SM */
-@media (min-width: 768px) {
-    #KTDownload {
-        text-align: right;
-    }
-    .KTLeftScreenshotDiv {
-        text-align: center;
-    }
-    .KTRightScreenshotDiv {
-        text-align: center;
-    }
-    #header_Art {
-        max-height: 400px;
-    }
+@media (min-width: 576px) {
+
 }
 
 /* MD */
-@media (min-width: 992px) {
-    .KTLeftScreenshotDiv {
-        text-align: left;
-    }
-    .KTRightScreenshotDiv {
-        text-align: right;
-    }
-    .featuresBlock {
-        padding-top: 70px;
-    }
+@media (min-width: 768px) {
+
 }
 
+/* LG */
+@media (min-width: 992px) {
+
+}
+
+/* XL */
 @media (min-width: 1200px) {
-    .KTFeaturesBG {
-        padding-bottom: 130px;
-    }
+
 }

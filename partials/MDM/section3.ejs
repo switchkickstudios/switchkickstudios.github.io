@@ -1,0 +1,203 @@
+<div class="row d-flex flex-row justify-content-start mx-0 topMenuPadding">
+    <div class="col">
+
+        <%# FEATURES %>
+        <div class="row darkText mdm_featureSection">
+            <div class="col-1"></div>
+            <div class="col-10 d-flex flex-column">
+                <div class="row">
+                    <div class="mb-2">
+                        <span class="titleText">Features</span>
+                    </div>
+                    <div class="descriptionText">
+                        <p>
+                            Magic DeckMate is designed to maximize screen space and fit into your play area as seamlesssly as possible. It will orient to portrait or landscape depending on how you orient your device. Much of the functionality is accessible through the menu. You can find the menu button just below your life counter. This button will change depending on which color scheme you choose.
+                        </p>
+
+                        <p>
+                            When you start up the app for the first time, the tutorial will guide you through the controls. If you wish to see the tutorial again, you can find it in the menu:
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4">Menu > Settings > Controls | Help > Tutorial</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <div class="sectionHeader">1 Player Mode vs 2 Player Mode</div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4 font-italic">Menu > Settings > Players</li>
+                                <li class="ml-4">In 1 Player Mode a user will be able to have a maximum of 9 tokens and/or counters on the battlefield</li>
+                                <li class="ml-4">In 2 Player Mode a user will be able to have a maxumum of 6 tokens and/or counters on the battlefield</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <div class="sectionHeader">Battlefield Resets</div>
+                            <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                <li class="ml-4 font-italic">Menu > Battlefield Resets</li>
+                                <li class="ml-4">Reset Life
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Resets current life to the starting life</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Reset Card Values
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Untaps all tokens</li>
+                                        <li>Resets quantity of tokens to 0</li>
+                                        <li>Resets counter values to 0</li>
+                                        <li>Leaves all tokens and counters on the battlefield</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Clear Cards
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Removes all tokens and counters from the battlefield</li>
+                                    </ul>
+                                </li>
+                                <li class="ml-4">Reset All
+                                    <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                        <li>Resets current life to the starting life</li>
+                                        <li>Removes all tokens and counters from the battlefield</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# LIFE %>
+        <div class="row darkText mdm_featureSection" id="lifeSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./lifeCounterContent %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./lifeCounterContent %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# TOKENS %>
+        <div class="row mdm_featureSection" id="tokenSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientRight">
+                    <% include ./tokensContent %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./tokensContent %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# COUNTERS %>
+        <div class="row mdm_featureSection" id="counterSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./countersSection %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./countersSection %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# DECKS %>
+        <div class="row darkText mdm_featureSection" id="deckSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# LARGE SCREEN %>
+                <div class="d-none d-xl-flex flex-row orientRight">
+                    <% include ./decksSection %>
+                </div>
+
+                <%# SMALL SCREEN %>
+                <div class="d-flex d-xl-none flex-column orientCenter">
+                    <% include ./decksSection %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <%# DICE AND COLORS %>
+        <div class="row">
+            <div class="col-sm-6 mdm_featureSection" id="diceSection">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="row sectionHeader">
+                            <h2>Virtual Dice Rolls and Coin Flips</h2>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-grow-1">
+                                <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                    <li class="font-italic">Menu > Dice</li>
+                                    <li>Simulate coin flip</li>
+                                    <li>Roll dice
+                                        <ul class="descriptionText listIndent" style="list-style-type:circle">
+                                            <li>d6</li>
+                                            <li>2x d6</li>
+                                            <li>d8</li>
+                                            <li>d20</li>
+                                        </ul>
+                                     </li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center" id="diceIconDiv">
+                                <i class="fas fa-dice-d20 pb-3"></i>
+                                <i class="fas fa-dice"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 darkText mdm_featureSection" id="colorSection">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="row sectionHeader">
+                            <h2>6 Different Color Schemes</h2>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-grow-1">
+                                <ul class="descriptionText listIndent" style="list-style-type:disc">
+                                    <li class="font-italic">Menu > Settings > Color</li>
+                                    <li>Colorless</li>
+                                    <li>Blue</li>
+                                    <li>Red</li>
+                                    <li>Green</li>
+                                    <li>Black</li>
+                                    <li>White</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="../../images/MDM_Colors_Circle3.png" id="colorsIcon" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <% include ../footer %>
+</div>

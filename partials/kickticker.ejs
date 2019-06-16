@@ -8,182 +8,44 @@
 <body itemscope itemtype="http://schema.org/Product" data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="KT_Body">
     <% include ./menu %>
 
-    <div id="KT_Container">
-
-        <!-- Section 1: Logo and Header -->
-        <div class="row" id="logoDiv">
-            <div class="col-sm-1">
-            </div>
-
-            <div class="col-sm-10">
-                <div class="text-center">
-                    <div class="row">
-                        <img src="images/kickticker/KickTickerLogo.png" id="KT_Logo" alt="KICK TICKER">
-                    </div>
-                    <div class="row">
-                        <img src="images/kickticker/KickTickerHeaderArt.png" id="header_Art">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-1">
-            </div>
+    <!-- CONTENT -->
+    <div class="col-xs-12" id="KT_Container">
+        <div class="section" id="KT_Section0">
+            <% include ./KT/section0 %>
         </div>
 
-        <!-- Section 2: Reveiws and Download Info -->
-        <div class="row" id="contentBlockKT">
-            <div class="col-sm-1 hidden-xs"></div>
-
-            <div class="col-xs-12 col-sm-10">
-
-                <!-- Info Section -->
-                <div class="col-xs-12">
-
-                    <!-- General Info Text -->
-                    <div class="col-xs-12 col-sm-9" id="KTGeneral">
-                        <div class="col-xs-12" id="KTTitle">
-                            <h1><span itemprop="name">Kick Ticker</span></h1>
-                        </div>
-                        <div class="col-xs-12 subTitle">
-                            A simple and easy-to-use timer for your favorite ass-kicking activities.
-                        </div>
-                        <div class="col-xs-12" id="KTDescription">
-                            Whether you're a boxer, kickboxer, grappler, or weight-lifter,
-                            you likely often find yourself in need of a quick and effective way to keep track of your rounds and rest periods.
-                            Kick Ticker functions similarly to any other timer, following the familiar control scheme of "start, pause, reset"
-                             - just with a few more useful features.
-                            It's designed to work perfectly into your session,
-                            including adjustable buzzer volume and audio that momentarily ducks the volume of your music.
-                            So if you want to blast Wu-Tang in your gym via bluetooth, you will be able to clearly hear
-                            Kick Ticker's buzzer sounds but also clearly hear the Wu.
-                            <!-- Magic DeckMate is built to be the world&rsquo;s most robust in-game Magic: The Gathering companion. Featuring interactive touch-controlled virtual tokens and counters, it is all you need to keep track of everything in-game in the most convenient and visual way possible. -->
-                        </div>
-                    </div>
-
-                    <!-- Download Info -->
-                    <div class="col-xs-12 col-sm-3" id="KTDownload">
-                        <a href="https://itunes.apple.com/us/app/kick-ticker/id1436800669?ls=1&mt=8" target="_blank">
-                            <img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store">
-                        </a>
-
-                            <!-- Star Rating -->
-                        <div class="vert-padding-3 margin-top-20">
-                            <img itemprop="image" src="images/kickticker/kickTickerIcon.png" alt="Magic DeckMate" class="KT_App_Icon"/>
-                        </div>
-
-                        <div class="vert-padding-3 padding-right-10">
-                            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="USD" />
-                            <span itemprop="price">FREE</span>
-                        </div>
-                    </div>
-
-                    <div class="subtitleIndent">
-                        <div class="sectionHeader col-xs-12">
-                            Perfect for:
-                        </div>
-                        <div class="col-xs-12">
-                            <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                <li>Bag workouts</li>
-                                <li>Sparring sessions</li>
-                                <li>Interval training</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-sm-1 hidden-xs"></div>
+        <div class="section" id="KT_Section1">
+            <% include ./KT/section1 %>
         </div>
 
-        <!-- Section 3: Features -->
-        <div class="row KTFeaturesBG">
-            <!-- <img src="images/kickticker/KT_ScreenShot_Timer.png">
-            <img src="images/kickticker/KT_ScreenShot_Setup.png"> -->
-            <div class="col-sm-1 hidden-xs"></div>
-
-            <div class="col-xs-12 col-sm-10">
-
-                    <!-- Features Info -->
-                    <div class="col-xs-12 whiteText">
-
-                        <div class="p-0 col-lg-1 visible-lg"></div>
-                        <div class="p-0 col-xs-12 col-lg-10">
-                            <div class="col-xs-12 contentHeader">
-                                Features
-                            </div>
-
-                            <div class="p-0 col-xs-12 col-md-6 col-md-push-6 featuresBlock">
-                                <div class="sectionHeader col-xs-12">
-                                    <h2>Timer</h2>
-                                </div>
-                                <div class="col-xs-12">
-                                    <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                        <li>Familiar control scheme:
-                                            <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                                <li>Start</li>
-                                                <li>Pause</li>
-                                                <li>Reset</li>
-                                            </ul>
-                                        </li>
-                                        <li>Sound effects that duck background sound, like music.
-                                            <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                                <li>3 second countdown at the end of each round and rest period</li>
-                                                <li>Distinct sounds for the start of rounds and rest periods</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-0 col-xs-12 col-md-6 col-md-pull-6 KTLeftScreenshotDiv">
-                                <img src="images/kickticker/KT_Screenshot_Timer.png" alt="Recent Tokens Screenshot" class="img img-responsive screenshot_portrait">
-                            </div>
-
-                            <div class="p-0 col-xs-12 col-md-6 featuresBlock">
-                                <div class="sectionHeader col-xs-12">
-                                    <h2>Setup</h2>
-                                </div>
-                                <div class="col-xs-12">
-                                    <ul class="descriptionText listIndent" style="list-style-type:disc">
-                                        <li>Number of rounds</li>
-                                        <li>Length of each round</li>
-                                        <li>Length of each rest period
-                                            <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                                <li>Only applies when there are multiple rounds.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Volume setting
-                                            <ul class="descriptionText listIndent" style="list-style-type:circle">
-                                                <li>This value is relative to your device's system volume. So, if Kick Ticker's
-                                                    volume is set to 100, but it still doesn't seem loud enough, you should raise
-                                                    your device volume in your device's settings.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>Chocolate Mode</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-0 col-xs-12 col-md-6 KTRightScreenshotDiv">
-                                <img src="images/kickticker/KT_ScreenShot_Setup.png" alt="Life Counter Screenshot" class="img img-responsive screenshot_portrait">
-                            </div>
-
-                            <div class="p-0 col-xs-12" id="KT_privacyPolicyDiv">
-                                <a href="/kicktickerprivacypolicy">PRIVACY POLICY</a>
-                            </div>
-                        </div>
-                        <div class="p-0 col-lg-1 visible-lg"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-1 hidden-xs"></div>
+        <div class="section" id="KT_Section2">
+            <% include ./KT/section2 %>
         </div>
-        <!-- Container End -->
     </div>
 
-    <% include ./footer %>
+    <% include ./footFiles %>
+    <script>
+        $(document).ready(function() {
+            $('#KT_Container').fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Top', 'Info', 'Features'],
+                autoScrolling: false,
+                licenseKey: '<%= fullpageJSLicense %>',
+
+                onLeave: function(origin, destination, direction){
+                    if(destination.index <= 1){
+                        $("#KT_Body #fp-nav ul li .fp-tooltip").css("color", "black");
+                        $("#KT_Body #fp-nav ul li a span").css("background-color", "black");
+
+                    }
+                    if(destination.index > 1){
+                        $("#KT_Body #fp-nav ul li .fp-tooltip").css("color", "white");
+                        $("#KT_Body #fp-nav ul li a span").css("background-color", "white");
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,42 +1,48 @@
-/*
+:root {
+    --primaryColor: #9AC6B9;
+    --secondaryColor: #946841;
+    --section1TextColor: #333;
+    --section1HoverColor: white;
+    --section1AccentTextColor: #7D9EB1;
+    --lightPrimaryColor: #C9E2DB;
+    --lightAccentColor: #9CAFC5;
+    --ultralightAccentColor: #CBD6E2;
+    --ultralightSecondaryColor: #F9D69F;
+    --topBarHeight: 80px;
 
-Style Guidelines:
+    /* xs : < 768px */
+    /* sm >= 768px */
+    /* md > 992px */
+    /* lg > 1200px */
 
-Colors: White, PaleTurquoise, #283f60, Black
-Fonts: Anurati, DINCondensed, Futura
-
-*/
+    --section1MaskWidthLG: 1024px;
+    --section1MaskWidthMD: 780px;
+    --section1MaskWidthSM: 400px;
+    --section1MaskWidthXS: 340px;
+}
 
 body {
   overscroll-behavior-y: none;
+  color: #333;
+  color: var(--section1TextColor, #333);
 }
 
 /* TOP */
 .topBar {
-    box-shadow: 0px 20px 75px black;
+    /* box-shadow: 0px 20px 75px black; */
     padding: 20px;
     display: flex;
-    z-index: 10;
+    z-index: 3;
+    height: 80px !important;
+    height: var(--topBarHeight, 80px) !important;
 }
 #topNavSKS {
-    background-color: white !important;
-
+    background-color: #9AC6B9;
+    background-color: var(--primaryColor, white);
 }
-div.topRightStack {
-    position: absolute;
-    right: 45px;
-    padding-top: 17px;
-}
-.logo {
-    max-height: 100%;
-    max-width: 100%;
-    padding-top: 6px;
-}
-.logoMini {
-    max-height: 45px;
-    max-width: 50%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+.logoText {
+    font-family: BlankaRegular;
+    font-size: 28pt;
 }
 .hamburgerMenuIcon {
     max-height: 45px;
@@ -48,63 +54,100 @@ div.topRightStack {
     outline: none;
 }
 .hamburgerMenuItem {
-    background-color:white;
     padding: 8px;
     padding-right: 16px;
 }
-.verticalMenuParentDiv {
-    margin-top:80px;
-    text-align:right;
-    z-index:10;
-    padding-left: 0px;
-    padding-right:0px;
+
+#verticalMenuDiv {
+    z-index: 2;
+    background-color: #9AC6B9;
+    background-color: var(--primaryColor, white);
 }
-.verticalMenuTopBorderBackground {
-    padding: 0px;
-    width:100%;
-    background-color: white;
-}
-.verticalMenuTopBorder {
-    background-color: #e5e5e5;
-    height:2px;
-}
-.verticalMenu {
-    width:160px;
-    float:right;
-    text-align: right;
+#SKSMenuIcon {
+    font-size: 20pt;
 }
 
-.SKSButton:active {
-    color: white;
-}
 .SKSButton:hover {
     text-decoration: none;
+    color: white;
+    color: var(--section1HoverColor, #333);
+}
+.SKSButton:active {
+    color: #946841;
+    color: var(--secondaryColor, lightgray);
 }
 a.SKSButton {
     cursor: pointer !important;
-    font-family: DinCondensed;
-    font-size: 20px;
+    color: #333;
+    color: var(--section1TextColor, #333);
+}
+a.SKSTextButton {
+    font-family: din-condensed, DinCondensed;
+    font-size: 15pt;
+}
+.accentText {
+    color: #7D9EB1 !important;
+    color: var(--section1AccentTextColor, white) !important;
+}
+
+.socialMediaIconLink {
+    z-index: 3;
+}
+.socialMediaIconLink > .socialMediaIcon {
+    color: #333;
+    color: var(--section1TextColor, #333);
+    font-size: 22pt;
+}
+.socialMediaIconLink > .socialMediaIconWhite {
+    color: white;
+    font-size: 22pt;
+}
+.socialMediaIconLink:link {
+    text-decoration: none;
+}
+.socialMediaIconLink > .socialMediaIcon:hover {
+    color: white;
+    color: var(--section1HoverColor, white);
+}
+.socialMediaIconLink > .socialMediaIconWhite:hover {
+    color: #7D9EB1;
+    color: var(--section1AccentTextColor, #7D9EB1);
+}
+
+.socialMediaIconLink > .fa-instagram {
+    font-size: 23pt;
+    padding-right: 1px;
+}
+
+#section0 {
+    background-color: #9AC6B9;
+    background-color: var(--primaryColor, #9AC6B9);
+}
+#section0SocialMediaIcons {
+    position: absolute;
+    bottom: 28px;
+}
+#section1 {
+    background-color: white;
+}
+.aboutMeText {
+    color: #333;
+    color: var(--section1TextColor, #333);
 }
 
 /* Main Content */
 #contentBlockSKS{
-    position: relative;
-    background-color: #0f1826;
-    padding: 0px;
-    z-index: 1;
-}
-
-.contentHeader {
-    text-align: center !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
+    /* position: relative; */
+    background-color: #9AC6B9;
+    /* padding: 0px; */
+    /* z-index: 1; */
 }
 
 .subTitle {
     text-align: left !important;
-    font-family: Futura;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -113,7 +156,7 @@ a.SKSButton {
 
 .sectionHeader {
     text-align: left !important;
-    font-family: Futura;
+    font-family: futura-pt, Futura;
     font-size: 24px;
     padding: 0px;
     padding-top: 20px;
@@ -121,181 +164,135 @@ a.SKSButton {
 }
 
 /* Main Background */
-#mainBG{
-    width: 100%;
-    height: 100%;
-}
-#photoCred {
-    position: relative;
-    top: -45px;
-    text-align: right;
-    z-index: 2;
-    color: paleturquoise;
+#mainBG {
+    object-fit: cover;
+    padding: 2px;
 }
 
 /* About Me */
-#aboutMe {
-    position: relative;
-}
 #aboutMeTitle {
-    text-align: center !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    text-decoration: underline;
-    padding: 20px;
-    padding-top: 35px;
-    color: white;
+    font-family: din-condensed, DinCondensed;
+    line-height: 1;
+    border-bottom: 3px solid #946841;
+    border-bottom: 3px solid var(--secondaryColor, #946841);
 }
-.leftTitle {
-    text-align: left !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    text-decoration: underline;
-    padding: 20px;
-    padding-top: 35px;
-    color: white;
+.titleText {
+    font-size: 40pt;
 }
 #aboutMeContent {
     text-align: left;
-    font-family: Futura;
-    padding: 20px;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13pt;
+    padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 35px;
-    color: white;
 }
-
+#skillsDiv {
+    background-color: #C9E2DB !important;
+    background-color: var(--lightPrimaryColor, #C9E2DB) !important;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 600;
+}
+#skillsDiv .captainIcon {
+    font-size: 30pt;
+    padding-top: 17px;
+    padding-right: 16px;
+}
+#skillsBlock {
+    max-height: 475px;
+}
 
 /* BOTTOM */
 #botBar {
-    background-color: white !important;
-}
-.botBar {
-    box-shadow: 0px 15px 75px black;
-    color: blue;
-    vertical-align:middle;
-    z-index: 9;
+    background-color: #333 !important;
+    background-color: var(--section1TextColor, #333) !important;
+    height: 150px;
 }
 .contact {
-    font-family: Futura;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 500;
+    color: #CBD6E2;
+    color: var(--ultralightAccentColor, #CBD6E2);
+    margin-bottom: 0px;
 }
-#socialMedia {
-    text-align: right;
-    padding: 0px;
+.contactTitle {
+    color: #9CAFC5 !important;
+    color: var(--lightAccentColor, #9CAFC5) !important;
 }
-
 
 /* --------------------------------------------------------------- */
 
 
 /* XS */
-@media (max-width: 768px) {
-    #SKSbody {
-        background-color: #0f1826;
+@media (max-width: 576px) {
+    #mainBG {
+        width: 340px;
+        width: var(--section1MaskWidthXS, 340px);
+        height: 240px;
     }
-    .topBar {
-        height: 80px;
-        padding-left: 5px;
+    #skillsDivSmall {
+        height: 500px;
+        padding-left: 32px;
     }
-    .botBar {
-        height: 115px;
-        padding-top: 15px;
-        margin-top: 50px;
+    .skillText {
+        font-size: 28pt;
     }
-    div.topRightStack {
-        right: 20px;
-        padding-top: 0px;
-    }
-    #aboutMe {
-        top: -30px;
-        /*padding-bottom: 700px;*/
-    }
-    #socialMedia {
-        text-align: left;
-    }
-    #contentBlockSKS {
-        top: 50px;
-    }
-    .contentHeader {
-        padding-top: 60px;
-    }
-
 }
 
 /* SM */
-@media (min-width: 768px) {
-    #SKSbody {
-        background-color: #0f1826;
+@media (min-width: 576px) {
+    #mainBG {
+        width: 400px;
+        width: var(--section1MaskWidthSM, 400px);
+        height: 260px;
     }
-    .topBar {
-        height: 80px;
+    #skillsDivSmall {
+        height: 500px;
     }
-    .botBar {
-        min-height: 115px;
-        padding-top: 25px;
-        margin-top: 60px;
-    }
-    .topRightButton {
-        padding-right: 20px;
-    }
-    div.topRightStack {
-        right: 45px;
-    }
-    #aboutMe {
-        top: -30px;
-    }
-    #switchKickDefinition {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    #socialMedia {
-        text-align: right;
-    }
-    #contentBlockSKS {
-        top: 50px;
-    }
-    .contentHeader {
-        padding-top: 100px;
+    .skillText {
+        font-size: 36pt;
     }
 }
 
 /* MD */
-@media (min-width: 992px) {
-    .topBar {
-        min-height: 80px;
-        height: inherit;
+@media (min-width: 768px) {
+    #mainBG {
+        width: 780px;
+        width: var(--section1MaskWidthMD, 780px);
+        height: 500px;
     }
-    .botBar {
-        min-height: 80px;
-        padding-top: 15px;
-        position: inherit;
+    .hamburgerMenuItem {
+        display: none;
     }
-    .topRightButton {
-        padding-right: 40px;
-    }
-    #aboutMe {
-        top: -20px;
-    }
-    #switchKickDefinition {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    #contentBlockSKS {
-        top: 20px;
-    }
-    .contentHeader {
-        padding-top: 150px;
+    #skillsDivSmall {
+        height: 400px;
     }
 }
 
 /* LG */
-@media (min-width: 1200px) {
-    .botBar {
-        position: fixed;
-        bottom: 0px;
+@media (min-width: 992px) {
+    #mainBG {
+        width: 1024px;
+        width: var(--section1MaskWidthLG, 1024px);
+        height: 650px;
+        padding: 20px;
     }
-    #contentBlockSKS {
-        top: 0px;
-        margin-bottom: 170px;
+    #skillsDiv div {
+        width: 394px;
+    }
+    #aboutMeContent {
+        padding-right: 80px
+    }
+}
+
+/* XL */
+@media (min-width: 1200px) {
+    .dynamicHeightDivLG {
+        height: 100% !important;
     }
 }
 
@@ -307,7 +304,15 @@ a.SKSButton {
 }
 @font-face {
     font-family: DinCondensed;
-    src: url(../fonts/DINCondensedBold.ttf);
+    src: url(../fonts/DINCondensedBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: BlankaRegular;
+    src: url(../fonts/BlankaRegular.otf) format("opentype");
+}
+@font-face {
+    font-family: CaptainIcon;
+    src: url(../fonts/captainicon.ttf) format("opentype");
 }
 
 /* STYLES */
@@ -317,42 +322,32 @@ a.SKSButton {
 .primaryColor {
     color: #283f60;
 }
-.blackBackground {
-    background-color: black;
-}
 .disclaimer {
     color: white;
     font-size: 12px;
     text-align: left;
     font-style: italic;
 }
-.vert-padding-3 {
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-.margin-top-20 {
-    margin-top: 20px;
-}
-.padding-right-10 {
-    padding-right: 10px;
-}
-.inline-flex {
-    display: inline-flex;
-}
 ul.listIndent, li.listIndent {
     padding-left: 20px;
 }
-.subtitleIndent {
-    padding-left: 15px;
-}
 .screenshot_portrait {
-    max-height: 520px;
-    margin-top: 40px;
+    max-height: 500px;
     display: initial;
 }
 .descriptionText {
-    font-family: Futura;
+    font-family: futura-pt, Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13pt;
     padding: 0px;
+}
+.captainIcon {
+    font-family: CaptainIcon;
+}
+.sks_App_Icon {
+    height: 40px;
+    width: 40px;
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -369,4 +364,37 @@ ul.listIndent, li.listIndent {
 }
 .fa:focus {
     text-decoration: none;
+}
+
+.topMenuPadding {
+    padding-top: 80px !important;
+    padding-top: var(--topBarHeight, 80px) !important;
+}
+.botMenuPadding {
+    padding-bottom: 80px !important;
+    padding-bottom: var(--topBarHeight, 80px) !important;
+}
+.topMenuMargin {
+    margin-top: 80px !important;
+    margin-top: var(--topBarHeight, 80px) !important;
+}
+
+.pinFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* UTILITY */
+.section .fp-tableCell {
+    /* height: auto !important; */
+}
+.flex-1 {
+    flex: 1 1 0px;
+}
+.flex-1-ms {
+    -ms-flex: 1 1 0px;
+}
+.bg-white {
+    background-color: white;
 }

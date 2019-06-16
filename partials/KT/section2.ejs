@@ -1,0 +1,49 @@
+<div class="row d-flex flex-row justify-content-start mx-0 topMenuPadding">
+    <div class="col whiteText">
+
+        <%# FEATURES %>
+        <div class="row mdm_featureSection">
+            <div class="col-1"></div>
+            <div class="col-10 d-flex flex-column">
+                <div class="row">
+                    <div>
+                        <span class="titleText">Features</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row mdm_featureSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# LARGE SCREEN %>
+                <div class="d-none d-md-flex flex-row orientLeft">
+                    <% include ./timerSection %>
+                </div>
+
+                <div class="d-flex d-md-none flex-column orientCenter">
+                    <% include ./timerSection %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row mdm_featureSection">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <%# SMALL SCREEN %>
+                <div class="d-none d-md-flex flex-row orientRight">
+                    <% include ./setupSection %>
+                </div>
+
+                <div class="d-flex d-md-none flex-column-reverse orientCenter">
+                    <% include ./setupSection %>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <% include ../footer %>
+</div>

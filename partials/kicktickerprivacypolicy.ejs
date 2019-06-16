@@ -5,33 +5,30 @@
     <title>Kick Ticker</title>
 </head>
 
-<body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="KT_PrivacyPolicy_Body">
+<body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="KT_PrivacyPolicy_Body" class="h-100">
     <% include ./menu %>
 
     <!-- CONTENT -->
-    <div id="KT_Container">
-
-        <div class="row">
-            <div class="col-sm-1 hidden-xs"></div>
-            <div class="col-xs-12 col-sm-10">
-
-                <div id="aboutMe">
-                    <div class="col-xs-12 leftTitle">
-                        <h1>Kick Ticker Privacy Policy</h1>
-                    </div>
-                    <div class="col-xs-12" id="aboutMeContent">
-                        <div>
-                            Neither Switck Kick Studios nor Kick Ticker collect any data from users.
-                        </div>
-                    </div>
+    <div class="row d-flex flex-grow-1 topMenuPadding">
+        <div class="col-1"></div>
+        <div class="col-10 topMenuPadding">
+            <div class="row">
+                <div>
+                    <span class="titleText">Privacy Policy</span>
                 </div>
-
             </div>
-            <div class="col-sm-1 hidden-xs"></div>
+            <div class="row" id="aboutMeContent">
+                <div>
+                    Neither Switck Kick Studios nor Kick Ticker collect any data from users.
+                </div>
+            </div>
         </div>
+        <div class="col-1"></div>
     </div>
 
-    <% include ./footer %>
+    <div class="pinFooter w-100">
+        <% include ./footer %>
+    </div>
 
     <style>
         .botBar {
@@ -39,5 +36,7 @@
             bottom: 0px;
         }
     </style>
+    <% include ./footFiles %>
+
 </body>
 </html>

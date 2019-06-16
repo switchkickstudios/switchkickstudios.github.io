@@ -1,256 +1,283 @@
+:root {
+    --MDM_section0HoverColor: #4e4e4e;
+    --MDM_section0PressColor: #4e4e4e;
+    --MDM_section3DarkTextColor: #0C0C0C;
+    --MDM_buttonAnimationLength: 0.25s;
+    --MDM_sectionAnimationLength: 1s;
+}
+
+/* NAV */
+#MDMbody #topNavSKS {
+    background-color: transparent;
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
+}
+#MDMbody .SKSButton {
+    color: white;
+}
+#MDMbody .logoText.SKSButton:hover {
+    text-decoration: none;
+    text-shadow: -8px 8px #4e4e4e;
+    text-shadow: -8px 8px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow 0.25s; /* Safari */
+    transition: text-shadow 0.25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
+}
+#MDMbody .SKSButton:hover {
+    text-decoration: none;
+    text-shadow: -6px 6px #4e4e4e;
+    text-shadow: -6px 6px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow 0.25s; /* Safari */
+    transition: text-shadow 0.25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
+}
+#MDMbody .SKSButton:active, #MDMbody .SKSButton:active {
+    color: #4e4e4e;
+    color:  var(--MDM_section0PressColor, #4e4e4e);
+}
+#MDMbody #verticalMenuDiv {
+    background-color: transparent;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
+
+/* FULLPAGEJS */
+#MDMbody #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: white;
+}
+#MDMbody #fp-nav ul li .fp-tooltip  {
+    font-family: din-condensed, DinCondensed !important;
+    font-size: 15pt;
+}
+#MDMbody #fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+}
+#MDMbody #fp-nav ul li .fp-tooltip {
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+    -webkit-transition: color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: color var(--MDM_sectionAnimationLength, 1s);
+}
+#MDMbody #fp-nav ul li a span {
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+    -webkit-transition: background-color var(--MDM_sectionAnimationLength, 1s); /* Safari */
+    transition: background-color var(--MDM_sectionAnimationLength, 1s);
+}
+
 /* Main Content */
 #MDMbody {
-    background-color: #0f1826;
-}
-#MDMLogo {
-    height: 200px;
-    width: auto;
-}
-#carouselBlockMDM{
-    position: relative;
     background-color: black;
-    padding: 0px;
-    z-index: 1;
-    display: grid;
+    color: white;
 }
-#contentBlockMDM{
-    position: relative;
-    background-color: black;
-    padding: 0px;
+
+#MDM_creature_art_div {
+
 }
-#featuresBlockMDM{
-    position: relative;
-    background-color: #0f1826;
-    padding: 0px;
+#mdm_circle_art {
+    height: 270px;
+    position: absolute;
+    bottom: 145px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#mdm_creature_art {
+    height: 370px;
+}
+
+/* CAROUSEL */
 #MDMCarouselBody {
     margin-top: 50px;
 }
 .MDMCarouselImage {
-    height: auto !important;
-    width: auto;
-    margin: auto;
-    margin-bottom: 10px;
+    max-height: 85vh;
+    max-width: 92%;
 }
-#MDMLogoContainer {
-    text-align: center;
-    position: relative;
-    top: 100px;
+#MDMbody .titleText {
+    font-family: din-condensed, DinCondensed;
+    border-bottom: 3px solid #4e4e4e;
+    border-bottom: 3px solid var(--MDM_section0HoverColor, #4e4e4e);
+}
+#MDMbody .carousel-control-prev, #MDMbody .carousel-control-next {
+    opacity: 1;
+}
+#MDMbody .carousel-arrow {
+    font-size: 24pt;
+}
+#MDMbody .carousel-control-prev:hover {
+    text-shadow: -16px 0px #4e4e4e;
+    text-shadow: -16px 0px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow .25s; /* Safari */
+    transition: text-shadow .25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
+}
+#MDMbody .carousel-control-next:hover {
+    text-shadow: 16px 0px #4e4e4e;
+    text-shadow: 16px 0px var(--MDM_section0HoverColor, #4e4e4e);
+    -webkit-transition: text-shadow .25s; /* Safari */
+    transition: text-shadow .25s;
+    -webkit-transition: text-shadow var(--MDM_buttonAnimationLength, .25s); /* Safari */
+    transition: text-shadow var(--MDM_buttonAnimationLength, .25s);
+}
+#MDMbody .carousel-control-prev:active, #MDMbody .carousel-control-next:active {
+    color:  #4e4e4e;
+    color:  var(--MDM_section0PressColor, #4e4e4e);
+}
+
+/* SECTION BACKGROUNDS */
+#MDM_Section0 {
+    background-image: linear-gradient(52deg, black, #383838);
+}
+#MDM_Section1 {
+    background-image: linear-gradient(-52deg, #383838, black);
+}
+#MDM_Section2 {
+    background-color: black;
+}
+#MDM_Section3 {
+    background-color: white;
 }
 
 
-/* General Info */
-#MDMTitle {
-    text-align: left !important;
-    font-family: DinCondensed;
-    font-size: 30px;
-    padding: 0px;
-    text-decoration: underline;
+/* Info */
+#mdm_infoBG {
+    background-image: linear-gradient(black, #4e4e4e);
+    background-image: linear-gradient(black, var(--MDM_section0HoverColor, #4e4e4e));
 }
-#MDMDescription {
-    text-align: left !important;
-    font-family: Futura;
-    padding: 0px;
+#mdm_infoSection2 {
+    background-color: #4e4e4e;
+    background-color: var(--MDM_section0HoverColor, #4e4e4e);
 }
-#MDMFeatures {
-    padding-top: 10px;
+#mdm_infoSection3 {
+    background-color: white;
+    color: #0C0C0C;
+    color: var(--MDM_section3DarkTextColor,  #0C0C0C);
+    font-family: din-condensed, DinCondensed;
+    font-size: 16pt;
+    height: 212px;
 }
-#MDMComingSoon {
-    text-align: center;
-    font-size: 16px;
-    padding-top: 30px;
+#mdm_appInfoCol {
+    height: 170px;
 }
-#MDMDiceRollTitle {
-    margin-top: 40px;
-}
-#MDMColorSchemesTitle {
-    margin-top: 40px;
-}
-#MDMColorsCircle {
-    margin: auto;
+#colorsIcon {
+    height: 90px;
+    width: 90px;
 }
 
-.MDM_App_Icon {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+/* FEATURES */
+.mdm_featureSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.mdm_featureSection .orientCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mdm_featureSection .orientRight {
+    display: flex;
+    justify-content: flex-end;
+}
+.mdm_featureSection .orientLeft .textSection {
+    padding-left: 80px;
+}
+.mdm_featureSection .orientRight .textSection {
+    padding-right: 80px;
+}
+.mdm_screenshot_flex {
+    -ms-flex: 0 1 281px;
+}
+.mdm_screenshot_flex_double {
+    -ms-flex: 0 1 578px;
+}
+#diceIconDiv {
+    font-size: 24pt;
+}
+
+/* MDM SECTIONS */
+#lifeSection {
+    background-color: #FEED96;
+}
+#tokenSection {
+    background-color: #f75951;
+}
+#counterSection {
+    background-color: #4eb6f7;
+}
+#deckSection {
+    background-color: #B0FB92;
+}
+#diceSection {
+    background-color: black;
+}
+#colorSection {
+    background-color: white;
 }
 
 /* --------------------------------------------------------------- */
 
 
 /* XS */
-@media (max-width: 768px) {
-    #MDMCarouselIndicators {
-        bottom: -5px;
+@media (max-width: 576px) {
+    #mdm_deckmateText {
+        width: 100%;
+        max-width: 460px;
     }
-    .MDMCarouselImage {
-        margin-top: 20px;
-        width: 85%;
+    #mdm_magicText {
+        width: 100%;
+        max-width: 293px;
     }
-    #MDMBottomBuffer {
-        height: 10px;
-    }
-    #MDMDownload {
-        text-align: center;
-        padding-top: 30px;
-    }
-    #contentBlockMDM{
-        padding-top: 10px;
-        padding-bottom: 60px;
-    }
-    #MDMLifeCounterTitle {
-        padding-top: 40px;
-    }
-    #MDMLifeCounterScreenshotDiv {
-        text-align: center;
-    }
-    #MDMTokensTitle {
-        padding-top: 40px;
-    }
-    #MDMTokensScreenshotDiv {
-        text-align: center;
-    }
-    #MDMCountersTitle {
-        padding-top: 40px;
-    }
-    #MDMStormScreenshotDiv {
-        text-align: center;
-    }
-    #MDMDecksTitle {
-        text-align: center;
-    }
-    #MDMDeckAddScreenshotDiv {
-        text-align: center;
-    }
-    #MDMDeckEditScreenshotDiv {
-        text-align: center;
-    }
-    #MDMCircleDiv {
-        padding-top: 80px;
-    }
-    #MDMColorsCircle {
-        max-height: 50px;
-    }
-
 }
 
 /* SM */
-@media (min-width: 768px) {
-    #MDMCarouselIndicators {
-        bottom: 5px;
+@media (min-width: 576px) {
+    #mdm_deckmateText {
+        height: 180px;
     }
-    .MDMCarouselImage {
-        max-height: auto;
-        width: 70%;
+    #mdm_magicText {
+        height: 170px;
     }
-    #MDMBottomBuffer {
-        height: 120px;
-    }
-    #MDMDownload {
-        text-align: right;
-    }
-    #contentBlockMDM{
-        padding-top: 40px;
-        padding-bottom: 100px;
-    }
-    #MDMLifeCounterTitle {
-        padding-top: 40px;
-    }
-    #MDMLifeCounterScreenshotDiv {
-        text-align: center;
-    }
-    #MDMTokensTitle {
-        padding-top: 40px;
-    }
-    #MDMTokensScreenshotDiv {
-        text-align: center;
-    }
-    #MDMCountersTitle {
-        padding-top: 40px;
-    }
-    #MDMStormScreenshotDiv {
-        text-align: center;
-    }
-    #MDMDeckAddScreenshotDiv {
-        text-align: center;
-    }
-    #MDMDeckEditScreenshotDiv {
-        text-align: center;
-    }
-    #MDMCircleDiv {
-        padding-top: 80px;
-    }
-    #MDMColorsCircle {
-        max-height: 60px;
-    }
-
 }
 
 /* MD */
-@media (min-width: 992px) {
-    .MDMCarouselImage {
-        max-height: 600px;
-        width: auto;
+@media (min-width: 768px) {
+    #mdm_infoSection2 {
+        height: 100%;
     }
-    #MDMBottomBuffer {
-        height: 155px;
+    #mdm_infoSection3 {
+        height: 100%;
     }
-    #contentBlockMDM{
-        padding-top: 80px;
-        padding-bottom: 150px;
-    }
-    #MDMLifeCounterTitle {
-        padding-top: 120px;
-    }
-    #MDMLifeCounterScreenshotDiv {
-        text-align: right;
-    }
-    #MDMTokensTitle {
-        padding-top: 190px;
-    }
-    #MDMTokensScreenshotDiv {
-        text-align: left;
-    }
-    #MDMDeckAddScreenshotDiv {
-        text-align: left;
-    }
-    #MDMDeckEditScreenshotDiv {
-        text-align: right;
-    }
-    #MDMCountersTitle {
-        padding-top: 190px;
-    }
-    #MDMStormScreenshotDiv {
-        text-align: right;
-    }
-    #MDMCircleDiv {
-        padding-top: 400px;
-        padding-bottom: 170px;
-    }
-    #MDMColorsCircle {
-        max-height: 60px;
-    }
-
 }
 
 /* LG */
+@media (min-width: 992px) {
+
+}
+
+/* XL */
 @media (min-width: 1200px) {
-    #MDMCarouselIndicators {
-        bottom: 20px;
-    }
-    .MDMCarouselImage {
-        max-height: 700px;
-    }
+
 }
 
 /* STYLES */
-.align-center {
-    text-align: center;
-}
-.align-left {
-    text-align: left;
-}
-.align-right {
-    text-align: right;
+.darkText {
+    color: #0C0C0C;
+    color: var(--MDM_section3DarkTextColor,  #0C0C0C);
 }

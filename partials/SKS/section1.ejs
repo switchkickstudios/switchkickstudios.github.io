@@ -1,0 +1,38 @@
+<div class="d-flex flex-column align-items-center h-100">
+    <%# LARGE SCREEN %>
+    <div class="row w-100 flex-grow-1 mx-0 d-none d-lg-flex">
+        <div class="col-1"></div>
+        <div class="col-6 d-flex topMenuPadding">
+            <% include ./aboutContent %>
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center topMenuPadding" id="skillsDiv">
+            <% include ./skillsContent %>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <%# SMALL SCREEN %>
+    <div class="row flex-grow-1 mx-0 d-flex d-lg-none">
+        <div class="col-12 topMenuPadding" id="skillsDiv">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-12 col-sm-10 d-flex flex-column justify-content-center align-items-center" id="skillsDivSmall">
+                    <% include ./skillsContent %>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 d-flex flex-column pt-4">
+                    <% include ./aboutContent %>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <% include ../footer %>
+</div>
