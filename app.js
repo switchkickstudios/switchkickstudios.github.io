@@ -2,15 +2,16 @@ const express = require('express')
 const app = express();
 const path = require('path');
 const router = express.Router();
+const { fullpageJSLicense } = require('./config');
 
 router.get('/',function(req,res) {
-    res.render(path.join(__dirname+'/partials/index'))
+    res.render(path.join(__dirname+'/partials/index'), { fullpageJSLicense });
 });
 router.get("/magicdeckmate", (req, res) => {
-    res.render(path.join(__dirname+'/partials/magicdeckmate'));
+    res.render(path.join(__dirname+'/partials/magicdeckmate'), { fullpageJSLicense });
 });
 router.get("/kickticker", (req, res) => {
-    res.render(path.join(__dirname+'/partials/kickticker'));
+    res.render(path.join(__dirname+'/partials/kickticker'), { fullpageJSLicense });
 });
 router.get("/kicktickerprivacypolicy", (req, res) => {
     res.render(path.join(__dirname+'/partials/kicktickerprivacypolicy'));
