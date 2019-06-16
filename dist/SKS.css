@@ -16,8 +16,9 @@
     /* lg > 1200px */
 
     --section1MaskWidthLG: 1024px;
-    --section1MaskWidthSM: 780px;
-    --section1MaskWidthXS: 400px;
+    --section1MaskWidthMD: 780px;
+    --section1MaskWidthSM: 400px;
+    --section1MaskWidthXS: 340px;
 }
 
 body {
@@ -138,7 +139,7 @@ a.SKSTextButton {
 #contentBlockSKS{
     /* position: relative; */
     background-color: #9AC6B9;
-    padding: 0px;
+    /* padding: 0px; */
     /* z-index: 1; */
 }
 
@@ -203,10 +204,6 @@ a.SKSTextButton {
 #skillsBlock {
     max-height: 475px;
 }
-.skillText {
-    font-size: 36pt;
-}
-
 
 /* BOTTOM */
 #botBar {
@@ -233,13 +230,16 @@ a.SKSTextButton {
 /* XS */
 @media (max-width: 576px) {
     #mainBG {
-        width: 400px;
-        width: var(--section1MaskWidthXS, 400px);
+        width: 340px;
+        width: var(--section1MaskWidthXS, 340px);
         height: 260px;
     }
     #skillsDivSmall {
         height: 500px;
         padding-left: 32px;
+    }
+    .skillText {
+        font-size: 28pt;
     }
 }
 
@@ -247,11 +247,14 @@ a.SKSTextButton {
 @media (min-width: 576px) {
     #mainBG {
         width: 400px;
-        width: var(--section1MaskWidthXS, 400px);
+        width: var(--section1MaskWidthSM, 400px);
         height: 260px;
     }
     #skillsDivSmall {
         height: 500px;
+    }
+    .skillText {
+        font-size: 36pt;
     }
 }
 
@@ -259,7 +262,7 @@ a.SKSTextButton {
 @media (min-width: 768px) {
     #mainBG {
         width: 780px;
-        width: var(--section1MaskWidthSM, 780px);
+        width: var(--section1MaskWidthMD, 780px);
         height: 500px;
     }
     .hamburgerMenuItem {
