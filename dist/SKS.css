@@ -287,14 +287,13 @@ a.SKSTextButton {
     #aboutMeContent {
         padding-right: 80px
     }
-    .dynamicHeightDivLG {
-        height: 100% !important;
-    }
 }
 
 /* XL */
 @media (min-width: 1200px) {
-
+    .dynamicHeightDivLG {
+        height: 100% !important;
+    }
 }
 
 /* FONTS */
