@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./headFiles %>
+    <title>Spread: The Application of Jam</title>
+</head>
+
+<body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="KT_PrivacyPolicy_Body" class="h-100">
+    <% include ./menu %>
+
+    <!-- CONTENT -->
+    <div class="row d-flex flex-grow-1 topMenuPadding">
+        <div class="col-1"></div>
+        <div class="col-10 topMenuPadding">
+            <div class="row">
+                <div>
+                    <span class="titleText">Privacy Policy</span>
+                </div>
+            </div>
+            <div class="row" id="aboutMeContent">
+                <div>
+                    <% include ./spread/privacyPolicy %>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="w-100">
+        <% include ./footer %>
+    </div>
+
+    <style>
+        .botBar {
+            position: fixed !important;
+            bottom: 0px;
+        }
+    </style>
+    <% include ./footFiles %>
+
+</body>
+</html>

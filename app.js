@@ -16,6 +16,9 @@ router.get("/kickticker", (req, res) => {
 router.get("/kicktickerprivacypolicy", (req, res) => {
     res.render(path.join(__dirname+'/partials/kicktickerprivacypolicy'));
 });
+router.get("/spreadprivacypolicy", (req, res) => {
+    res.render(path.join(__dirname+'/partials/spreadprivacypolicy'));
+})
 
 app.use('/favicon.png',express.static(path.join(__dirname+'/favicon.png')));
 app.use('/dist',express.static(path.join(__dirname+'/dist')));
