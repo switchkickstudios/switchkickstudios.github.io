@@ -30,7 +30,7 @@ a.SpreadButton {
     flex: 1;
     flex-grow: 1;
     flex-direction: column;
-    padding: 1rem 2rem 0;
+    padding: 1rem 2rem 3rem;
 }
 
 .spread-join-band-header {

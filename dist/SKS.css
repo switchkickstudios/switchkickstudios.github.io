@@ -209,7 +209,6 @@ a.SKSTextButton {
 #botBar {
     background-color: #333 !important;
     background-color: var(--section1TextColor, #333) !important;
-    height: 150px;
 }
 .contact {
     font-family: futura-pt, Futura;
@@ -219,9 +218,13 @@ a.SKSTextButton {
     color: var(--ultralightAccentColor, #CBD6E2);
     margin-bottom: 0px;
 }
+.contactRow {
+    margin-top: 8px;
+}
 .contactTitle {
     color: #9CAFC5 !important;
     color: var(--lightAccentColor, #9CAFC5) !important;
+    padding-right: 8px;
 }
 
 /* --------------------------------------------------------------- */
