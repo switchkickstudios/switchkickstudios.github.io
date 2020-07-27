@@ -79,3 +79,16 @@ a.SpreadButton {
     justify-content: space-evenly;
     padding: 1rem 0;
 }
+
+.spread-join-band-google-play-button {
+    width: 148px;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.spread-join-band-app-store-button {
+    padding: 9px;
+}
