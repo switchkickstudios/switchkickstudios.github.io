@@ -20,6 +20,8 @@ router.get("/spreadprivacypolicy", (req, res) => {
     res.render(path.join(__dirname+'/partials/spreadprivacypolicy'));
 })
 
+app.use("/spread", require(path.join(__dirname+'/routes/spread')));
+
 app.use('/favicon.png',express.static(path.join(__dirname+'/favicon.png')));
 app.use('/dist',express.static(path.join(__dirname+'/dist')));
 app.use('/images',express.static(path.join(__dirname+'/images')));

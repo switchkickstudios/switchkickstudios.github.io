@@ -1,0 +1,12 @@
+#Spread_JoinBand_Body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.spread-join-band-container {
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+}

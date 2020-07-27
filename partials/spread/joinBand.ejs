@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../headFiles %>
+    <title>Spread: The Application of Jam</title>
+</head>
+
+<body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="Spread_JoinBand_Body" class="h-100">
+    <div class="spread-join-band-container">
+        <div>Here is your invitation code:</div>
+        <div><%= invitationCode %></div>
+        <div>To accept your invitation:</div>
+        <div>
+            <div>1) Log into Spread: The Application of Jam</div>
+            <div>2) Click the link below. Or, go to the Join Band screen and submit your invitation code. </div>
+        </div>
+        <div>
+            <a href="spread://invitationCode=<%= invitationCode %>">Spread</a>
+        </div>
+        <div>Don't Have Spread? Download it for free:</div>
+        <div>
+            <div>
+                <a href="https://bit.ly/2WSyokE">Android</a>
+            </div>
+            <div>
+                <a href="https://apple.co/30LOPk2">iOS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100">
+        <% include ../footer %>
+    </div>
+
+    <style>
+        .botBar {
+            position: fixed !important;
+            bottom: 0px;
+        }
+    </style>
+    <% include ../footFiles %>
+
+</body>
+</html>
