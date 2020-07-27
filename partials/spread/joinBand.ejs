@@ -6,19 +6,28 @@
 </head>
 
 <body data-spy="scroll" data-target="#topNavSKS" data-offset="0" id="Spread_JoinBand_Body" class="h-100">
-    <div class="spread-join-band-container">
-        <div>Here is your invitation code:</div>
-        <div><%= invitationCode %></div>
-        <div>To accept your invitation:</div>
-        <div>
-            <div>1) Log into Spread: The Application of Jam</div>
-            <div>2) Click the link below. Or, go to the Join Band screen and submit your invitation code. </div>
+    <div class="spread-join-band-header">
+        <a href="/#home" data-menuanchor="home" class="logoText SpreadButton d-block" id="Logo_Button_Small">
+            SKS
+        </a>
+    </div>
+    <div class="spread-join-band-container container">
+        <div class="spread-join-band-logo-container">
+            <img src="../../images/spread/logo_main_digital.png" alt="Spread" class="spread-join-band-logo">
         </div>
-        <div>
-            <a href="spread://join-band?invitationCode=<%= invitationCode %>">Spread</a>
+
+        <div class="spread-join-band-instructions-header">Here is your invitation code:</div>
+        <div class="spread-join-band-invitation-code"><%= invitationCode %></div>
+        <div class="spread-join-band-instructions-header">To accept your invitation:</div>
+        <div class="spread-join-band-instructions">
+            <div>1) If you aren't already logged in, log into Spread: The Application of Jam</div>
+            <div>2) Click the link below. Or, go to the Join Band screen within Spread and submit your invitation code. </div>
+            <div class="spread-join-band-link-to-app">
+                <a href="spread://join-band?invitationCode=<%= invitationCode %>">Join Band</a>
+            </div>
         </div>
-        <div>Don't Have Spread? Download it for free:</div>
-        <div>
+        <div class="spread-join-band-instructions-header">Don't Have Spread? Download it for free:</div>
+        <div class="spread-join-band-store-links">
             <div>
                 <a href="https://bit.ly/2WSyokE">Android</a>
             </div>

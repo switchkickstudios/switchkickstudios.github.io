@@ -1,7 +1,28 @@
+:root {
+    --Spread_Primary: #67438C;
+    --Spread_Accent: #B357AF;
+    --Spread_MainText: #FFF;
+    --Spread_DimFont: #FFFFFF65,
+}
+
 #Spread_JoinBand_Body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: din-condensed, DinCondensed;
+    color: #333;
+}
+
+.SpreadButton:hover {
+    text-decoration: none;
+    color: var(--Spread_Primary, #67438C);
+}
+.SpreadButton:active {
+    color: var(--Spread_Accent, #B357AF);
+}
+a.SpreadButton {
+    cursor: pointer !important;
+    color: #333;
 }
 
 .spread-join-band-container {
@@ -9,4 +30,52 @@
     flex: 1;
     flex-grow: 1;
     flex-direction: column;
+    padding: 1rem 2rem 0;
+}
+
+.spread-join-band-header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.spread-join-band-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.spread-join-band-logo {
+    width: 120px;
+    object-fit: contain;
+}
+
+.spread-join-band-instructions-header {
+    font-family: futura-pt, Futura;
+    font-size: 18px;
+}
+
+.spread-join-band-invitation-code {
+    text-align: center;
+    padding: 1rem;
+}
+
+.spread-join-band-instructions {
+    padding: 1rem;
+    font-family: futura-pt, Futura;
+}
+
+.spread-join-band-instructions > div:not(:first-of-type) {
+    padding-top: .5rem;
+}
+
+.spread-join-band-link-to-app {
+    text-align: center;
+}
+
+
+.spread-join-band-store-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
 }
