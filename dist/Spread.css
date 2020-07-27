@@ -46,8 +46,13 @@ a.SpreadButton {
 }
 
 .spread-join-band-logo {
-    width: 120px;
+    width: 172px;
     object-fit: contain;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
 .spread-join-band-instructions-header {
@@ -90,5 +95,5 @@ a.SpreadButton {
 }
 
 .spread-join-band-app-store-button {
-    padding: 9px;
+    padding-top: 9px;
 }
